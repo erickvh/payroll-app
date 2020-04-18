@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'estado_civil',
     'departamento',
     'tipo_unidad',
-    'genero'
+    'genero',
+    'puesto'
 ]
 
 MIDDLEWARE = [

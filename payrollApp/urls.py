@@ -24,4 +24,5 @@ urlpatterns = [
     path('departamento/', include(('departamento.urls','departamento'), namespace= 'departamento')),
     path('tipounidad/', include(('tipo_unidad.urls','tipounidad'), namespace= 'tipounidad')),
     path('genero/', include(('genero.urls','genero'), namespace= 'genero')),
+    path('puesto/', include(('puesto.urls','puesto'), namespace= 'puesto')),
 ]
