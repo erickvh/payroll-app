@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'departamento',
     'tipo_unidad',
     'genero',
-    'puesto'
+    'puesto',
+    'configuracion'
 ]
 
 MIDDLEWARE = [

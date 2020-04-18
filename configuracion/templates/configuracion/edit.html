@@ -1,0 +1,74 @@
+{% extends 'base.html' %} {% block head_title %} Configuracion {% endblock head_title %} {% block titulo_principal %} Editar Configuración {% endblock titulo_principal %} {% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/configuracion">Configuracion</a></li> {% endblock enlace_actual %} {% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            {% if messages %} {% for message in messages %}
+            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endfor %} {% endif %}
+            <form action="{% url 'configuracion:update' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <h3>Información Basica</h3>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nombre">Nombre </label>
+                            <input class="form-control" id="nombre" type="text" name="nombre" value="{{configuracion.nombre}}">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <label for="telefono">Telefono</label>
+                            <input class="form-control" id="telefono" type="text" name="telefono" value="{{configuracion.telefono}}">
+                        </div>
+                        <div class="col-6">
+                            <label for="web">Web</label>
+                            <input class="form-control" id="web" type="web" name="web" value="{{configuracion.web}}">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email" value="{{configuracion.email}}">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="descripción">Descripción</label>
+                            <textarea name="descripcion" id="descripcion" rows="4" cols="30" class="form-control">{{configuracion.descripcion}}</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h4>Datos Legales</h4>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="nic">NIC</label>
+                            <input class="form-control" id="nic" type="text" name="nic" value="{{configuracion.nic}}">
+                        </div>
+                        <div class="col-4">
+                            <label for="nit">NIT</label>
+                            <input class="form-control" id="nit" type="text" name="nit" value="{{configuracion.nit}}">
+                        </div>
+                        <div class="col-4">
+                            <label for="nombre">Salario Minimo</label>
+                            <input class="form-control" id="salario_minimo_sector" type="number" step="0.01" name="salario_minimo_sector" value="{{configuracion.salario_minimo_sector}}">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <label for="representante_legal">Representante Legal</label>
+                            <input class="form-control" id="representante_legal" type="text" name="representante_legal" value="{{configuracion.representante_legal}}">
+                        </div>
+                        <div class="col-6">
+                            <label for="sociedad">Sociedad</label>
+                            <input class="form-control" id="sociedad" type="text" name="sociedad" value="{{configuracion.sociedad}}">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-success" type="submit">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
