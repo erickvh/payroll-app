@@ -42,13 +42,25 @@
             </div>
         </div>
         <ul class="app-menu">
-            <li><a class="app-menu__item" href="/"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Home</span></a></li>
-            <li><a class="app-menu__item" href="/profesion"><i class="app-menu__icon fa fa-user-secret"></i><span class="app-menu__label">Profesiones</span></a></li>
-            <li><a class="app-menu__item" href="/estadocivil"><i class="app-menu__icon fa fa-user-secret"></i><span class="app-menu__label">Estado Civil</span></a></li>
-            <li><a class="app-menu__item" href="/departamento"><i class="app-menu__icon fa fa-user-secret"></i><span class="app-menu__label">Departamentos</span></a></li>
-            <li><a class="app-menu__item" href="/tipounidad"><i class="app-menu__icon fa fa-user-secret"></i><span class="app-menu__label">Tipo Unidad</span></a></li>
-            <li><a class="app-menu__item" href="/genero"><i class="app-menu__icon fa fa-user-secret"></i><span class="app-menu__label">Genero</span></a></li>
-            <li><a class="app-menu__item" href="/puesto"><i class="app-menu__icon fa fa-user-secret"></i><span class="app-menu__label">Puestos</span></a></li>
+            <li>
+                <a class="app-menu__item" href="/"><img src="{% static 'images/home.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Home</span></a>
+            </li>
+            <li class="treeview ">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/lista.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Catálogos Empleado</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/profesion"><i class="icon fa fa-circle-o"></i> Profesiones</a></li>
+                    <li><a class="treeview-item" href="/estadocivil"><i class="icon fa fa-circle-o"></i>Estado Civil</a></li>
+                    <li><a class="treeview-item" href="/departamento"><i class="icon fa fa-circle-o"></i> Departamento Territorial</a></li>
+                    <li><a class="treeview-item" href="/genero"><i class="icon fa fa-circle-o"></i>Generos</a></li>
+                </ul>
+            </li>
+            <li class="treeview ">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/sociedad.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Catálogos Sociedad</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/tipounidad"><i class="icon fa fa-circle-o"></i> Tipo Unidad</a></li>
+                    <li><a class="treeview-item" href="/puesto"><i class="icon fa fa-circle-o"></i> Puestos</a></li>
+                </ul>
+            </li>
         </ul>
     </aside>
     <main class="app-content">
