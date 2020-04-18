@@ -1,0 +1,21 @@
+python manage.py shell
+**importando los modelos
+
+**************Para manejar Departamentos *****************
+from departamento.models import Departamento
+
+#consultando todos los registros
+Departamento.objects.all()
+
+#realizando un registro
+d = Departamento(codigo="SAOC",nombre="Santa Ana")
+#guardando un registro
+d.save()
+#consultando cada registro
+d.id
+d.nombre
+
+#Filtrando 
+Departamento.objects.filter(id=1)
+Departamento.objects.filter(nombre__startswith='Sa')   
+

@@ -31,7 +31,7 @@ def update_estado(request, estado_id):
     if request.method == 'POST':
         form = EstadoCivilForm(request.POST, instance=estado_civil)
         form.save()
-        messages.success(request, 'Estado Civil actualizada correctamente')
+        messages.success(request, 'Estado Civil actualizado correctamente')
     return redirect('/estadocivil')
 
 def store_estado(request):
@@ -39,7 +39,7 @@ def store_estado(request):
         form = EstadoCivilForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Estado Civil Guardada correctamente')
+            messages.success(request, 'Estado Civil Guardado correctamente')
     return redirect('/estadocivil')
 
     

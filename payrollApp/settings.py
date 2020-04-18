@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'generales',
     'profesion',
     'estado_civil',
+    'departamento'
 ]
 
 MIDDLEWARE = [

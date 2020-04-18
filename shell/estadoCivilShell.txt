@@ -1,7 +1,7 @@
 python manage.py shell
 **importando los modelos
 
-**************Para manejar EstadoCivilales *****************
+**************Para manejar Estados Civiles *****************
 from estado_civil.models import EstadoCivil
 
 #consultando todos los registros
