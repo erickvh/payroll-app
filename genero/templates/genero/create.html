@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block head_title %} Registrar Genero {% endblock head_title %} {% block titulo_principal %} Registrar Genero {% endblock titulo_principal %} {% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/genero">Generos</a></li>
+<li class="breadcrumb-item"><a href="{% url 'genero:create' %}">Registrar</a></li> {% endblock enlace_actual %} {% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="{% url 'genero:store' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre">
+                </div>
+                <button class="btn btn-outline-success" type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}

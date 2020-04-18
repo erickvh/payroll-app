@@ -15,7 +15,6 @@ def index_profesion(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'profesion/index.html', {'page_obj': page_obj})
-    #return HttpResponse(template.render(context, request))
 
 def create_profesion(request):
     return render(request, 'profesion/create.html')
