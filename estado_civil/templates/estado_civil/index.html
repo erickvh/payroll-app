@@ -1,11 +1,11 @@
-{% extends 'base.html' %} {% block head_title %} Home {% endblock head_title %} {% block titulo_principal %} Home {% endblock titulo_principal %} {% block enlace_actual %}
-<li class="breadcrumb-item"><a href="/profesion">Profesiones</a></li> {% endblock enlace_actual %} {% block contenido %}
+{% extends 'base.html' %} {% block head_title %} Estado Civil {% endblock head_title %} {% block titulo_principal %} Estado Civil {% endblock titulo_principal %} {% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/estadocivil">Estado Civil</a></li> {% endblock enlace_actual %} {% block contenido %}
 <div class="tile">
     <div class="tile-body table-responsive">
         <div class="d-flex mb-2">
-            <h3 class="tile-title">Profesiones</h3>
+            <h3 class="tile-title">Estado Civil</h3>
             <div class="float-right ml-auto">
-                <a class="btn btn-outline-success" href="{% url 'profesion:create' %}"><i
+                <a class="btn btn-outline-success" href="{% url 'estadocivil:create' %}"><i
                         class="fa fa-plus icon-expe"></i>Registrar</a>
             </div>
         </div>
@@ -21,12 +21,12 @@
                 </tr>
             </thead>
             <tbody>
-                {% for profesion in page_obj %}
+                {% for estado_civil in page_obj %}
                 <tr>
-                    <td>{{ profesion.nombre }}</td>
-                    <td>{{ profesion.descripcion }}</td>
+                    <td>{{ estado_civil.nombre }}</td>
+                    <td>{{ estado_civil.descripcion }}</td>
                     <td class="d-flex justify-content-center">
-                        <a class="btn btn-outline-info mr-2" href="{% url 'profesion:edit' profesion.id %}"><i class="fa fa-pencil icon-expe"></i></a>
+                        <a class="btn btn-outline-info mr-2" href="{% url 'estadocivil:edit' estado_civil.id %}"><i class="fa fa-pencil icon-expe"></i></a>
                         <!--<a class="btn btn-outline-warning mr-2">
                             <i class="fa fa-unlock icon-expe"></i>
                         </a>
@@ -51,7 +51,7 @@
             </span>
         </div>
         {% else %}
-        <p>Profesiones no disponibles</p>
+        <p>Estado Civiles no disponibles</p>
         {% endif %}
     </div>
 </div>

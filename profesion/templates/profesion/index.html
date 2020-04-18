@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block head_title %} profesiones{% endblock head_title %} {% block titulo_principal %} Profesiones {% endblock titulo_principal %} {% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/profesion">Profesiones</a></li> {% endblock enlace_actual %} {% block contenido %}
+<div class="tile">
+    <div class="tile-body table-responsive">
+        <div class="d-flex mb-2">
+            <h3 class="tile-title">Profesiones</h3>
+            <div class="float-right ml-auto">
+                <a class="btn btn-outline-success" href="{% url 'profesion:create' %}"><i
+                        class="fa fa-plus icon-expe"></i>Registrar</a>
+            </div>
+        </div>
+        {% if messages %} {% for message in messages %}
+        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+        {% endfor %} {% endif %} {% if page_obj %}
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for profesion in page_obj %}
+                <tr>
+                    <td>{{ profesion.nombre }}</td>
+                    <td>{{ profesion.descripcion }}</td>
+                    <td class="d-flex justify-content-center">
+                        <a class="btn btn-outline-info mr-2" href="{% url 'profesion:edit' profesion.id %}"><i class="fa fa-pencil icon-expe"></i></a>
+                        <!--<a class="btn btn-outline-warning mr-2">
+                            <i class="fa fa-unlock icon-expe"></i>
+                        </a>
+                        <a class="btn btn-outline-primary mr-2"><i class="fa fa-eye icon-expe"></i></a>-->
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="pagination">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+        
+                <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span> {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a> {% endif %}
+            </span>
+        </div>
+        {% else %}
+        <p>Profesiones no disponibles</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock contenido %}

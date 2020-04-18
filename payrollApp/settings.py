@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     #creadas
     'generales',
-    'profesion.apps.ProfesionConfig',
+    'profesion',
+    'estado_civil',
 ]
 
 MIDDLEWARE = [

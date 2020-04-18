@@ -1,0 +1,24 @@
+python manage.py shell
+**importando los modelos
+
+**************Para manejar EstadoCivilales *****************
+from estado_civil.models import EstadoCivil
+
+#consultando todos los registros
+EstadoCivil.objects.all()
+
+#realizando un registro
+e = EstadoCivil(nombre="Mujer")
+#guardando un registro
+e.save()
+#consultando cada registro
+e.id
+e.nombre
+e.descripcion
+#actualizando un registro
+e.nombre= "Hombre"
+
+#Filtrando 
+EstadoCivil.objects.filter(id=1)
+EstadoCivil.objects.filter(nombre__startswith='H')   
+

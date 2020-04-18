@@ -10,22 +10,22 @@ from .models import Profesion
 from .forms import ProfesionForm
 
 # Create your views here.
-def index(request):
+def index_profesion(request):
     profesiones = Profesion.objects.all().order_by('nombre')
     paginator = Paginator(profesiones, 6)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    return render(request, 'index.html', {'page_obj': page_obj})
+    return render(request, 'profesion/index.html', {'page_obj': page_obj})
     #return HttpResponse(template.render(context, request))
 
-def create(request):
-    return render(request, 'create.html')
+def create_profesion(request):
+    return render(request, 'profesion/create.html')
 
-def edit(request, profesion_id):
+def edit_profesion(request, profesion_id):
     profesion = get_object_or_404(Profesion,pk=profesion_id)
-    return render(request, 'edit.html', {'profesion': profesion})
+    return render(request, 'profesion/edit.html', {'profesion': profesion})
 
-def update(request, profesion_id):
+def update_profesion(request, profesion_id):
     profesion =  get_object_or_404(Profesion, pk=profesion_id)
     if request.method == 'POST':
         form = ProfesionForm(request.POST, instance=profesion)
@@ -33,7 +33,7 @@ def update(request, profesion_id):
         messages.success(request, 'Profesión actualizada correctamente')
     return redirect('/profesion')
 
-def store(request):
+def store_profesion(request):
     if request.method == 'POST':
         form = ProfesionForm(request.POST)
         if form.is_valid():
