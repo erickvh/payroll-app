@@ -1,0 +1,26 @@
+python manage.py shell
+**importando los modelos
+
+**************Para manejar Profesionales *****************
+from profesion.models import Profesion
+
+#consultando todos los registros
+Profesion.objects.all()
+
+#realizando un registro
+p = Profesion(nombre="Programador Junior React", descripcion= "Programador Junior React")
+#guardando un registro
+p.save()
+#consultando cada registro
+p.id
+p.nombre
+p.descripcion
+#actualizando un registro
+p.nombre= "Programador Intermedio React"
+
+#Filtrando 
+Profesion.objects.filter(id=1)
+Profesion.objects.filter(nombre__startswith='Pro')   
+
+
+

@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    #creadas
     'generales',
+    'profesion.apps.ProfesionConfig',
 ]
 
 MIDDLEWARE = [

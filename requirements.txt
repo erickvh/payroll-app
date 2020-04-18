@@ -1,4 +1,5 @@
 django
 pylint
 psycopg2
+pylint-django
 
