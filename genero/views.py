@@ -36,7 +36,11 @@ def store_genero(request):
         form = GeneroForm(request.POST)
         if form.is_valid():
             form.save()
+ 
             messages.success(request, 'Profesión Guardada correctamente')
+        else:
+            errors=form.errors
+            return render(request, 'genero/create.html',{'errors': errors})
     return redirect('/genero')
 
     
