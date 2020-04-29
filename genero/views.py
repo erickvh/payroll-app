@@ -10,11 +10,6 @@ from .forms import GeneroForm
 
 # Create your views here.
 def index_genero(request):
-    """genero_list = Genero.objects.all().order_by('nombre')
-    paginator = Paginator(genero_list, 6)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    """
     genero_list = Genero.objects.all().order_by('nombre')
     return render(request, 'genero/index.html', {'genero_list': genero_list})
 
@@ -46,7 +41,8 @@ def store_genero(request):
             messages.success(request, 'Profesión Guardada correctamente')
         else:
             errors=form.errors
-            return render(request, 'genero/create.html',{'errors': errors})
+            data=form.data
+            return render(request, 'genero/create.html',{'errors': errors,'data': data})
     return redirect('/genero')
 
     

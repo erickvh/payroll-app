@@ -9,7 +9,7 @@
 
                 <div class="form-group">
                     <label for="nombre">Nombre </label>
-                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre"> {% if errors.nombre %}
+                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre" value="{{data.nombre}}"> {% if errors.nombre %}
                     <div class="form-control-feedback text-danger">
                         {{errors.nombre.0}}
                     </div>

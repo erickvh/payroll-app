@@ -8,19 +8,35 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="nombre">Nombre </label>
-                    <input class="form-control" id="nombre" type="text" name="nombre" value="{{puesto.nombre}}">
+                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" value="{{puesto.nombre}}"> {% if errors.nombre %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.nombre.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <div class="form-group">
                     <label for="descripción">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" rows="4" cols="30" class="form-control" placeholder="Ingresa una descripción">{{puesto.descripcion}}</textarea>
+                    <textarea name="descripcion" id="descripcion" rows="4" cols="30" class="form-control {% if errors.descripcion %} is-invalid {% endif %}">{{puesto.descripcion}}</textarea> {% if errors.descripcion %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.descripcion.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="nombre">Minimo</label>
-                    <input class="form-control" id="minimo" type="number" step="0.01" name="minimo" value="{{puesto.minimo}}">
+                    <label for="minimo">Minimo</label>
+                    <input class="form-control {% if errors.minimo %} is-invalid {% endif %}" id="minimo" type="number" step="0.01" name="minimo" value="{{puesto.minimo}}"> {% if errors.minimo %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.minimo.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <div class="form-group">
-                    <label for="nombre">Maximo</label>
-                    <input class="form-control" id="maximo" type="number" step="0.01" name="maximo" value="{{puesto.maximo}}">
+                    <label for="maximo">Maximo</label>
+                    <input class="form-control {% if errors.maximo %} is-invalid {% endif %}" id="maximo" type="number" step="0.01" name="maximo" value="{{puesto.maximo}}"> {% if errors.maximo %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.maximo.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <button class="btn btn-outline-success" type="submit">Actualizar</button>
             </form>

@@ -11,10 +11,7 @@ from .forms import PuestoForm
 # Create your views here.
 def index_puesto(request):
     puesto_list = Puesto.objects.all().order_by('nombre')
-    paginator = Paginator(puesto_list, 6)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    return render(request, 'puesto/index.html', {'page_obj': page_obj})
+    return render(request, 'puesto/index.html', {'puesto_list': puesto_list})
 
 def create_puesto(request):
     return render(request, 'puesto/create.html')
@@ -27,8 +24,12 @@ def update_puesto(request, puesto_id):
     puesto =  get_object_or_404(Puesto, pk=puesto_id)
     if request.method == 'POST':
         form = PuestoForm(request.POST, instance=puesto)
-        form.save()
-        messages.success(request, 'Puesto actualizado correctamente')
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Puesto actualizado correctamente')
+        else:
+            errors=form.errors
+            return render(request, 'puesto/edit.html',{'errors': errors, 'puesto':puesto})
     return redirect('/puesto')
 
 def store_puesto(request):
@@ -36,5 +37,10 @@ def store_puesto(request):
         form = PuestoForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Puesto Guardada correctamente')
+            messages.success(request, 'Puesto Guardado correctamente')
+        else:
+            errors=form.errors
+            data=form.data
+            return render(request, 'puesto/create.html',{'errors': errors, 'data': data})
+            
     return redirect('/puesto')
