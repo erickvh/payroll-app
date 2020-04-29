@@ -11,10 +11,7 @@ from .forms import EstadoCivilForm
 # Create your views here.
 def index_estado(request):
     estado_civil_list = EstadoCivil.objects.all().order_by('nombre')
-    paginator = Paginator(estado_civil_list, 6)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    return render(request, 'estado_civil/index.html', {'page_obj': page_obj})
+    return render(request, 'estado_civil/index.html', {'estado_civil_list': estado_civil_list})
 
 def create_estado(request):
     return render(request, 'estado_civil/create.html')
@@ -29,8 +26,13 @@ def update_estado(request, estado_id):
     estado_civil =  get_object_or_404(EstadoCivil, pk=estado_id)
     if request.method == 'POST':
         form = EstadoCivilForm(request.POST, instance=estado_civil)
-        form.save()
-        messages.success(request, 'Estado Civil actualizado correctamente')
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Estado Civil actualizado correctamente')
+        else:
+            errors=form.errors
+            return render(request, 'estado_civil/edit.html',{'errors': errors, 'estado_civil':estado_civil})
+        
     return redirect('/estadocivil')
 
 def store_estado(request):
@@ -39,6 +41,11 @@ def store_estado(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Estado Civil Guardado correctamente')
+        else:
+            errors=form.errors
+            data=form.data
+            return render(request, 'estado_civil/create.html',{'errors': errors, 'data': data})
+           
     return redirect('/estadocivil')
 
     

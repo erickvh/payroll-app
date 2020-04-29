@@ -1,4 +1,11 @@
-{% extends 'base.html' %} {% block head_title %} Registrar Tipo Unidad {% endblock head_title %} {% block titulo_principal %} Registrar Tipo Unidad {% endblock titulo_principal %} {% block enlace_actual %}
+{% extends 'base.html' %} 
+{% block head_title %} 
+Registrar Tipo Unidad 
+{% endblock head_title %} 
+{% block titulo_principal %}
+ Registrar Tipo Unidad 
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
 <li class="breadcrumb-item"><a href="/tipounidad">Tipo Unidad</a></li>
 <li class="breadcrumb-item"><a href="{% url 'tipounidad:create' %}">Registrar</a></li> {% endblock enlace_actual %} {% block contenido %}
 <div class="tile">
