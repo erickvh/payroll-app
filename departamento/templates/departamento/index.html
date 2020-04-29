@@ -27,11 +27,12 @@
                     <td>{{ departamento.nombre }}</td>
                     <td class="d-flex justify-content-center">
                         <a class="btn btn-outline-info mr-2" href="{% url 'departamento:edit' departamento.id %}"><i class="fa fa-pencil icon-expe"></i></a>
-                        <!--<a class="btn btn-outline-warning mr-2">
-                            <i class="fa fa-unlock icon-expe"></i>
-                        </a>
-                        <a class="btn btn-outline-primary mr-2"><i class="fa fa-eye icon-expe"></i></a>-->
-                    </td>
+                        <form action="{% url 'departamento:delete' departamento.id %}" method="post">
+                            {% csrf_token %}
+                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                                <i class="fa fa-trash icon-expe"></i>
+                            </button>
+                        </form>
                 </tr>
                 {% endfor %}
             </tbody>

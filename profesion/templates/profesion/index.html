@@ -30,10 +30,12 @@
                     <td>{{ profesion.descripcion }}</td>
                     <td class="d-flex justify-content-center">
                         <a class="btn btn-outline-info mr-2" href="{% url 'profesion:edit' profesion.id %}"><i class="fa fa-pencil icon-expe"></i></a>
-                        <!--<a class="btn btn-outline-warning mr-2">
-                            <i class="fa fa-unlock icon-expe"></i>
-                        </a>
-                        <a class="btn btn-outline-primary mr-2"><i class="fa fa-eye icon-expe"></i></a>-->
+                        <form action="{% url 'profesion:delete' profesion.id %}" method="post">
+                            {% csrf_token %}
+                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                                <i class="fa fa-trash icon-expe"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 {% endfor %}

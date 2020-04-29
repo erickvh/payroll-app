@@ -48,4 +48,10 @@ def store_estado(request):
            
     return redirect('/estadocivil')
 
+def delete_estado(request, estado_id):
+    estado_civil =  get_object_or_404(EstadoCivil, pk=estado_id)
+    estado_civil.delete()
+    messages.success(request, 'Estado Civil Borrado correctamente')
+
+    return redirect('/estadocivil')
     

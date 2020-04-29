@@ -10,4 +10,5 @@ urlpatterns = [
     path('store', views.store_genero, name='store'),
     path('<int:genero_id>/edit', views.edit_genero, name='edit'),
     path('<int:genero_id>/update', views.update_genero, name='update'),
+    path('<int:genero_id>/delete', views.delete_genero, name='delete'),
 ]

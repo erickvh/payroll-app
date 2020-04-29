@@ -26,7 +26,7 @@ def update_genero(request, genero_id):
         form = GeneroForm(request.POST, instance=genero)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Profesión Actualizada correctamente')
+            messages.success(request, 'Genero Actualizado correctamente')
         else:
             errors=form.errors
             return render(request, 'genero/edit.html',{'errors': errors, 'genero':genero})
@@ -38,11 +38,19 @@ def store_genero(request):
         form = GeneroForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Profesión Guardada correctamente')
+            messages.success(request, 'Genero Guardado correctamente')
         else:
             errors=form.errors
             data=form.data
             return render(request, 'genero/create.html',{'errors': errors,'data': data})
     return redirect('/genero')
+
+def delete_genero(request, genero_id):
+    genero =  get_object_or_404(Genero, pk=genero_id)
+    genero.delete()
+    messages.success(request, 'Genero Borrado correctamente')
+
+    return redirect('/genero')
+
 
     

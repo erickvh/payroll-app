@@ -49,5 +49,13 @@ def store_departamento(request):
            
     return redirect('/departamento')
 
+def delete_departamento(request, departamento_id):
+    departamento =  get_object_or_404(Departamento, pk=departamento_id)
+    departamento.delete()
+    messages.success(request, 'Departamento Borrado correctamente')
+
+    return redirect('/departamento')
+
+
 
     

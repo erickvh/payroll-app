@@ -46,4 +46,10 @@ def store_profesion(request):
             
     return redirect('/profesion')
 
+def delete_profesion(request, profesion_id):
+    profesion =  get_object_or_404(Profesion, pk=profesion_id)
+    profesion.delete()
+    messages.success(request, 'Profesion Borrado correctamente')
+
+    return redirect('/profesion')
     

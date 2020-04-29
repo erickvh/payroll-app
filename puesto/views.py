@@ -44,3 +44,10 @@ def store_puesto(request):
             return render(request, 'puesto/create.html',{'errors': errors, 'data': data})
             
     return redirect('/puesto')
+
+def delete_puesto(request, puesto_id):
+    puesto =  get_object_or_404(Puesto, pk=puesto_id)
+    puesto.delete()
+    messages.success(request, 'Puesto Borrado correctamente')
+
+    return redirect('/puesto')
