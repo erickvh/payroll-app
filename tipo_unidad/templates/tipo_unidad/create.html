@@ -8,11 +8,21 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="nombre">Nombre </label>
-                    <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre">
+                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre" value="{{data.nombre}}">
+                    {% if errors.nombre %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.nombre.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <div class="form-group">
                     <label for="descripción">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" rows="4" cols="30" class="form-control" placeholder="Ingresa una descripción." name="descripcion"></textarea>
+                    <textarea name="descripcion" id="descripcion" rows="4" cols="30" class="form-control {% if errors.descripcion %} is-invalid {% endif %}" placeholder="Ingresa una descripción." name="descripcion">{{data.descripcion}}</textarea>
+                    {% if errors.descripcion %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.descripcion.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <button class="btn btn-outline-success" type="submit">Guardar</button>
             </form>

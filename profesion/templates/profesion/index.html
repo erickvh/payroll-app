@@ -9,10 +9,13 @@
                         class="fa fa-plus icon-expe"></i>Registrar</a>
             </div>
         </div>
-        {% if messages %} {% for message in messages %}
-        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
-        {% endfor %} {% endif %} {% if page_obj %}
-        <table class="table table-striped text-center">
+        {% if messages %} 
+            {% for message in messages %}
+            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endfor %} 
+        {% endif %} 
+        {% if profesiones_list %}
+        <table class="table table-striped text-center" id="profesion">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -21,7 +24,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for profesion in page_obj %}
+                {% for profesion in profesiones_list %}
                 <tr>
                     <td>{{ profesion.nombre }}</td>
                     <td>{{ profesion.descripcion }}</td>
@@ -36,23 +39,20 @@
                 {% endfor %}
             </tbody>
         </table>
-        <div class="pagination">
-            <span class="step-links">
-                {% if page_obj.has_previous %}
-                    <a href="?page=1">&laquo; first</a>
-                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
-                {% endif %}
-        
-                <span class="current">
-                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-                </span> {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">next</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a> {% endif %}
-            </span>
-        </div>
         {% else %}
         <p>Profesiones no disponibles</p>
         {% endif %}
     </div>
 </div>
 {% endblock contenido %}
+{% block plugins %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#profesion').DataTable({
+        "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+        },
+    });
+</script>
+{% endblock plugins %}

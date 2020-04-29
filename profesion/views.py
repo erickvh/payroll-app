@@ -10,11 +10,8 @@ from .forms import ProfesionForm
 
 # Create your views here.
 def index_profesion(request):
-    profesiones = Profesion.objects.all().order_by('nombre')
-    paginator = Paginator(profesiones, 6)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    return render(request, 'profesion/index.html', {'page_obj': page_obj})
+    profesiones_list = Profesion.objects.all().order_by('nombre')
+    return render(request, 'profesion/index.html', {'profesiones_list': profesiones_list})
 
 def create_profesion(request):
     return render(request, 'profesion/create.html')
@@ -27,8 +24,13 @@ def update_profesion(request, profesion_id):
     profesion =  get_object_or_404(Profesion, pk=profesion_id)
     if request.method == 'POST':
         form = ProfesionForm(request.POST, instance=profesion)
-        form.save()
-        messages.success(request, 'Profesión actualizada correctamente')
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profesión actualizada correctamente')
+        else:
+            errors=form.errors
+            return render(request, 'profesion/edit.html',{'errors': errors, 'profesion':profesion})
+       
     return redirect('/profesion')
 
 def store_profesion(request):
@@ -37,6 +39,11 @@ def store_profesion(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Profesión Guardada correctamente')
+        else:
+            errors=form.errors
+            data=form.data
+            return render(request, 'profesion/create.html',{'errors': errors, 'data': data})
+            
     return redirect('/profesion')
 
     
