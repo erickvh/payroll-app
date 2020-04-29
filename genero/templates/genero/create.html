@@ -9,19 +9,18 @@
 
                 <div class="form-group">
                     <label for="nombre">Nombre </label>
-                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre">
-                     {% if errors.nombre %}
-                     <div class="form-control-feedback text-danger">
+                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre"> {% if errors.nombre %}
+                    <div class="form-control-feedback text-danger">
                         {{errors.nombre.0}}
-                     </div>
+                    </div>
                     {% endif %}
                 </div>
                 <button class="btn btn-outline-success" type="submit">Guardar</button>
-            
+
             </form>
 
-   
-        
+
+
 
         </div>
     </div>

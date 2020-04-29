@@ -10,7 +10,11 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="nombre">Nombre </label>
-                    <input class="form-control" id="nombre" type="text" name="nombre" value="{{genero.nombre}}">
+                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" value="{{genero.nombre}}"> {% if errors.nombre %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.nombre.0}}
+                    </div>
+                    {% endif %}
                 </div>
                 <input class="btn btn-outline-success" type="submit" value="Actualizar">
             </form>

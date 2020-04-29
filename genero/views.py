@@ -10,11 +10,13 @@ from .forms import GeneroForm
 
 # Create your views here.
 def index_genero(request):
-    genero_list = Genero.objects.all().order_by('nombre')
+    """genero_list = Genero.objects.all().order_by('nombre')
     paginator = Paginator(genero_list, 6)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    return render(request, 'genero/index.html', {'page_obj': page_obj})
+    """
+    genero_list = Genero.objects.all().order_by('nombre')
+    return render(request, 'genero/index.html', {'genero_list': genero_list})
 
 def create_genero(request):
     return render(request, 'genero/create.html')
@@ -27,8 +29,13 @@ def update_genero(request, genero_id):
     genero =  get_object_or_404(Genero, pk=genero_id)
     if request.method == 'POST':
         form = GeneroForm(request.POST, instance=genero)
-        form.save()
-        messages.success(request, 'Genero actualizado correctamente')
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profesión Actualizada correctamente')
+        else:
+            errors=form.errors
+            return render(request, 'genero/edit.html',{'errors': errors, 'genero':genero})
+
     return redirect('/genero')
 
 def store_genero(request):
@@ -36,7 +43,6 @@ def store_genero(request):
         form = GeneroForm(request.POST)
         if form.is_valid():
             form.save()
- 
             messages.success(request, 'Profesión Guardada correctamente')
         else:
             errors=form.errors
