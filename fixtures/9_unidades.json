@@ -1,0 +1,27 @@
+[
+    {
+        "model": "unidad.unidad",
+        "pk": 1,
+        "fields": {
+            "nombre":"Unidad frontend",
+            "tipo_unidad": 1
+        }
+    },
+     {
+        "model": "unidad.unidad",
+        "pk": 2,
+        "fields": {
+            "nombre":"Unidad Backend",
+            "tipo_unidad": 2
+        }
+    },
+     {
+        "model": "unidad.unidad",
+        "pk": 3,
+        "fields": {
+            "nombre":"Unidad Backend Java",
+            "tipo_unidad": 2,
+            "dirigido": 2
+        }
+    }
+]

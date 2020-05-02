@@ -46,7 +46,7 @@ def update_municipio(request, municipio_id):
             messages.success(request, 'Municipio actualizado correctamente')
         else:
             errors=form.errors
-            return render(request, 'Municipio/edit.html',{'errors': errors, 'municipio':municipio,'departamento_list': departamento_list})
+            return render(request, 'municipio/edit.html',{'errors': errors, 'municipio':municipio,'departamento_list': departamento_list})
         
     return redirect('/municipio')
 

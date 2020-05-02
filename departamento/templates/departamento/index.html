@@ -11,14 +11,13 @@
         </div>
         {% if messages %} 
             {% for message in messages %}
+            {% if message.tags == 'error' %}
             <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endif %}
             {% endfor %} 
         {% endif %} 
-        {% if messages %} 
-            {% for message in messages %}
-            <div class="alert {% if message.tags != 'error' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
-            {% endfor %} 
-        {% endif %}
         {% if departamento_list %}
         <table class="table table-striped text-center" id="departamento">
             <thead>

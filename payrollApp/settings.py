@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'genero',
     'puesto',
     'configuracion',
-    'municipio'
+    'municipio',
+    'unidad'
 ]
 
 MIDDLEWARE = [

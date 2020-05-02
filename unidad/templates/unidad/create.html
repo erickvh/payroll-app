@@ -1,0 +1,69 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Agregar Unidad 
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Agregar Unidad
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/unidad">Unidades</a></li>
+<li class="breadcrumb-item"><a href="{% url 'unidad:create' %}">Crear</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>{% endif %}
+            <form action="{% url 'unidad:store' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input class="form-control  {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese el Nombre de la Unidad"value="{{data.nombre}}">
+                    {% if errors.nombre %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.nombre.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="tipo_unidad">Tipo Unidad</label>
+                    <select class="form-control" id="tipo_unidad" name="tipo_unidad">
+                    <option value="null">Seleccione un tipo unidad</option>
+                      {% for tipo_unidad in tipo_unidad_list %}
+                        <option value="{{tipo_unidad.id}}" >{{tipo_unidad.nombre}}</option>
+                      {% endfor %}
+                    </select>
+                    {% if errors.tipo_unidad %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.tipo_unidad.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                {% if unidad_list %}
+                <div class="form-group">
+                    <label for="dirigido">Dirigido por </label>
+                    <select class="form-control" id="unidad" name="dirigido">
+                    <option value="">Seleccione un tipo unidad</option>
+                      {% for unidad in unidad_list %}
+                        <option value="{{unidad.id}}">{{unidad.nombre}}</option>
+                      {% endfor %}
+                    </select>
+                    <div class="form-control-feedback text-secondary ">
+                       Este campo no es obligatorio 
+                    </div>
+                    {% if errors.dirigido %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.dirigido.0}}
+                    </div>
+                    {% endif %}
+                </div>
+               
+                {% endif %}
+
+                <input class="btn btn-outline-success" type="submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}

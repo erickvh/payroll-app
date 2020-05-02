@@ -50,7 +50,9 @@ def update_unidad(request, unidad_id):
 
 def delete_unidad(request, unidad_id):
     tipo_unidad =  get_object_or_404(TipoUnidad, pk=unidad_id)
-    tipo_unidad.delete()
-    messages.success(request, 'Tipo Unidad Borrado correctamente')
-
+    try:
+        tipo_unidad.delete()
+        messages.success(request, 'Tipo Unidad Borrada correctamente')
+    except:
+        messages.error(request, 'Este Tipo Unidad tiene unidades asignadas')
     return redirect('/tipounidad')
