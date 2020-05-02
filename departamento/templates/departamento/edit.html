@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block head_title %} Editar Departamento {% endblock head_title %} {% block titulo_principal %} Editar Deparatmento {{departamento.nombre}} {% endblock titulo_principal %} {% block enlace_actual %}
+{% extends 'base.html' %} {% block head_title %} Editar Departamento {% endblock head_title %} {% block titulo_principal %} Editar Departamento {{departamento.nombre}} {% endblock titulo_principal %} {% block enlace_actual %}
 <li class="breadcrumb-item"><a href="/departamento">Departamentos</a></li>
 <li class="breadcrumb-item"><a href="{% url 'departamento:edit' departamento.id %}">Editar</a></li> {% endblock enlace_actual %} {% block contenido %}
 <div class="tile">

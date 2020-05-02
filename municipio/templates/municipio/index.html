@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% block head_title %} Municipios {% endblock head_title %} {% block titulo_principal %} Municipios {% endblock titulo_principal %} {% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/estadocivil">Municipios</a></li> {% endblock enlace_actual %} {% block contenido %}
+<div class="tile">
+    <div class="tile-body table-responsive">
+        <div class="d-flex mb-2">
+            <h3 class="tile-title">Municipios</h3>
+            <div class="float-right ml-auto">
+                <a class="btn btn-outline-success" href="{% url 'municipio:create' %}"><i
+                        class="fa fa-plus icon-expe"></i>Registrar</a>
+            </div>
+        </div>
+        {% if messages %} {% for message in messages %}
+        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+        {% endfor %} {% endif %} 
+        {% if municipio_list %}
+        <table class="table table-striped text-center" id="municipio">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Departamento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for municipio in municipio_list %}
+                <tr>
+                    <td>{{ municipio.codigo }}</td>
+                    <td>{{ municipio.nombre }}</td>
+                    <td>{{ municipio.departamento }}</td>
+                    <td class="d-flex justify-content-center">
+                        <a class="btn btn-outline-info mr-2" href="{% url 'municipio:edit' municipio.id %}"><i class="fa fa-pencil icon-expe"></i></a>
+                        <form action="{% url 'municipio:delete' municipio.id %}" method="post">
+                            {% csrf_token %}
+                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                                <i class="fa fa-trash icon-expe"></i>
+                            </button>
+                        </form>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>Municipios no disponibles</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock contenido %}
+{% block plugins %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#municipio').DataTable({
+        "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+        },
+    });
+</script>
+{% endblock plugins %}

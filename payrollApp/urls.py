@@ -28,5 +28,6 @@ urlpatterns = [
     path('tipounidad/', include(('tipo_unidad.urls','tipounidad'), namespace= 'tipounidad')),
     path('genero/', include(('genero.urls','genero'), namespace= 'genero')),
     path('puesto/', include(('puesto.urls','puesto'), namespace= 'puesto')),
-    path('configuracion/', include(('configuracion.urls','configuracion'), namespace= 'configuracion')),
+    path('municipio/', include(('municipio.urls','municipio'), namespace= 'municipio')),
+    path('configuracion/', include(('configuracion.urls','configuracion'), namespace= 'configuracion'))
 ]

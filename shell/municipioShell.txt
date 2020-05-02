@@ -1,0 +1,24 @@
+python manage.py shell
+**importando los modelos
+
+**************Para manejar Departamentos *****************
+from municipio.models import Municipio
+from departamento.models import Departamento
+
+#consultando todos los registros
+Municipio.objects.all()
+
+#realizando un registro
+d =  Departamento.objects.filter(id=1).first()
+# o se puede
+d = Departamento.objects.get(id=1)
+#asignando el municipio
+m = Municipio(codigo="SAOC",nombre="Cantón el Limón",departamento=d)
+#guardando un registro
+m.save()
+#consultando cada registro
+m.id
+m.nombre
+
+#Filtrando 
+Municipio.objects.filter(id=1) 

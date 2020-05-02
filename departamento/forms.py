@@ -4,7 +4,7 @@ from .models import Departamento
 import re 
 
 def check_number(value):   
-    if len(value) < 3:
+    if len(value) < 1:
         raise forms.ValidationError("Minimo requerido de 3")
 
 def check_string(value):   
