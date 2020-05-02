@@ -27,7 +27,7 @@
                         <a class="btn btn-outline-info mr-2" href="{% url 'genero:edit' genero.id %}"><i class="fa fa-pencil icon-expe"></i></a>
                           <form action="{% url 'genero:delete' genero.id %}" method="post">
                             {% csrf_token %}
-                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                            <button class="btn btn-outline-danger mr-2" type="submit" onclick="return confirm('¿Esta Seguro de Eliminar este Genero?');">
                                 <i class="fa fa-trash icon-expe"></i>
                             </button>
                         </form>

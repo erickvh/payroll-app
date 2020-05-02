@@ -32,7 +32,7 @@
                         <a class="btn btn-outline-info mr-2" href="{% url 'municipio:edit' municipio.id %}"><i class="fa fa-pencil icon-expe"></i></a>
                         <form action="{% url 'municipio:delete' municipio.id %}" method="post">
                             {% csrf_token %}
-                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                            <button class="btn btn-outline-danger mr-2" type="submit" onclick="return confirm('¿Esta Seguro de Eliminar este Municipio?');">
                                 <i class="fa fa-trash icon-expe"></i>
                             </button>
                         </form>

@@ -36,7 +36,7 @@
                         <a class="btn btn-outline-info mr-2" href="{% url 'departamento:edit' departamento.id %}"><i class="fa fa-pencil icon-expe"></i></a>
                         <form action="{% url 'departamento:delete' departamento.id %}" method="post">
                             {% csrf_token %}
-                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                            <button class="btn btn-outline-danger mr-2" type="submit" onclick="return confirm('¿Esta Seguro de Eliminar este Departamento?');">
                                 <i class="fa fa-trash icon-expe"></i>
                             </button>
                         </form>

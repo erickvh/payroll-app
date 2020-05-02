@@ -29,7 +29,7 @@
                         <a class="btn btn-outline-info mr-2" href="{% url 'estadocivil:edit' estado_civil.id %}"><i class="fa fa-pencil icon-expe"></i></a>
                         <form action="{% url 'estadocivil:delete' estado_civil.id %}" method="post">
                             {% csrf_token %}
-                            <button class="btn btn-outline-danger mr-2" type="submit" >
+                            <button class="btn btn-outline-danger mr-2" type="submit" onclick="return confirm('¿Esta Seguro de Eliminar este Estado Civil?');">
                                 <i class="fa fa-trash icon-expe"></i>
                             </button>
                         </form>
