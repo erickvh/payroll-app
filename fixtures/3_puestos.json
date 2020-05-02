@@ -1,0 +1,63 @@
+[
+    {
+        "model": "puesto.puesto",
+        "pk": 1,
+        "fields": {
+            "nombre":"Desarrollador Backend Go",
+            "descripcion":"Puesto de Desarrollador Backend Go",
+            "minimo":300,
+            "maximo":500
+        }
+    },
+    {
+        "model": "puesto.puesto",
+        "pk": 2,
+        "fields": {
+            "nombre":"Desarrollador Backend PHP",
+            "descripcion":"Puesto de Desarrollador Backend PHP",
+            "minimo":300,
+            "maximo":500
+        }
+    },
+    {
+        "model": "puesto.puesto",
+        "pk": 3,
+        "fields": {
+            "nombre":"Desarrollador Backend Java",
+            "descripcion":"Puesto de Desarrollador Backend Java",
+            "minimo":300,
+            "maximo":500
+        }
+    },
+    {
+        "model": "puesto.puesto",
+        "pk": 4,
+        "fields": {
+            "nombre":"Desarrollador Backend Node",
+            "descripcion":"Puesto de Desarrollador Backend Node",
+            "minimo":300,
+            "maximo":500
+        }
+    },
+    {
+        "model": "puesto.puesto",
+        "pk": 4,
+        "fields": {
+            "nombre":"Secretaria",
+            "descripcion":"Puesto de Secretaria",
+            "minimo":300,
+            "maximo":400
+        }
+    },
+    {
+        "model": "puesto.puesto",
+        "pk": 5,
+        "fields": {
+            "nombre":"Gerente General",
+            "descripcion":"Puesto de Gerente General",
+            "minimo":900,
+            "maximo":1200
+        }
+    }
+    
+]

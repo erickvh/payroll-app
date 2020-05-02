@@ -1,0 +1,17 @@
+[
+    {
+        "model": "genero.genero",
+        "pk": 1,
+        "fields": {
+            "nombre":"Mujer"
+        }
+    },
+     {
+        "model": "genero.genero",
+        "pk": 2,
+        "fields": {
+            "nombre":"Hombre"
+        }
+    }
+    
+]

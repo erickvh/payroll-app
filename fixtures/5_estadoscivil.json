@@ -1,0 +1,67 @@
+[
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 1,
+        "fields": {
+            "nombre":"Casado",
+            "descripcion":"Cuando una persona esta Casado"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 2,
+        "fields": {
+            "nombre":"Soltero",
+            "descripcion":"Cuando una persona esta Soltero"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 3,
+        "fields": {
+            "nombre":"Divorciado",
+            "descripcion":"Cuando una persona esta Divorciado"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 4,
+        "fields": {
+            "nombre":"Viudo",
+            "descripcion":"Cuando una persona es viudo"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 5,
+        "fields": {
+            "nombre":"Casada",
+            "descripcion":"Cuando una persona esta Casada"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 6,
+        "fields": {
+            "nombre":"Soltera",
+            "descripcion":"Cuando una persona esta Soltera"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 7,
+        "fields": {
+            "nombre":"Divorciada",
+            "descripcion":"Cuando una persona esta Divorciada"
+        }
+    },
+    {
+        "model": "estado_civil.estadocivil",
+        "pk": 8,
+        "fields": {
+            "nombre":"Viuda",
+            "descripcion":"Cuando una persona es viuda"
+        }
+    }
+    
+]
