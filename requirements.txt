@@ -3,3 +3,4 @@ pylint
 psycopg2
 pylint-django
 django-login-required-middleware
+python-dotenv
