@@ -51,8 +51,12 @@ def store_departamento(request):
 
 def delete_departamento(request, departamento_id):
     departamento =  get_object_or_404(Departamento, pk=departamento_id)
-    departamento.delete()
-    messages.success(request, 'Departamento Borrado correctamente')
+    try:
+        departamento.delete()
+        messages.success(request, 'Departamento Borrado correctamente')
+    except:
+        messages.error(request, 'Este Departamento tiene Municipios asignados')
+    
 
     return redirect('/departamento')
 
