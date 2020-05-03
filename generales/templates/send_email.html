@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <title>Login</title>
+</head>
+<body>
+<section class="material-half-bg">
+    <div class="cover"></div>
+</section>
+<section class="login-content">
+    <div class="logo">
+        <h1>PayRollApp</h1>
+    </div>
+    <div class="login-box">
+        <form action="" method="post">
+            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Solicitar Credenciales</h3>
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="user_name">Nombre Completo: </label>
+                <input type="text" class="form-control" name="user_name" id="user_name" required>
+            </div>
+            <div class="form-group">
+                <label for="user_email">Email</label>
+                <input type="email" class="form-control" name="user_email" id="user_email" required>
+            </div>
+            <div class="form-group">
+                <label for="user_rol">Rol: </label>
+                <input type="text" class="form-control" name="user_rol" id="user_rol">
+            </div>
+            <div class="form-group">
+                <label for="user_department">Departamento: </label>
+                <input type="text" class="form-control" name="user_department" id="user_department">
+            </div>
+            <div class="form-group btn-container">
+                <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Enviar Email
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Essential javascripts for application to work-->
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<!-- The javascript plugin to display page loading on top-->
+<script src="{% static 'js/plugins/pace.min.js' %}"></script>
+
+</body>
+</html>
