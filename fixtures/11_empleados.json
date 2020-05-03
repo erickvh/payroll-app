@@ -20,6 +20,7 @@
             "estado_civil": 1,
             "genero": 1,
             "puesto":1,
+            "municipio": 1,
             "departamento_organizacion":2
         }
     }

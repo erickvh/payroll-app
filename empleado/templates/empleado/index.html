@@ -14,8 +14,8 @@ Empleados
         <div class="d-flex mb-2">
             <h3 class="tile-title">Empleados</h3>
             <div class="float-right ml-auto">
-                <a class="btn btn-outline-success" href=""><i
-                        class="fa fa-plus icon-expe"></i>Registrar</a>
+                <a class="btn btn-outline-success" href="{% url 'empleado:create' %}"><i
+                        class="fa fa-plus icon-expe"></i>Crear Expediente</a>
             </div>
         </div>
         {% if messages %} 
@@ -32,21 +32,33 @@ Empleados
             <thead>
                 <tr>
                     <th>Nombre Completo</th>
+                    <th>Identificación</th>
+                    <th>Nit</th>
+                    <th>Tipo de Empleado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 {% for empleado in empleado_list %}
                 <tr>
-                    <td>{{ empleado.primer_nombre }}</td>
+                    <td>{{ empleado.primer_nombre }} {{ empleado.segundo_nombre }} {{ empleado.apellido_paterno }} {{ empleado.apellido_materno }}</td>
+                    <td>{% if empleado.tipo_identificacion == 'TipoIdentificacionChoice.DU' %}
+                        DUI:
+                    {% else %} 
+                        Pasaporte:
+                    {% endif %}
+                    {{ empleado.identificacion }}</td>
+                    <td>{{ empleado.nit }}</td>
+                    <td>
+                        {% if empleado.tipo_empleado == "TipoEmpleadoChoice.EA" %}
+                        Administrativo
+                        {% else %}
+                        Comisión
+                        {% endif %}
+                    </td>
+                    
                     <td class="d-flex justify-content-center">
-                        <a class="btn btn-outline-info mr-2" href=""><i class="fa fa-pencil icon-expe"></i></a>
-                        <!--<form action="" method="post">
-                            {% csrf_token %}
-                            <button class="btn btn-outline-danger mr-2" type="submit" onclick="return confirm('¿Esta Seguro de Eliminar este Departamento?');">
-                                <i class="fa fa-trash icon-expe"></i>
-                            </button>
-                        </form>-->
+                        <a class="btn btn-outline-primary mr-2" href=""><i class="fa fa-eye icon-expe"></i></a>
                 </tr>
                 {% endfor %}
             </tbody>
