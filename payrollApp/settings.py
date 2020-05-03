@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'puesto',
     'configuracion',
     'municipio',
-    'unidad'
+    'unidad',
+    'departamento_organizacion'
 ]
 
 MIDDLEWARE = [
