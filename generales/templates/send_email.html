@@ -19,29 +19,28 @@
     <div class="logo">
         <h1>PayRollApp</h1>
     </div>
-    {% if form.non_field_errors %}
-        <div class="alert alert-warning">{{ form.non_field_errors }}</div>
-    {% endif %}
     <div class="login-box">
-        <form class="login-form" method="POST">
+        <form action="" method="post">
+            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Solicitar Credenciales</h3>
             {% csrf_token %}
-            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Iniciar Sesión</h3>
             <div class="form-group">
-                <label class="control-label">Email</label>
-                <input class="form-control" type="text" name='username' placeholder="Nombre de usuario" autofocus>
+                <label for="user_name">Nombre Completo: </label>
+                <input type="text" class="form-control" name="user_name" id="user_name" required>
             </div>
-            {% if form.errors.username %}
-                <div class="form-control-feedback text-danger">{{ form.errors.username }}</div>
-            {% endif %}
             <div class="form-group">
-                <label class="control-label">Contraseña</label>
-                <input class="form-control" type="password" name="password" placeholder="Contraseña">
-                {% if form.errors.password %}
-                    <div class="form-control-feedback text-danger">{{ form.errors.password }}</div>
-                {% endif %}
+                <label for="user_email">Email</label>
+                <input type="email" class="form-control" name="user_email" id="user_email" required>
+            </div>
+            <div class="form-group">
+                <label for="user_rol">Rol: </label>
+                <input type="text" class="form-control" name="user_rol" id="user_rol">
+            </div>
+            <div class="form-group">
+                <label for="user_department">Departamento: </label>
+                <input type="text" class="form-control" name="user_department" id="user_department">
             </div>
             <div class="form-group btn-container">
-                <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Iniciar Sesión
+                <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Enviar Email
                 </button>
             </div>
         </form>
