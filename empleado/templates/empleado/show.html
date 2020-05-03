@@ -1,0 +1,97 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Ver Expediente
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Ver Expediente de {{empleado.primer_nombre}}
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/empleado">Empleados</a></li> 
+<li class="breadcrumb-item"><a href="{% url 'empleado:show' empleado.id %}">Ver Expediente</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <h4>Información Básica</h4>
+    <p>Nombre Completo: {{ empleado.primer_nombre }} {{ empleado.segundo_nombre }} {{ empleado.apellido_paterno }} {{ empleado.apellido_materno }} </p>
+    {% if empleado.apellido_casada %}
+    <p>Apellido de Casada: {{empleado.apellido_casada}}</p>
+    {% endif %}
+    <p>Fecha de Nacimiento: {{ empleado.fecha_nacimiento }}  </p>
+    <p>Profesión: {{empleado.profesion.nombre}}</p>
+    <p>Genero: {{empleado.genero.nombre}}</p>
+    <p>Estado Civil: {{empleado.estado_civil.nombre}}</p>
+    <h4>Dirección Residencial</h4>
+    <div class="row">
+        <div class="col-md-3">
+            <p>Departamento: {{empleado.municipio.departamento.nombre}}</p>
+        </div>
+        <div class="col-md-3">
+             <p>Municipio: {{empleado.municipio.nombre}}</p>
+        </div>
+        <div class="col-md-6">
+            <p>Direccion: {{empleado.direccion}}</p>
+        </div>
+    </div>
+   
+    <h4>Documentos de Identidad</h4>
+    <div class="row">
+        <div class="col-md-2">
+            <p>{% if empleado.tipo_identificacion == 'TipoIdentificacionChoice.DU' %}
+                DUI:
+                {% else %} 
+                Pasaporte:
+                {% endif %}
+                {{ empleado.identificacion }}
+            </p>
+        </div>
+        <div class="col-md-3">
+            <p>Número de ISSS: {{ empleado.isss }}</p>
+        </div>
+        <div class="col-md-3">
+            <p>Número de NUP: {{ empleado.nup }}</p>
+        </div>
+        <div class="col-md-4">
+            <p>Número de NIT: {{ empleado.nit}}</p>
+        </div>
+    </div>
+    <h4>Datos de Contratación</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <p>Tipo de Empleado:  {% if empleado.tipo_empleado == "TipoEmpleadoChoice.EA" %}
+                        Empleado Administrativo
+                        {% else %}
+                        Empleado por Comisión
+                        {% endif %}
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+                Salario: ${{empleado.salario}}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                Departamento: {{empleado.departamento_organizacion.nombre}}
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+                Puesto: {{empleado.puesto.nombre}}
+            </p>
+        </div>
+    </div>
+    {% if empleado.dirigido %}
+    <h4>Información del Supervisor</h4>
+    <div class="row">
+        <div class="col-md-6">
+            Nombre Completo: {{ empleado.dirigido.primer_nombre }} {{ empleado.dirigido.segundo_nombre }} {{ empleado.dirigido.apellido_paterno }} {{ empleado.dirigido.apellido_materno }}
+        </div>
+        <div class="col-md-6">
+            Pertenece al Departamento de: {{ empleado.dirigido.departamento_organizacion.nombre }} 
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock contenido %}

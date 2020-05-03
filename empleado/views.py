@@ -79,46 +79,9 @@ def store_empleado(request):
             return render(request, 'empleado/create.html',context)
            
     return redirect('/empleado')
-"""
-def edit_departamento(request, departamento_id):
-    departamento = get_object_or_404(Departamento,pk=departamento_id)
-    context = {'departamento': departamento}
-    return render(request, 'departamento/edit.html', context)
-   
-def update_departamento(request, departamento_id):
-    departamento =  get_object_or_404(Departamento, pk=departamento_id)
-    if request.method == 'POST':
-        form = DepartamentoForm(request.POST, instance=departamento)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Departamento actualizado correctamente')
-        else:
-            errors=form.errors
-            return render(request, 'departamento/edit.html',{'errors': errors, 'departamento':departamento})
-        
-    return redirect('/departamento')
 
-def store_departamento(request):
-    if request.method == 'POST':
-        form = DepartamentoForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Departamento Guardado correctamente')
-        else:
-            errors=form.errors
-            data=form.data
-            return render(request, 'departamento/create.html',{'errors': errors, 'data': data})
-           
-    return redirect('/departamento')
+def show_empleado(request, empleado_id):
+    empleado = get_object_or_404(Empleado,pk=empleado_id)
+    context = {'empleado': empleado}
+    return render(request, 'empleado/show.html', context)
 
-def delete_departamento(request, departamento_id):
-    departamento =  get_object_or_404(Departamento, pk=departamento_id)
-    try:
-        departamento.delete()
-        messages.success(request, 'Departamento Borrado correctamente')
-    except:
-        messages.error(request, 'Este Departamento tiene Municipios asignados')
-    
-
-    return redirect('/departamento')
-"""
