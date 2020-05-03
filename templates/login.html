@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,53 +10,50 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
     <title>Login</title>
-  </head>
-  <body>
-    <section class="material-half-bg">
-      <div class="cover"></div>
-    </section>
-    <section class="login-content">
-      <div class="logo">
+</head>
+<body>
+<section class="material-half-bg">
+    <div class="cover"></div>
+</section>
+<section class="login-content">
+    <div class="logo">
         <h1>PayRollApp</h1>
-      </div>
-      {% if form.non_field_errors %}
-      <div class="alert alert-warning">{{form.non_field_errors}}</div>
-      {% endif %}
-      <div class="login-box">
-        <form class="login-form"  method="POST">
+    </div>
+    {% if form.non_field_errors %}
+        <div class="alert alert-warning">{{ form.non_field_errors }}</div>
+    {% endif %}
+    <div class="login-box">
+        <form class="login-form" method="POST">
             {% csrf_token %}
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Iniciar Sesión</h3>
-          <div class="form-group">
-            <label class="control-label">Email</label>
-            <input class="form-control" type="text" name='username' placeholder="Nombre de usuario" autofocus>
-          </div>
-          {% if form.errors.username %}
-          <div class="form-control-feedback text-danger">{{form.errors.username}}</div>
-          {% endif %}
-          <div class="form-group">
-            <label class="control-label">Contraseña</label>
-            <input class="form-control" type="password"  name="password" placeholder="Contraseña">
-            {% if form.errors.password %}
-            <div class="form-control-feedback text-danger">{{form.errors.password}}</div>
+            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Iniciar Sesión</h3>
+            <div class="form-group">
+                <label class="control-label">Email</label>
+                <input class="form-control" type="text" name='username' placeholder="Nombre de usuario" autofocus>
+            </div>
+            {% if form.errors.username %}
+                <div class="form-control-feedback text-danger">{{ form.errors.username }}</div>
             {% endif %}
-          </div>
-          <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Iniciar Sesión</button>
-          </div>
+            <div class="form-group">
+                <label class="control-label">Contraseña</label>
+                <input class="form-control" type="password" name="password" placeholder="Contraseña">
+                {% if form.errors.password %}
+                    <div class="form-control-feedback text-danger">{{ form.errors.password }}</div>
+                {% endif %}
+            </div>
+            <div class="form-group btn-container">
+                <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Iniciar Sesión
+                </button>
+            </div>
         </form>
-      </div>
-      <div>
-        {% block contenido %}
-        {% endblock %}
-      </div>
-    </section>
-    <!-- Essential javascripts for application to work-->
-    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-    <script src="{% static 'js/popper.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-            <!-- The javascript plugin to display page loading on top-->
-    <script src="{% static 'js/plugins/pace.min.js' %}"></script>
-    
-  </body>
+    </div>
+</section>
+<!-- Essential javascripts for application to work-->
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<!-- The javascript plugin to display page loading on top-->
+<script src="{% static 'js/plugins/pace.min.js' %}"></script>
+
+</body>
 </html>

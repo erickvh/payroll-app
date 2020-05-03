@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import generic
@@ -24,6 +25,6 @@ def send_email(request):
         body = 'Usuario: {} \n Email: {} \n Departamento: {} \n Rol: {}'.format(user_name, user_email, user_department,
                                                                                 user_rol)
         # Send mail(Subject, body, from, to, fail)
-        send_mail(subject, body, 'bad115gp10@gmail.com', ['bad115gp10@gmail.com'], fail_silently=False)
+        send_mail(subject, body,  os.getenv('EMAIL'), [os.getenv('EMAIL')], fail_silently=False)
         return render(request, 'send_email.html', {})
     return render(request, 'send_email.html', {})
