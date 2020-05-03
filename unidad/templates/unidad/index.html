@@ -33,7 +33,8 @@ Unidades
                 <tr>
                     <th>Nombre</th>
                     <th>Tipo Unidad</th>
-                     <th>Dirigido por:</th>
+                    <th>Departamento</th>
+                    <th>Dirigido por:</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -42,6 +43,7 @@ Unidades
                 <tr>
                     <td>{{ unidad.nombre }}</td>
                     <td>{{ unidad.tipo_unidad.nombre }}</td>
+                    <td>{{ unidad.departamento_organizacion.nombre }}</td>
                     {% if unidad.dirigido.nombre %}
                         <td>{{ unidad.dirigido.nombre}}</td>
                     {% else  %}

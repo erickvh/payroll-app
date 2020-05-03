@@ -2,6 +2,7 @@ from django import forms
 #imports del modelo
 from .models import Unidad
 from tipo_unidad.models import TipoUnidad
+from departamento_organizacion.models import DepartamentoOrganizacion
 import re 
 
 def check_number(value):   
@@ -16,6 +17,7 @@ def check_string(value):
 class UnidadForm(forms.ModelForm):
     nombre = forms.CharField(required=True,validators = [check_number, check_string])
     tipo_unidad = forms.IntegerField()
+    departamento_organizacion = forms.IntegerField()
     dirigido = forms.IntegerField(required=False)
 
     class Meta:
@@ -30,6 +32,15 @@ class UnidadForm(forms.ModelForm):
             raise forms.ValidationError("Tipo Unidad Invalido") 
 
         return tipo_unidad
+
+    def clean_departamento_organizacion(self):
+        departamento_organizacion_id=self.cleaned_data['departamento_organizacion']
+        if DepartamentoOrganizacion.objects.filter(id=departamento_organizacion_id).exists():
+            departamento_organizacion = DepartamentoOrganizacion.objects.get(id=departamento_organizacion_id)
+        else:
+            raise forms.ValidationError("Departamento Organizacional Invalido") 
+
+        return departamento_organizacion
 
     def clean_dirigido(self):
         dirigido=self.cleaned_data['dirigido']
