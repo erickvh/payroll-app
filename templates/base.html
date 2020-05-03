@@ -36,7 +36,6 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
             <div>
                 <p class="app-sidebar__user-name">John Doe</p>
                 <p class="app-sidebar__user-designation">Frontend Developer</p>
@@ -65,6 +64,9 @@
                     <li><a class="treeview-item" href="/puesto"><i class="icon fa fa-circle-o"></i> Puestos</a></li>
                     <li><a class="treeview-item" href="/centro_costo"><i class="icon fa fa-circle-o"></i> Centro de Costos</a></li>
                 </ul>
+            </li>
+            <li>
+                <a class="app-menu__item" href="/empleado"><img src="{% static 'images/employee.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Empleados</span></a>
             </li>
         </ul>
     </aside>

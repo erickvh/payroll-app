@@ -1,0 +1,342 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Crear Expediente de Empleado
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Crear Expediente  
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/empleado">Empleados</a></li>
+<li class="breadcrumb-item"><a href="{% url 'empleado:create' %}">Crear Expediente</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>{% endif %}
+            <form action="{% url 'empleado:store' %}" method="post">
+                {% csrf_token %}
+                <h4>Información Basica</h4>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="primer_nombre">Primer Nombre</label>
+                                <input class="form-control  {% if errors.primer_nombre %} is-invalid {% endif %}" id="primer_nombre" type="text" name="primer_nombre" placeholder="Ingrese Primer Nombre"value="{{data.primer_nombre}}">
+                                {% if errors.primer_nombre %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.primer_nombre.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label for="segundo_nombre">Segundo Nombre</label>
+                                <input class="form-control  {% if errors.segundo_nombre %} is-invalid {% endif %}" id="segundo_nombre" type="text" name="segundo_nombre" placeholder="Ingrese Segundo Nombre"value="{{data.segundo_nombre}}">
+                                {% if errors.segundo_nombre %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.segundo_nombre.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="apellido_paterno">Apellido Paterno</label>
+                                <input class="form-control  {% if errors.apellido_paterno %} is-invalid {% endif %}" id="apellido_paterno" type="text" name="apellido_paterno" placeholder="Ingrese Apellido Paterno"value="{{data.apellido_paterno}}">
+                                {% if errors.apellido_paterno %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.apellido_paterno.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                <label for="apellido_materno">Apellido Materno</label>
+                                <input class="form-control  {% if errors.apellido_materno %} is-invalid {% endif %}" id="apellido_materno" type="text" name="apellido_materno" placeholder="Ingrese Apellido Materno"value="{{data.apellido_materno}}">
+                                {% if errors.apellido_materno %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.apellido_materno.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                <label for="apellido_casada">Apellido de Casada</label>
+                                <input class="form-control  {% if errors.apellido_casada %} is-invalid {% endif %}" id="apellido_casada" type="text" name="apellido_casada" placeholder="Ingrese Apellido de Casada"value="{{data.apellido_casada}}">
+                                {% if errors.apellido_casada %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.apellido_casada.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="profesion">Profesion</label>
+                                    <select class="form-control" id="profesion" name="profesion">
+                                    <option value="">Seleccione una Profesion</option>
+                                      {% for profesion in profesion_list %}
+                                        <option value="{{profesion.id}}">{{ profesion.nombre }} </option>
+                                      {% endfor %}
+                                    </select>
+                                    {% if errors.profesion %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.profesion.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                 <div class="col-md-3">
+                                    <label for="genero">Genero</label>
+                                    <select class="form-control" id="genero" name="genero">
+                                    <option value="">Seleccione un Genero</option>
+                                      {% for genero in genero_list %}
+                                        <option value="{{genero.id}}">{{ genero.nombre }} </option>
+                                      {% endfor %}
+                                    </select>
+                                    {% if errors.genero %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.genero.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="estado_civil">Estado Civil</label>
+                                    <select class="form-control" id="estado_civil" name="estado_civil">
+                                    <option value="">Seleccione un Estado Civil</option>
+                                      {% for estado_civil in estado_civil_list %}
+                                        <option value="{{estado_civil.id}}">{{ estado_civil.nombre }} </option>
+                                      {% endfor %}
+                                    </select>
+                                    {% if errors.estado_civil %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.estado_civil.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="fecha_nacimientoe">Fecha de Nacimiento</label>
+                                    <input class="form-control  {% if errors.fecha_nacimiento %} is-invalid {% endif %}" id="fecha_nacimiento" type="date" name="fecha_nacimiento" value="{{data.fecha_nacimiento}}" >
+                                    {% if errors.fecha_nacimiento %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.fecha_nacimiento.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                    </div>
+                     <h4 class="my-3">Dirección Residencial</h4>
+                    <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="departamento">Departamento</label>
+                                    <select class="form-control" id="departamento" name="departamento">
+                                    <option value="">Seleccione un Departamento</option>
+                                      {% for departamento in departamento_list %}
+                                        <option value="{{departamento.id}}">{{ departamento.nombre }} </option>
+                                      {% endfor %}
+                                    </select>
+                                    {% if errors.departamento %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.departamento.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="municipio">Municipio</label>
+                                    <select class="form-control" id="municipio" name="municipio">
+                                    </select>
+                                    {% if errors.municipio %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.municipio.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="direccion">Dirección</label>
+                                    <input class="form-control  {% if errors.direccion %} is-invalid {% endif %}" id="direccion" type="text" name="direccion" placeholder="Ingrese Dirección"value="{{data.direccion}}">
+                                    {% if errors.direccion %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.direccion.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                
+                            </div>
+                    </div>
+                   
+                    <h4 class="my-3">Documentos de Identificación</h4>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="tipo_identificacion">Tipo de Identificación</label>
+                                {{form.tipo_identificacion}}
+                                {% if errors.tipo_identificacion %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.tipo_identificacion.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label for="identificacion">Identificación</label>
+                                <input class="form-control  {% if errors.identificacion %} is-invalid {% endif %}" id="identificacion" type="text" name="identificacion" placeholder="Ingrese Identificación"value="{{data.identificacion}}">
+                                {% if errors.identificacion %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.identificacion.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="isss">ISSS</label>
+                                <input class="form-control  {% if errors.isss %} is-invalid {% endif %}" id="isss" type="text" name="isss" placeholder="Ingrese Numero ISSS"value="{{data.isss}}">
+                                <div class="form-control-feedback text-secondary ">
+                                    Formato Permitido 9 digitos
+                                </div>
+                                {% if errors.isss %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.isss.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                <label for="nit">NIT</label>
+                                <input class="form-control  {% if errors.nit %} is-invalid {% endif %}" id="nit" type="text" name="nit" placeholder="Ingrese Numero NIT"value="{{data.nit}}">
+                                <div class="form-control-feedback text-secondary ">
+                                    Formato Permitido xxxx-xxxxxx-xxx-x 
+                                </div>
+                                {% if errors.nit %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.nit.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                <label for="nup">NUP</label>
+                                <input class="form-control  {% if errors.nup %} is-invalid {% endif %}" id="nup" type="text" name="nup" placeholder="Ingrese Numero NUP"value="{{data.nup}}">
+                                <div class="form-control-feedback text-secondary ">
+                                    Formato Permitido de 12 digitos
+                                </div>
+                                {% if errors.nup %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.nup.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="my-3">Tipo de Contratación</h4>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="tipo_empleado">Tipo de Empleado</label>
+                                {{form.tipo_empleado}}
+                                {% if errors.tipo_empleado %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.tipo_empleado.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label for="salario">Salario</label>
+                                <input class="form-control {% if errors.salario %} is-invalid {% endif %}" id="salario" type="number" step="0.01" name="salario" placeholder="Ingrese el Salario" value="{{data.salario}}"> 
+                                {% if errors.salario %}
+                                <div class="form-control-feedback text-danger">
+                                    {{errors.salario.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="puesto">Puesto a Desempeñar</label>
+                                    <select class="form-control" id="puesto" name="puesto">
+                                    <option value="">Seleccione un Puesto</option>
+                                      {% for puesto in puesto_list %}
+                                        <option value="{{puesto.id}}">{{ puesto.nombre }} </option>
+                                      {% endfor %}
+                                    </select>
+                                {% if errors.puesto %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.puesto.0}}
+                                 </div>
+                                {% endif %}
+                            </div>
+                             <div class="col-md-4">
+                                <label for="departamento_organizacion">Departamento Organizacional</label>
+                                    <select class="form-control" id="departamento_organizacion" name="departamento_organizacion">
+                                    <option value="">Seleccione un Puesto</option>
+                                      {% for departamento_organizacion in departamento_organizacion_list %}
+                                        <option value="{{departamento_organizacion.id}}">{{ departamento_organizacion.nombre }} </option>
+                                      {% endfor %}
+                                    </select>
+                                {% if errors.departamento_organizacion %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.departamento_organizacion.0}}
+                                 </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                {% if empleado_list %}
+                                    <label for="dirigido">Dirigido por </label>
+                                    <select class="form-control" id="empleado" name="dirigido">
+                                    <option value="">Seleccione a Jefe Inmediato</option>
+                                      {% for empleado in empleado_list %}
+                                        <option value="{{empleado.id}}">{{ empleado.primer_nombre }} {{ empleado.segundo_nombre }} {{ empleado.apellido_paterno }} {{ empleado.apellido_materno }}</option>
+                                      {% endfor %}
+                                    </select>
+                                    <div class="form-control-feedback text-secondary ">
+                                       Este campo no es obligatorio 
+                                    </div>
+                                    {% if errors.dirigido %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.dirigido.0}}
+                                    </div>
+                                    {% endif %}
+                               
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                <input class="btn btn-outline-success" type="submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
+{% block plugins %} 
+<script>
+    fecha_nacimiento.max = new Date().toISOString().split("T")[0];
+     $(document).ready(function() {
+            $("#departamento").on("change", getMunicipios);
+        });
+      function getMunicipios() {
+            var departamentoId = $("#departamento").val();
+            if (departamentoId) {
+                // Eliminamos las opciones anteriores del select
+                $("#municipio").html("");
+                var request = $.ajax({
+                    type: "GET",
+                    url: "{% url 'empleado:get_municipios' %}",
+                    data: {
+                        "departamento_id": departamentoId,
+                    },
+                });
+                request.done(function(response) {
+                    // Agregamos los resultados al select
+                    $("#municipio").html(response.municipios);
+                    $("#municipio").trigger("change");
+                });
+            } else {
+                $("#municipio").html("<option value='' selected='selected'>---------</option>");
+                $("#municipio").trigger("change");
+            }
+        }    
+</script>
+{% endblock plugins %}

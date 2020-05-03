@@ -1,0 +1,27 @@
+[
+    {
+        "model": "empleado.empleado",
+        "pk": 1,
+        "fields": {
+            "primer_nombre":"Ana",
+            "segundo_nombre":"Elsy",
+            "apellido_paterno":"Sosa",
+            "apellido_materno":"Martinez",
+            "direccion": "calle la manzana",
+            "identificacion": "11111-1",
+            "fecha_nacimiento": "1995-01-17",
+            "isss": "555555",
+            "nup": "6666",
+            "nit": "7777",
+            "salario": 700.50,
+            "tipo_empleado": "TipoEmpleadoChoice.EA",
+            "tipo_identificacion": "TipoIdentificacionChoice.DU",
+            "profesion": 1,
+            "estado_civil": 1,
+            "genero": 1,
+            "puesto":1,
+            "municipio": 1,
+            "departamento_organizacion":2
+        }
+    }
+]
