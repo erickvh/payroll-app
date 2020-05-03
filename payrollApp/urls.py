@@ -31,5 +31,6 @@ urlpatterns = [
     path('municipio/', include(('municipio.urls','municipio'), namespace= 'municipio')),
     path('unidad/', include(('unidad.urls','unidad'), namespace= 'unidad')),
     path('departamento_organizacion/', include(('departamento_organizacion.urls','departamento_organizacion'), namespace= 'departamento_organizacion')),
+    path('empleado/', include(('empleado.urls','empleado'), namespace= 'empleado')),
     path('configuracion/', include(('configuracion.urls','configuracion'), namespace= 'configuracion'))
 ]

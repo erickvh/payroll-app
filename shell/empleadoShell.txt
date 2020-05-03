@@ -1,0 +1,21 @@
+python manage.py shell
+**importando los modelos
+
+**************Para manejar Estados Civiles *****************
+from empleado.models import Empleado,TipoEmpleadoChoice
+
+#consultando todos los registros
+Empleado.objects.all()
+
+#realizando un registro
+e = Empleado(primer_nombre="Zoila", tipo_empleado= TipoEmpleadoChoice.EA)
+#guardando un registro
+e.save()
+#consultando cada registro
+e.id
+e.primer_nombre
+e.tipo_empleado
+
+
+#Filtrando 
+Empleado.objects.filter(id=1)
