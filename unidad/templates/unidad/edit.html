@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block head_title %} 
+Editar Unidad 
+{% endblock head_title %} 
+{% block titulo_principal %} Editar Unidad {{unidad.nombre}} 
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/unidad">Unidades</a></li>
+<li class="breadcrumb-item"><a href="{% url 'unidad:edit' unidad.id %}">Editar</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>{% endif %}
+            <form action="{% url 'unidad:update' unidad.id %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input class="form-control  {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" value="{{unidad.nombre}}">
+                    {% if errors.nombre %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.nombre.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="tipo_unidad">Tipo Unidad</label>
+                    <select class="form-control" id="tipo_unidad" name="tipo_unidad">
+                    <option value="null">Seleccione un tipo unidad</option>
+                      {% for tipo_unidad in tipo_unidad_list %}
+                        <option value="{{tipo_unidad.id}}" {% if tipo_unidad.id == unidad.tipo_unidad.id %} selected {% endif %}>{{tipo_unidad.nombre}}</option>
+                      {% endfor %}
+                    </select>
+                    {% if errors.tipo_unidad %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.tipo_unidad.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="departamento_organizacion">Departamento</label>
+                    <select class="form-control" id="departamento_organizacion" name="departamento_organizacion">
+                    <option value="">Seleccione un Departamento</option>
+                      {% for departamento_organizacion in departamento_organizacion_list %}
+                        <option value="{{departamento_organizacion.id}}"  {% if departamento_organizacion.id == unidad.departamento_organizacion.id %} selected {% endif %}>{{departamento_organizacion.nombre}}</option>
+                      {% endfor %}
+                    </select>
+                    {% if errors.departamento_organizacion %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.departamento_organizacion.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                {% if unidad_list %}
+                <div class="form-group">
+                    <label for="dirigido">Dirigido por </label>
+                    <select class="form-control" id="unidad" name="dirigido">
+                    <option value="">Seleccione un tipo unidad</option>
+                      {% for dirigido in unidad_list %}
+                        <option value="{{dirigido.id}}" {% if dirigido.id == unidad.dirigido.id %} selected {% endif %}>{{dirigido.nombre}}</option>
+                      {% endfor %}
+                    </select>
+                    <div class="form-control-feedback text-secondary ">
+                       Este campo no es obligatorio 
+                    </div>
+                    {% if errors.dirigido %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.dirigido.0}}
+                    </div>
+                    {% endif %}
+                </div>
+               
+                {% endif %}
+                <input class="btn btn-outline-success" type="submit" value="Actualizar">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}

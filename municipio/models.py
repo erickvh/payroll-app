@@ -6,7 +6,7 @@ class Municipio(models.Model):
     codigo = models.CharField(max_length=10,unique=True)
     nombre = models.CharField(max_length=50)
     departamento = models.ForeignKey(Departamento,on_delete=models.PROTECT)
-
+    
     class Meta:
         db_table = "municipios"
 

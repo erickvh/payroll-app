@@ -1,0 +1,24 @@
+python manage.py shell
+**importando los modelos
+
+**************Para manejar Departamentos *****************
+from tipo_unidad.models import TipoUnidad
+from unidad.models import Unidad
+
+#consultando todos los registros
+Unidad.objects.all()
+
+#realizando un registro
+t =  TipoUnidad.objects.filter(id=1).first()
+# o se puede
+t = TipoUnidad.objects.get(id=1)
+#asignando el municipio
+u = Unidad(nombre="Unidita",tipo_unidad=t)
+#guardando un registro
+u.save()
+#consultando cada registro
+u.id
+u.nombre
+
+#Filtrando 
+Unidad.objects.filter(id=1) 

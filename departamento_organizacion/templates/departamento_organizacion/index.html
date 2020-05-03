@@ -1,11 +1,18 @@
-{% extends 'base.html' %} {% block head_title %} Despartamentos {% endblock head_title %} {% block titulo_principal %} Despartamentos {% endblock titulo_principal %} {% block enlace_actual %}
-<li class="breadcrumb-item"><a href="/estadocivil">Despartamentos</a></li> {% endblock enlace_actual %} {% block contenido %}
+{% extends 'base.html' %} 
+{% block head_title %} 
+Departamentos Organizacionales 
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Departamentos Organizacionales
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/departamento_organizacion">Departamentos Organizacionales</a></li> {% endblock enlace_actual %} {% block contenido %}
 <div class="tile">
     <div class="tile-body table-responsive">
         <div class="d-flex mb-2">
-            <h3 class="tile-title">Despartamentos</h3>
+            <h3 class="tile-title">Departamentos Organizacionales</h3>
             <div class="float-right ml-auto">
-                <a class="btn btn-outline-success" href="{% url 'departamento:create' %}"><i
+                <a class="btn btn-outline-success" href="{% url 'departamento_organizacion:create' %}"><i
                         class="fa fa-plus icon-expe"></i>Registrar</a>
             </div>
         </div>
@@ -18,46 +25,47 @@
             {% endif %}
             {% endfor %} 
         {% endif %} 
-        {% if departamento_list %}
-        <table class="table table-striped text-center" id="departamento">
+       {% if departamento_organizacion_list %}
+        <table class="table table-striped text-center" id="departamento_organizacion">
             <thead>
                 <tr>
-                    <th>Código</th>
                     <th>Nombre</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
-                {% for departamento in departamento_list %}
+                {% for departamento in departamento_organizacion_list %}
                 <tr>
-                    <td>{{ departamento.codigo }}</td>
                     <td>{{ departamento.nombre }}</td>
                     <td class="d-flex justify-content-center">
-                        <a class="btn btn-outline-info mr-2" href="{% url 'departamento:edit' departamento.id %}"><i class="fa fa-pencil icon-expe"></i></a>
-                        <form action="{% url 'departamento:delete' departamento.id %}" method="post">
+                        <a class="btn btn-outline-info mr-2" href="{% url 'departamento_organizacion:edit' departamento.id %}"><i class="fa fa-pencil icon-expe"></i></a>
+                          <form action="{% url 'departamento_organizacion:delete' departamento.id %}" method="post">
                             {% csrf_token %}
                             <button class="btn btn-outline-danger mr-2" type="submit" onclick="return confirm('¿Esta Seguro de Eliminar este Departamento?');">
                                 <i class="fa fa-trash icon-expe"></i>
                             </button>
                         </form>
+                      
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
         {% else %}
-        <p>Departamentos no disponibles</p>
+        <p>Departamentos Organizacionales no disponibles</p>
         {% endif %}
     </div>
 </div>
-{% endblock contenido %}
-{% block plugins %}
+{% endblock contenido %} {% block plugins %}
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 <script>
-    $('#departamento').DataTable({
+    $('#departamento_organizacion').DataTable({
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
         },
     });
 </script>
+
+
 {% endblock plugins %}

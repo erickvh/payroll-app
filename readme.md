@@ -28,7 +28,7 @@ Después de cumplir todos los requisitos se debe instalar.
     ```
 2. Luego se debe acceder a la carpeta raiz del directorio clonado e instalar las dependencias.
     ```
-        pip install - requirements.txt
+        pip install -r requirements.txt
     ```
 3. Luego se debe realizar una copia del archivo **.env.example**  con el nombre **.env**
     ```

@@ -1,0 +1,17 @@
+[
+    {
+        "model": "departamento_organizacion.departamentoorganizacion",
+        "pk": 1,
+        "fields": {
+            "nombre":"Marketing"
+        }
+    },
+     {
+        "model": "departamento_organizacion.departamentoorganizacion",
+        "pk": 2,
+        "fields": {
+            "nombre":"Administracion"
+        }
+    }
+    
+]

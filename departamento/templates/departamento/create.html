@@ -20,6 +20,9 @@
                 <div class="form-group">
                     <label for="nombre">Nombre </label>
                     <input class="form-control  {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese el Nombre del Departamento"value="{{data.nombre}}">
+                    <div class="form-control-feedback text-secondary ">
+                       Este campo no es obligatorio 
+                    </div>
                     {% if errors.nombre %}
                     <div class=" form-control-feedback text-danger ">
                         {{errors.nombre.0}}

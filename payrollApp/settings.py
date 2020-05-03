@@ -51,7 +51,9 @@ INSTALLED_APPS = [
     'genero',
     'puesto',
     'configuracion',
-    'municipio'
+    'municipio',
+    'unidad',
+    'departamento_organizacion'
 ]
 
 MIDDLEWARE = [

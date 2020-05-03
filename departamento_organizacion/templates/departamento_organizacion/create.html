@@ -1,0 +1,32 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Registrar Departamento Organizacional
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Registrar Departamento Organizacional
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/departamento_organizacion">Departamentos Organizacionales</a></li>
+<li class="breadcrumb-item"><a href="">Registrar</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="{% url 'departamento_organizacion:store' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input class="form-control {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Ingrese Nombre" value="{{data.nombre}}"> 
+                    {% if errors.nombre %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.nombre.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <button class="btn btn-outline-success" type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
