@@ -47,7 +47,10 @@ def store_puesto(request):
 
 def delete_puesto(request, puesto_id):
     puesto =  get_object_or_404(Puesto, pk=puesto_id)
-    puesto.delete()
-    messages.success(request, 'Puesto Borrado correctamente')
+    try:
+        puesto.delete()
+        messages.success(request, 'Puesto Borrado correctamente')
+    except:
+        messages.error(request, 'Puesto esta asignado a empleados')
 
     return redirect('/puesto')

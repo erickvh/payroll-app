@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block head_title %}
+    Registrar Centro de Costos por Departamento
+{% endblock head_title %}
+{% block titulo_principal %}
+    Registrar Centro de Costos por Departamento
+{% endblock titulo_principal %}
+{% block enlace_actual %}
+    <li class="breadcrumb-item"><a href="/centro_costo">Centro de Costos por Departamento</a></li>
+    <li class="breadcrumb-item"><a href="">Registrar</a></li>
+{% endblock enlace_actual %}
+{% block contenido %}
+    <div class="tile">
+        <div class="row">
+            <div class="col-lg-12">
+                {% if error_message %}
+                    <p><strong>{{ error_message }}</strong></p>{% endif %}
+                {% if errors.fecha_inicio %}
+                    <h1>{{ errors.fecha_inicio }}</h1>
+                {% endif %}
+
+                <form action="{% url 'centro_costo:store' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto </label>
+                        <input class="form-control {% if errors.presupuesto %} is-invalid {% endif %}" type="number" name="presupuesto" id="presupuesto"
+                               value="{{ data.presupuesto }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_inicio">Fecha inicio </label>
+                        <input class="form-control {% if errors.fecha_fin %} is-invalid {% endif %}" type="date" name="fecha_inicio" id="fecha_inicio"
+                               value="{{ data.fecha_inicio }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_fin">Fecha fin </label>
+                        <input class="form-control {% if errors.fecha_fin %} is-invalid {% endif %}" type="date" name="fecha_fin" id="fecha_fin"
+                               value="{{ data.fecha_fin }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="remanente">Remanente </label>
+                        <input class="form-control {% if errors.remanente %} is-invalid {% endif %}" type="number" name="remanente" id="remanente"
+                               value="{{ data.remanente }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="departamento_organizacion">Departamento</label>
+                        <select class="form-control" id="departamento" name="departamento_organizacion">
+                            <option value="null">Seleccione un departamento</option>
+                            {% for departamento in departamento_organizacion %}
+                                <option value="{{ departamento.id }}">{{ departamento.nombre }}</option>
+                            {% endfor %}
+                        </select>
+                        {% if errors.departamento_organizacion %}
+                            <div class=" form-control-feedback text-danger ">
+                                {{ errors.departamento_organizacion.0 }}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <button class="btn btn-outline-success" type="submit">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}
