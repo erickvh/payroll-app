@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 from dotenv import load_dotenv
 from pathlib import Path  # python3 only
+import django_heroku
+
+django_heroku.settings(locals())
 
 env_path = Path(__file__).parent.parent.absolute() / '.env'
 load_dotenv(dotenv_path=env_path)
@@ -140,8 +143,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
 AUTH_USER_MODEL = 'usuario.User' 
