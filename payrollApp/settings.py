@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'municipio',
     'unidad',
     'departamento_organizacion',
-    'empleado'
+    'empleado',
+    'usuario'
 ]
 
 MIDDLEWARE = [
@@ -145,6 +146,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
+AUTH_USER_MODEL = 'usuario.User' 
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST_USER = os.getenv('EMAIL')
 EMAIL_HOST = 'smtp.gmail.com'
