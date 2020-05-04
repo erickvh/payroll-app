@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 from pathlib import Path  # python3 only
 import django_heroku
 
-django_heroku.settings(locals())
+
 
 env_path = Path(__file__).parent.parent.absolute() / '.env'
 load_dotenv(dotenv_path=env_path)
@@ -156,3 +156,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
+
+django_heroku.settings(locals())
