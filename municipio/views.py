@@ -53,6 +53,9 @@ def update_municipio(request, municipio_id):
 
 def delete_municipio(request, municipio_id):
     municipio =  get_object_or_404(Municipio, pk=municipio_id)
-    municipio.delete()
-    messages.success(request, 'Municipio Borrado correctamente')
+    try:
+        municipio.delete()
+        messages.success(request, 'Municipio Borrado correctamente')
+    except:
+        messages.error(request, 'Municipio no se puede eliminar porque esta asignado')
     return redirect('/municipio')

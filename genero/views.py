@@ -46,9 +46,12 @@ def store_genero(request):
     return redirect('/genero')
 
 def delete_genero(request, genero_id):
-    genero =  get_object_or_404(Genero, pk=genero_id)
-    genero.delete()
-    messages.success(request, 'Genero Borrado correctamente')
+    genero = get_object_or_404(Genero, pk=genero_id)
+    try:
+        genero.delete()
+        messages.success(request, 'Genero Borrado correctamente')
+    except:
+        messages.error(request, 'Genero esta asignado a empleados')
 
     return redirect('/genero')
 

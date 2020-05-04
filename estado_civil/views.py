@@ -50,8 +50,11 @@ def store_estado(request):
 
 def delete_estado(request, estado_id):
     estado_civil =  get_object_or_404(EstadoCivil, pk=estado_id)
-    estado_civil.delete()
-    messages.success(request, 'Estado Civil Borrado correctamente')
+    try:
+        estado_civil.delete()
+        messages.success(request, 'Estado Civil Borrado correctamente')
+    except:
+        messages.error(request, 'Estado Civil esta asignado a empleados')
 
     return redirect('/estadocivil')
     

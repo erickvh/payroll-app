@@ -57,6 +57,9 @@ def update_centro_costo(request, centro_costo_id):
 
 def delete_centro_costo(request, centro_costo_id):
     centro_costo = get_object_or_404(CentroCostos, pk=centro_costo_id)
-    centro_costo.delete()
-    messages.success(request, 'El Centro de Costo ha sido Borrado correctamente')
+    try:
+        centro_costo.delete()
+        messages.success(request, 'El Centro de Costo ha sido Borrado correctamente')
+    except:
+        messages.error(request, 'Centro de Costo no se puede Borrar')
     return redirect('/centro_costo')

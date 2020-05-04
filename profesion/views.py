@@ -48,8 +48,11 @@ def store_profesion(request):
 
 def delete_profesion(request, profesion_id):
     profesion =  get_object_or_404(Profesion, pk=profesion_id)
-    profesion.delete()
-    messages.success(request, 'Profesion Borrado correctamente')
+    try:
+        profesion.delete()
+        messages.success(request, 'Profesion Borrado correctamente')
+    except:
+        messages.error(request, 'Profesion esta asignado a empleados')
 
     return redirect('/profesion')
     

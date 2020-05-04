@@ -9,9 +9,16 @@
                         class="fa fa-plus icon-expe"></i>Registrar</a>
             </div>
         </div>
-        {% if messages %} {% for message in messages %}
-        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
-        {% endfor %} {% endif %} {% if genero_list %}
+        {% if messages %} 
+            {% for message in messages %}
+            {% if message.tags == 'error' %}
+            <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endif %}
+            {% endfor %} 
+        {% endif %} 
+        {% if genero_list %}
         <table class="table table-striped text-center" id="genero">
             <thead>
                 <tr>
