@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import generic
 from django.core.mail import send_mail
+from django.contrib import messages
+
 
 
 # Create your views here.
@@ -26,5 +28,6 @@ def send_email(request):
                                                                                 user_rol)
         # Send mail(Subject, body, from, to, fail)
         send_mail(subject, body,  os.getenv('EMAIL'), [os.getenv('EMAIL')], fail_silently=False)
+        messages.success(request,'Solicitud enviada con exito')
         return render(request, 'send_email.html', {})
     return render(request, 'send_email.html', {})

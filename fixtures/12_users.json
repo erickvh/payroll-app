@@ -13,14 +13,26 @@
     {
         "model": "usuario.user",
         "fields": {
-            "username":"yanethV94",
-            "first_name": "Zoila",
-            "last_name": "Villatoro",
+            "username":"anaSosa",
+            "first_name": "Ana",
+            "last_name": "Sosa",
             "password":"pbkdf2_sha256$180000$m4bLOjjFLhuQ$ACc5rKrzwjPB3007XuQvpS9isf8yDiRKfGL4QgVlZIA=",
             "is_superuser":false,
             "empleado": 1
         },
         "pk": 2
+    },
+    {
+        "model": "usuario.user",
+        "fields": {
+            "username":"yanethV94",
+            "first_name": "Zoila",
+            "last_name": "Villatoro",
+            "password":"pbkdf2_sha256$180000$m4bLOjjFLhuQ$ACc5rKrzwjPB3007XuQvpS9isf8yDiRKfGL4QgVlZIA=",
+            "is_superuser":false,
+            "empleado": 2
+        },
+        "pk": 3
     }
 
 ]

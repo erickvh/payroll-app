@@ -31,6 +31,12 @@ class UserForm(forms.ModelForm):
     def clean(self):
         new_password=self.cleaned_data.get('new_password')
         current_password=self.cleaned_data.get('password')
+        
+        if new_password and not current_password:
+            self.add_error('password','Debe colocar el campo password')
+        if not new_password and current_password:
+            self.add_error('new_password','Debe confirmar contraseña')
+        
         if new_password and current_password:
             if not new_password == current_password:
                 self.add_error('new_password','No coinciden ambos passwords')
@@ -68,3 +74,42 @@ class UserForm(forms.ModelForm):
 
 
         return empleado
+    
+class UserUpdateForm(forms.Form):
+    password= forms.CharField(required=False)
+    new_password= forms.CharField(required=False)
+    email= forms.CharField(required=True,validators=[validate_email])
+    is_admin=forms.BooleanField(required=False)
+
+
+
+    def clean(self):
+        new_password=self.cleaned_data.get('new_password')
+        current_password=self.cleaned_data.get('password')
+
+        if new_password and not current_password:
+            self.add_error('password','Debe colocar el campo password')
+        if not new_password and current_password:
+            self.add_error('new_password','Debe confirmar contraseña')
+
+        if new_password and current_password:
+            if not new_password == current_password:
+                self.add_error('new_password','No coinciden ambos passwords')
+
+    
+    def clean_is_admin(self):
+        admin=self.cleaned_data['is_admin']
+        print(admin)
+        if not admin:
+            is_admin=False
+        else:
+            is_admin=True
+
+        return is_admin
+
+    def clean_password(self):
+        pswd=self.cleaned_data.get('password')
+        if pswd:
+            return pswd
+        else:
+            return None

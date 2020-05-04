@@ -36,11 +36,11 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
+    <div class="app-sidebar__user justify-content-center">
             <div>
-                <p class="app-sidebar__user-name">John Doe</p>
-                <p class="app-sidebar__user-designation">Frontend Developer</p>
+            <p class="app-sidebar__user-name">{{request.user.username}}</p>
             </div>
-        </div>
+        </div>        
         <ul class="app-menu">
             <li>
                 <a class="app-menu__item" href="/"><img src="{% static 'images/home.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Home</span></a>
