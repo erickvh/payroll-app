@@ -53,11 +53,8 @@ INSTALLED_APPS = [
     'unidad',
     'departamento_organizacion',
     'empleado',
-<<<<<<< HEAD
-    'usuario'
-=======
+    'usuario',
     'centro_costo'
->>>>>>> refs/remotes/origin/master
 ]
 
 MIDDLEWARE = [
