@@ -7,17 +7,18 @@
 {% block contenido %}
     <div class="tile">
         <div class="row">
-            {% if message %}
-                <div class="alert
-                {% if codigo == 1 %}
-                alert-success
-                {% else %}
-                alert-danger"
-                {% endif %} role="alert">
-                    {{ message }}
-                </div>
-            {% endif %}
             <div class="col-lg-12">
+                {% if messages %}
+                    {% for message in messages %}
+                        {% if message.tags == 'error' %}
+                            <div class="text-center alert {% if message.tags == 'error' %}alert-danger {% endif %}"
+                                 role="alert">{{ message }}</div>
+                        {% else %}
+                            <div class="text-center alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}"
+                                 role="alert">{{ message }}</div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
                 <h2 class="text-center">Username: {{ user.username }}</h2>
                 <form action="" method="post">
                     {% csrf_token %}

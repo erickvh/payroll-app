@@ -23,5 +23,30 @@
             "municipio": 1,
             "departamento_organizacion":2
         }
+    },
+    {
+        "model": "empleado.empleado",
+        "pk": 2,
+        "fields": {
+            "primer_nombre":"Zoila",
+            "segundo_nombre":"Yaneth",
+            "apellido_paterno":"Villatoro",
+            "apellido_materno":"Garcia",
+            "direccion": "prados de venecia",
+            "identificacion": "11111-123",
+            "fecha_nacimiento": "1994-06-06",
+            "isss": "555555123",
+            "nup": "6666123",
+            "nit": "7777451",
+            "salario": 700.50,
+            "tipo_empleado": "TipoEmpleadoChoice.EA",
+            "tipo_identificacion": "TipoIdentificacionChoice.DU",
+            "profesion": 1,
+            "estado_civil": 1,
+            "genero": 1,
+            "puesto":1,
+            "municipio": 1,
+            "departamento_organizacion":2
+        }
     }
 ]

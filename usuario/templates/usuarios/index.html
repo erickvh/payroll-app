@@ -19,8 +19,10 @@
                     <th>Username</th>
                     <th>Administrador</th>
                     <th>Puesto de trabajo</th>
+                    <th>Acciones </th>
                 </tr>
             </thead>
+
             <tbody>
                 {% for usuario in usuario_list %}
                 <tr>
@@ -45,9 +47,17 @@
                         {% endif %}
 
                     </td>
-{#                    <td class="d-flex justify-content-center">#}
-{#                    </td>#}
-                </tr>
+                   <td class="d-flex justify-content-center">
+                     <a class="btn btn-outline-info mr-2" href="{% url 'usuario:edit' usuario.id %}"><i class="fa fa-pencil icon-expe"></i></a>
+                     <a class="btn btn-outline-info mr-2" href="{% url 'usuario:toggle' usuario.id %}">
+                     {% if usuario.is_active %}
+                        <i class="fa fa-unlock icon-expe"></i>
+                    {%else%}
+                        <i class="fa fa-lock icon-expe"></i>
+                    {% endif %}
+                    </a>                        
+                   </td>
+                </tr>   
                 {% endfor %}
             </tbody>
         </table>

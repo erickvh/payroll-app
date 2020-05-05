@@ -1,0 +1,17 @@
+[
+    {
+        "model": "configuracion.configuracion",
+        "fields": {
+            "nombre":"SAP",
+            "sociedad": "Planillas contables s.a de c.v",
+            "representante_legal": "Henry Aleman",
+            "telefono":"2123-1223",
+            "web":"https://",
+            "nic":"1234567890",
+            "nit":"1233-123451-123-1",
+            "salario_minimo_sector": 300.00
+        },
+        "pk": 1
+    }
+    
+]
