@@ -19,15 +19,17 @@
     <div class="logo">
         <h1>PayRollApp</h1>
     </div>
-            {% if messages %} 
-            {% for message in messages %}
+    {% if messages %}
+        {% for message in messages %}
             {% if message.tags == 'error' %}
-            <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+                <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}"
+                     role="alert">{{ message }}</div>
             {% else %}
-            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+                <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}"
+                     role="alert">{{ message }}</div>
             {% endif %}
-            {% endfor %} 
-        {% endif %} 
+        {% endfor %}
+    {% endif %}
     <div class="tile">
         <form action="" method="post">
             <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Solicitar Credenciales</h3>
@@ -51,7 +53,8 @@
             <div class="form-group btn-container">
                 <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Enviar Email
                 </button>
-                <a class="btn btn-primary btn-block" href='/login'><i class="fa fa-sign-in fa-lg fa-fw"></i>Regresar a login
+                <a class="btn btn-primary btn-block" href='/login'><i class="fa fa-sign-in fa-lg fa-fw"></i>Regresar a
+                    login
                 </a>
             </div>
         </form>

@@ -22,6 +22,17 @@
     {% if form.non_field_errors %}
         <div class="alert alert-warning">{{ form.non_field_errors }}</div>
     {% endif %}
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}"
+                     role="alert">{{ message }}</div>
+            {% else %}
+                <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}"
+                     role="alert">{{ message }}</div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
     <div class="login-box">
         <form class="login-form" method="POST">
             {% csrf_token %}

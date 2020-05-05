@@ -1,5 +1,5 @@
 import os
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views import generic
 from django.core.mail import send_mail
@@ -31,3 +31,23 @@ def send_email(request):
         messages.success(request,'Solicitud enviada con exito')
         return render(request, 'send_email.html', {})
     return render(request, 'send_email.html', {})
+
+
+def show_profile(request):
+    user = request.user;
+    if request.method == 'POST':
+        current_password = request.POST.get('currentPassword', None)
+        new_password = request.POST.get('newPassword', None)
+        if user.check_password(current_password):
+            if current_password != new_password:
+                user.set_password(new_password)
+                user.save()
+                messages.success(request,'Contraseña Cambiada con Exito inicie sesión de nuevo')
+                return redirect('/login')
+            else:
+                messages.error(request, 'La contraseña no puede ser la misma que la actual')
+                return render(request, 'show_profile.html', {'user': user})
+        else:
+            messages.error(request, 'La contraseña actual no es correcta')
+            return render(request, 'show_profile.html', {'user': user})
+    return render(request, 'show_profile.html', {'user': user})
