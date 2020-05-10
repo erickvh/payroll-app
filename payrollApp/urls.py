@@ -35,6 +35,7 @@ urlpatterns = [
     path('empleado/', include(('empleado.urls', 'empleado'), namespace='empleado')),
     path('centro_costo/', include(('centro_costo.urls', 'centro_costo'), namespace='centro_costo')),
     path('usuarios/',include(('usuario.urls','usuario'), namespace= 'usuario')),
-     path('comision/', include(('comision.urls', 'comision'), namespace='comision')),
+    path('comision/', include(('comision.urls', 'comision'), namespace='comision')),
+    path('renta/', include(('impuesto_renta.urls', 'renta'), namespace='renta')),
     path('configuracion/', include(('configuracion.urls', 'configuracion'), namespace='configuracion'))
 ]

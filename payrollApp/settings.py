@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'usuario',
     'centro_costo',
     'comision',
+    'impuesto_renta',
 ]
 
 MIDDLEWARE = [

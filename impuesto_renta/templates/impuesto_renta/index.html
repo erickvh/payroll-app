@@ -1,0 +1,66 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Impuesto de Renta
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Impuesto de Renta
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/renta">Impuesto de Renta</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="tile-body table-responsive">
+        <h3 class="tile-title">Impuesto de Renta</h3>
+         {% if messages %} 
+            {% for message in messages %}
+            {% if message.tags == 'error' %}
+            <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endif %}
+            {% endfor %} 
+        {% endif %}
+        {% if renta_list %}
+        <table class="table table-striped text-center" id="renta">
+            <thead>
+                <tr>
+                    <th>Tramo</th>
+                    <th>Periocidad</th>
+                    <th>Minimo</th>
+                    <th>Máximo</th>
+                    <th>Porcentaje</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for renta in renta_list %}
+                <tr>
+                    <td>{{ renta.tramo}}</td>
+                    <td>{{ renta.periocidad }}</td>
+                    <td>{{ renta.minimo }}</td>
+                    <td>{{ renta.maximo }}</td>
+                    <td>{{ renta.porcentaje }} %</td>
+                    <td class="d-flex justify-content-center">
+                        <a class="btn btn-outline-info mr-2" href="{% url 'renta:edit' renta.id %}"><i class="fa fa-pencil icon-expe"></i></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>Renta no disponible</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock contenido %} {% block plugins %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#renta').DataTable({
+        "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+        },
+    });
+</script>
+{% endblock plugins %}

@@ -1,0 +1,98 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Editar Renta
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Editar Renta
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/renta">Renta</a></li>
+<li class="breadcrumb-item"><a href="{% url 'renta:edit' renta.id %}">Editar</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="{% url 'renta:update' renta.id %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="tramo">Tramo</label>
+                            <select class="form-control" id="tramo">
+                              <option value="Tramo I" {% if renta.tramo == "Tramo I" %} selected {% endif %}>Tramo I</option>
+                              <option value="Tramo II" {% if renta.tramo == "Tramo II" %} selected {% endif %}>Tramo II</option>
+                              <option value="Tramo III" {% if renta.tramo == "Tramo III" %} selected {% endif %}>Tramo III</option>
+                              <option value="Tramo IV" {% if renta.tramo == "Tramo IV" %} selected {% endif %}>Tramo IV</option>
+                              <option value="Tramo V" {% if renta.tramo == "Tramo V" %} selected {% endif %}>Tramo V</option>
+                            </select>
+                             {% if errors.tramo %}
+                            <div class="form-control-feedback text-danger">
+                                {{errors.tramo.0}}
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <label for="periocidad">Periocidad</label>
+                            <select class="form-control" id="periocidad">
+                              <option value="Quincenal"  {% if renta.periocidad == "Quincenal" %} selected {% endif %}>Quincenal</option>
+                              <option value="Mensual"  {% if renta.periocidad == "Mensual" %} selected {% endif %}>Mensual</option>
+                            </select>
+                             {% if errors.periocidad %}
+                            <div class="form-control-feedback text-danger">
+                                {{errors.periocidad.0}}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                   <div class="row">
+                       <div class="col-md-6">
+                            <label for="minimo">Minimo</label>
+                            <input class="form-control {% if errors.minimo %} is-invalid {% endif %}" id="minimo" type="number"  name="minimo" placeholder="Ingrese el minimo" value="{{renta.minimo}}"> {% if errors.minimo %}
+                            <div class="form-control-feedback text-danger">
+                                {{errors.minimo.0}}
+                            </div>
+                            {% endif %}
+                       </div>
+                       <div class="col-md-6">
+                           <label for="maximo">Maximo</label>
+                            <input class="form-control {% if errors.maximo %} is-invalid {% endif %}" id="maximo" type="number" step="0.01" name="maximo" placeholder="Ingrese el maximo" value="{{renta.maximo}}"> {% if errors.maximo %}
+                            <div class="form-control-feedback text-danger">
+                                {{errors.maximo.0}}
+                            </div>
+                            {% endif %}
+                       </div>
+                   </div>
+                </div>
+                 <div class="form-group">
+                    <label for="porcentaje">Porcentaje</label>
+                    <input class="form-control {% if errors.porcentaje %} is-invalid {% endif %}" id="porcentaje" type="number" step="0.01" name="porcentaje" placeholder="Ingrese el porcentaje" value="{{renta.porcentaje}}"> {% if errors.porcentaje %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.porcentaje.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="exceso">Exceso</label>
+                    <input class="form-control {% if errors.exceso %} is-invalid {% endif %}" id="exceso" type="number"  name="exceso" placeholder="Ingrese el Exceso" value="{{renta.exceso}}"> {% if errors.exceso %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.exceso.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="cuota_fija">Cuota Fija</label>
+                    <input class="form-control {% if errors.cuota_fija %} is-invalid {% endif %}" id="cuota_fija" type="number"  name="cuota_fija" placeholder="Ingrese la Cuota Fija" value="{{renta.cuota_fija}}"> {% if errors.cuota_fija %}
+                    <div class="form-control-feedback text-danger">
+                        {{errors.cuota_fija.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <button class="btn btn-outline-success" type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}

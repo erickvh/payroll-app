@@ -11,4 +11,4 @@ class Comision(models.Model):
         db_table = "comisiones"
 
     def __str__(self):
-        return self.nombre
+        return self.porcentaje
