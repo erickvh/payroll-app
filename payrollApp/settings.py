@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     'departamento_organizacion',
     'empleado',
     'usuario',
-    'centro_costo'
+    'centro_costo',
+    'comision',
 ]
 
 MIDDLEWARE = [

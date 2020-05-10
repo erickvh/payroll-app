@@ -1,0 +1,23 @@
+[
+    {
+        "model": "comision.comision",
+        "pk": 1,
+        "fields": {
+            "descripcion":"Comision 1",
+            "minimo":300,
+            "maximo":500,
+            "porcentaje":20
+        }
+    },
+    {
+        "model": "comision.comision",
+        "pk": 2,
+        "fields": {
+            "descripcion":"Comision 2",
+            "minimo":300,
+            "maximo":500,
+            "porcentaje":30
+        }
+    }
+    
+]

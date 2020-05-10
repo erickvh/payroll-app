@@ -51,6 +51,7 @@ con las variables de entorno de su preferencia de acuerdo a su base de datos.
 5. luego de modificar el archivo **.env** se debe correr las migraciones junto a los datos semillas
 
 ```
+    python rollback.py
     python manage.py migrate
     python load_fixtures.py
 ```

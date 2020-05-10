@@ -1,0 +1,61 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Actualizar usuario
+{% endblock head_title %} 
+{% block titulo_principal %}
+Actualizar usuario 
+{% endblock titulo_principal %} 
+
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="{% url 'edit_profile' request.user.id %}">Editar Perfil</a></li> 
+{% endblock enlace_actual %} 
+
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="{% url 'update_profile' request.user.id %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre"> Username </label>
+                    <input class="form-control {% if errors.username %} is-invalid {% endif %}" id="username" type="text" name="username" placeholder="Ingrese nombre de usuario" value="{{usuario.username}}" readonly>
+                    {% if errors.username %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.username.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="descripción">Password</label>
+                    <input name="password" id="password"  type='password' class="form-control {% if errors.password %} is-invalid {% endif %}" placeholder="Ingresa una contraseña." name="password"/>
+                    {% if errors.password %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.password.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="descripción">Confirmar Password</label>
+                    <input  id="password"  type='password' class="form-control {% if errors.new_password %} is-invalid {% endif %}" placeholder="vuelve a ingresar la contraseña." name="new_password"/>
+                    {% if errors.new_password %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.new_password.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" id="email"  type='email' class="form-control {% if errors.email %} is-invalid {% endif %}" placeholder="Ingresa un email." value="{{usuario.email}}" />
+                    {% if errors.email %}
+                    <div class=" form-control-feedback text-danger ">
+                        {{errors.email.0}}
+                    </div>
+                    {% endif %}
+                </div>
+                <button class="btn btn-outline-success" type="submit">Actualizar Perfil</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
+
