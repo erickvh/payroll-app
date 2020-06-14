@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from .models import Planilla, DescuentoGeneral
+from .models import Planilla, DescuentoGeneral, BoletaPago
 from django.shortcuts import get_object_or_404,render,redirect
 from django.contrib import messages
 from datetime import date
 from django.db import connection
-
+from empleado.models import Empleado
 
 def home(request):
     planillas = Planilla.objects.all()
@@ -22,29 +22,43 @@ def create_planilla(request):
     planilla.fecha = fecha 
     planilla.activa = True
     planilla.save()
-    planilla.codigo = planilla.codigo + str(planilla.id)
+    c = ""
+    if planilla.id < 10:
+        c = "00"
+    elif planilla.id > 9 and planilla.id < 100:
+        c = "0"
+    planilla.codigo = planilla.codigo +  c + str(planilla.id)
     planilla.save()
     return redirect('/planilla/')
 
 def show_planilla(request, planilla_id):
     planilla = get_object_or_404(Planilla,pk=planilla_id)
-    if planilla.activa == False:
-        return render(request, 'planilla/show.html', {'planilla': planilla})
-    else: 
-        descuento_general = DescuentoGeneral.objects.all()
-        cabeceras = ["id","salario", "primer_nombre","apellido_paterno","otros_ingresos", "comision", "descuento","total",]
-        cuerpo = []
+    descuento_general = DescuentoGeneral.objects.all()
+    cabeceras = ["ID","Primer_nombre","Apellido_paterno","Salario","Otros_ingresos", "Comision", "Descuento total","Total","Accion"]
+    cuerpo = []
+    for d in descuento_general:
+        cabeceras.insert(6, d.nombre)
+    cursor = connection.cursor()
+    cursor.execute("SELECT id, primer_nombre, apellido_paterno, salario_actual, total_ingreso, total_comision, total_descuento, total FROM vista_planilla where planilla_id = "+str(planilla.id)) 
+    for row in cursor.fetchall():
+        lista = list(row)
         for d in descuento_general:
-            cabeceras.append(d.nombre)
-        cursor = connection.cursor()
-        cursor.execute("select 	e.id, e.salario, e.primer_nombre,e.apellido_paterno, get_ingreso_total_de_catalogo(e.id), get_ingreso_total_comision(e.id) , get_descuento_total(e.id), (e.salario - get_descuento_total(e.id) + get_ingreso_total_comision(e.id) + get_ingreso_total_de_catalogo(e.id)) from empleados as e;") 
-        for row in cursor.fetchall():
-            lista = list(row)
-            for d in descuento_general:
-                lista.append(round(d.porcentaje*lista[1], 2))
-            cuerpo.append(lista)
-        return render(request, 'planilla/show.html', {'cabeceras': cabeceras, 'cuerpo':cuerpo})
+            lista.insert(6,round(d.porcentaje*lista[3], 2))
+        cuerpo.append(lista)
+    return render(request, 'planilla/show.html', {'cabeceras': cabeceras, 'cuerpo':cuerpo, 'codigo':planilla.codigo, 'activa':planilla.activa, "planilla_id":planilla.id})
 
 
+def close_planilla(request, planilla_id):
+    planilla = get_object_or_404(Planilla,pk=planilla_id)
+    planilla.activa = False
+    planilla.save()
+    return redirect("/planilla/")
+
+
+def boleta(request, empleado_id, planilla_id):
+    planilla = get_object_or_404(Planilla,pk=planilla_id)
+    empleado = get_object_or_404(Empleado,pk=empleado_id)
+    boleta = BoletaPago.objects.filter(planilla_id=planilla.id, empleado_id = empleado.id).first()
+    return render(request, 'planilla/boleta.html', {'empleado':empleado, "boleta":boleta})
 
 

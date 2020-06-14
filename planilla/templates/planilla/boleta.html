@@ -1,9 +1,9 @@
 {% extends 'base.html' %} 
 {% block head_title %} 
-Planillas
+Boleta de pagos
 {% endblock head_title %} 
 {% block titulo_principal %} 
-Planillas
+Boleta de pago
 {% endblock titulo_principal %} 
 {% block enlace_actual %}
 <li class="breadcrumb-item"><a href="/planilla/">Planillas</a></li> 
@@ -12,11 +12,13 @@ Planillas
 <div class="tile">
     <div class="tile-body table-responsive">
         <div class="d-flex mb-2">
-            <h3 class="tile-title">Planillas</h3>
-            <div class="float-right ml-auto">
-                <a class="btn btn-outline-success" href="{% url 'planilla:create' %}"><i
-                        class="fa fa-plus icon-expe"></i>Crear planilla</a>
-            </div>
+            <h3 class="tile-title">{{empleado.primer_nombre}} {{empleado.segundo_nombre}}, {{empleado.apellido_paterno}} {{empleado.apellido_materno}}</h3>
+            {% if activa %}
+                <div class="float-right ml-auto">
+                    <a class="btn btn-outline-danger" href="{% url 'planilla:close' planilla_id %}"><i
+                            class="fa fa-remove icon-expe"></i>Actualizar</a>
+                </div>
+            {% endif %}
         </div>
         {% if messages %} 
             {% for message in messages %}
@@ -27,34 +29,25 @@ Planillas
             {% endif %}
             {% endfor %} 
         {% endif %} 
-        {% if planillas %}
+        {% if boleta %}
         <table class="table table-striped text-center" id="planilla">
             <thead>
                 <tr>
-                    <th>Código</th>
-                    <th>Fecha</th>
-                    <th>Total descuento</th>
-                    <th>Total pago empleado</th>
-                    <th>Total a pagar</th>
-                    <th>Acciones</th>
+                    {% for cabecera in cabeceras %}
+                        <th>{{cabecera}}</th>
+                    {% endfor %}
                 </tr>
             </thead>
             <tbody>
-                {% for planilla in planillas %}
-                <tr>
-                    <td>{{planilla.codigo}}</td>
-                    <td>{{planilla.fecha}}</td>
-                    <td>{{planilla.total_descuento}}</td>
-                    <td>{{planilla.total_pago_empleado}}</td>
-                    <td>{{planilla.total_pagar}}</td>
-                    
-                    <td class="d-flex justify-content-center">
-                        <a class="btn btn-outline-primary mr-2" href="{% url 'planilla:show' planilla.id %}"><i class="fa fa-eye icon-expe"></i></a>
-                        {% if planilla.activa %}
-                            <a class="btn btn-outline-danger mr-2" href="{% url 'planilla:close' planilla.id %}"><i class="fa fa-remove icon-expe"></i></a>
-                        {% endif %}
-                    </td>
-                </tr>
+                {% for valores in cuerpo %}
+                    <tr>
+                        {% for v in valores %}
+                            <td> {{v}} </td>
+                        {% endfor %}
+                        <td class="d-flex justify-content-center">
+                            <a class="btn btn-outline-primary mr-2" href="{% url 'planilla:boleta' valores.0 planilla_id %}"><i class="fa fa-eye icon-expe"></i></a>
+                        </td>
+                    </tr>
                 {% endfor %}
             </tbody>
         </table>

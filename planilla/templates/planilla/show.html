@@ -12,11 +12,13 @@ Planillas
 <div class="tile">
     <div class="tile-body table-responsive">
         <div class="d-flex mb-2">
-            <h3 class="tile-title">Planillas</h3>
-            <div class="float-right ml-auto">
-                <a class="btn btn-outline-success" href="{% url 'planilla:create' %}"><i
-                        class="fa fa-plus icon-expe"></i>Crear planilla</a>
-            </div>
+            <h3 class="tile-title"># {{codigo}} </h3>
+            {% if activa %}
+                <div class="float-right ml-auto">
+                    <a class="btn btn-outline-danger" href="{% url 'planilla:close' planilla_id %}"><i
+                            class="fa fa-remove icon-expe"></i>Cerrar planilla</a>
+                </div>
+            {% endif %}
         </div>
         {% if messages %} 
             {% for message in messages %}
@@ -34,7 +36,6 @@ Planillas
                     {% for cabecera in cabeceras %}
                         <th>{{cabecera}}</th>
                     {% endfor %}
-                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,6 +44,9 @@ Planillas
                         {% for v in valores %}
                             <td> {{v}} </td>
                         {% endfor %}
+                        <td class="d-flex justify-content-center">
+                            <a class="btn btn-outline-primary mr-2" href="{% url 'planilla:boleta' valores.0 planilla_id %}"><i class="fa fa-eye icon-expe"></i></a>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>

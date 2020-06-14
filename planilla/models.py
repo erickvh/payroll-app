@@ -17,10 +17,35 @@ class Planilla(models.Model):
     def __str__(self):
         return self.codigo
 
+class BoletaPago(models.Model):
+    empleado = models.ForeignKey(Empleado,on_delete=models.PROTECT)
+    planilla = models.ForeignKey(Planilla, on_delete=models.PROTECT)
+    codigo = models.TextField(max_length=20)
+    fecha_pago = models.DateField()
+    dias_laborales = models.IntegerField(default=23)
+    dias_trabajados = models.IntegerField(default=23)
+    salario_actual = models.DecimalField(max_digits=8,decimal_places=2, default = 0.0)
+    total_comision = models.DecimalField(max_digits=8,decimal_places=2, default = 0)
+    total_descuento = models.DecimalField(max_digits=8,decimal_places=2, default = 0)
+    total_ingreso = models.DecimalField(max_digits=8,decimal_places=2, default = 0)
+    pago_total = models.DecimalField(max_digits=8,decimal_places=2, default = 0)
+    pago_neto = models.DecimalField(max_digits=8,decimal_places=2, default = 0)
+    activa = models.BooleanField(default=False, blank=True)
+    
+    class Meta:
+        db_table = "boleta_pago"
+
+    def __str__(self):
+        return self.codigo
+
+
+
 class CatalogoDescuento(models.Model):
     nombre = models.TextField(max_length=75)
     fecha_inicio = models.DateField()
     fecha_fin = models.DateField()
+    descuento_total = models.DecimalField(max_digits=8,decimal_places=2, default=0.0)
+    cantidad_descontada = models.DecimalField(max_digits=8,decimal_places=2, default=0.0)
     descuento = models.DecimalField(max_digits=8,decimal_places=2)
     fijo = models.BooleanField(default=False)
 
@@ -66,20 +91,6 @@ class IngresoEmpleado(models.Model):
 
     def __str__(self):
         return self.empleado
-
-
-class DetallePlanilla(models.Model):
-    dias_laborales = models.IntegerField(default=23)
-    dias_trabajados = models.IntegerField(default=23)
-    planilla = models.ForeignKey(Planilla, on_delete=models.PROTECT)
-    descuento = models.ForeignKey(DescuentoEmpleado, on_delete=models.PROTECT)
-    ingreso = models.ForeignKey(IngresoEmpleado, on_delete=models.PROTECT)
-
-    class Meta:
-        db_table = "detalle_planilla"
-
-    def __str__(self):
-        return self.planilla
 
 
 # Tablas sin relaciones

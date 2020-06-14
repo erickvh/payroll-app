@@ -67,3 +67,21 @@ $$ LANGUAGE plpgsql;
 
 
 
+/*
+** Obtener todos los descuentos de ley de un monto
+*/
+
+
+create or replace function 
+get_descuento_ley(monto numeric) 
+returns numeric AS $$
+DECLARE
+descuento_gral RECORD;
+descuento_e NUMERIC := 0;
+BEGIN 
+	for descuento_gral in select * from descuento_general loop
+		descuento_e = descuento_e + monto * descuento_gral.porcentaje;
+	end loop;
+RETURN descuento_e;
+END;
+$$ LANGUAGE plpgsql;
