@@ -1,0 +1,67 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Planillas
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Planillas
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/planilla/">Planillas</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="tile-body table-responsive">
+        <div class="d-flex mb-2">
+            <h3 class="tile-title">Planillas</h3>
+            <div class="float-right ml-auto">
+                <a class="btn btn-outline-success" href="{% url 'planilla:create' %}"><i
+                        class="fa fa-plus icon-expe"></i>Crear planilla</a>
+            </div>
+        </div>
+        {% if messages %} 
+            {% for message in messages %}
+            {% if message.tags == 'error' %}
+            <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endif %}
+            {% endfor %} 
+        {% endif %} 
+        {% if cabeceras %}
+        <table class="table table-striped text-center" id="planilla">
+            <thead>
+                <tr>
+                    {% for cabecera in cabeceras %}
+                        <th>{{cabecera}}</th>
+                    {% endfor %}
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for valores in cuerpo %}
+                    <tr>
+                        {% for v in valores %}
+                            <td> {{v}} </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>Planillas no disponibles</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock contenido %}
+{% block plugins %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#planilla').DataTable({
+        "order": [[ 0, "desc" ]],
+        "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+        },
+    });
+</script>
+{% endblock plugins %}

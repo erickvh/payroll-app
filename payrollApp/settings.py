@@ -18,7 +18,9 @@ import django_heroku
 
 
 env_path = Path(__file__).parent.parent.absolute() / '.env'
-load_dotenv(dotenv_path=env_path)
+load_dotenv(dotenv_path=str(env_path))
+#load_dotenv(dotenv_path=env_path)
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -60,6 +62,7 @@ INSTALLED_APPS = [
     'centro_costo',
     'comision',
     'impuesto_renta',
+    'planilla',
 ]
 
 MIDDLEWARE = [

@@ -37,5 +37,9 @@ urlpatterns = [
     path('usuarios/',include(('usuario.urls','usuario'), namespace= 'usuario')),
     path('comision/', include(('comision.urls', 'comision'), namespace='comision')),
     path('renta/', include(('impuesto_renta.urls', 'renta'), namespace='renta')),
-    path('configuracion/', include(('configuracion.urls', 'configuracion'), namespace='configuracion'))
+    path('configuracion/', include(('configuracion.urls', 'configuracion'), namespace='configuracion')), 
+
+    #Modulo de planilla
+    path('planilla/', include(('planilla.urls', 'planilla'), namespace='planilla')),
+
 ]
