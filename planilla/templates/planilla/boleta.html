@@ -13,12 +13,16 @@ Boleta de pago
     <div class="tile-body table-responsive">
         <div class="d-flex mb-2">
             <h3 class="tile-title">{{empleado.primer_nombre}} {{empleado.segundo_nombre}}, {{empleado.apellido_paterno}} {{empleado.apellido_materno}}</h3>
+            <div class="float-right ml-auto">
             {% if activa %}
-                <div class="float-right ml-auto">
-                    <a class="btn btn-outline-danger" href="{% url 'planilla:close' planilla_id %}"><i
-                            class="fa fa-remove icon-expe"></i>Actualizar</a>
-                </div>
+                <a class="btn btn-outline-success" href="" data-toggle="modal" data-target="#Myingreso" ><i
+                    class="fa fa-plus icon-expe"></i>Agregar Ingreso</a>
+                <a class="btn btn-outline-info" href="#" data-toggle="modal" data-target="#myModal" ><i
+                    class="fa fa-plus icon-expe"></i>Agregar Descuento</a>
             {% endif %}
+            <a class="btn btn-outline-info" href=""><i
+                class="fa fa-print icon-expe"></i>Imprimir</a>
+            </div>
         </div>
         {% if messages %} 
             {% for message in messages %}
@@ -30,42 +34,211 @@ Boleta de pago
             {% endfor %} 
         {% endif %} 
         {% if boleta %}
-        <table class="table table-striped text-center" id="planilla">
-            <thead>
-                <tr>
-                    {% for cabecera in cabeceras %}
-                        <th>{{cabecera}}</th>
-                    {% endfor %}
-                </tr>
-            </thead>
-            <tbody>
-                {% for valores in cuerpo %}
+        <div id="boleta">
+            <h2 class="text-center" id="ocultar"> Empresa SA </h2>
+            <h3 class="text-center" id="ocultar">Departamento de: {{empleado.departamento_organizacion}}</h3>
+            <h4 class="text-right" id="ocultar">Tipo de pago: {% if periodicidad.quincenal %} quincenal {% else %} mensual {% endif %} <label class="alert-info">{{fecha}}</label> </h4>
+            <h4 class="text-left" id="ocultar">Empleado: <label>{{empleado.apellido_paterno}} {{empleado.apellido_materno}}</label>, <label>{{empleado.primer_nombre}} {{empleado.segundo_nombre}}</label> </h4>
+            <h4 class="text-left">NIT: {{empleado.nit}}</h4>
+            <h4 class="text-left">PUESTO: {{empleado.puesto}}</h4>
+            <table class="table table-striped text-center">
+                <thead>
                     <tr>
-                        {% for v in valores %}
-                            <td> {{v}} </td>
-                        {% endfor %}
-                        <td class="d-flex justify-content-center">
-                            <a class="btn btn-outline-primary mr-2" href="{% url 'planilla:boleta' valores.0 planilla_id %}"><i class="fa fa-eye icon-expe"></i></a>
+                        <th class="text-center">
+                            ID
+                        </th>
+                        <th class="text-center">
+                            Nombre
+                        </th>
+                        <th class="text-center">
+                            Ingreso/descuento
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="alert alert-info">
+                        <td></td>
+                        <td class="text-center">
+                            INGRESOS
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-center">
+                            <label> </label>
+                        </td>
+                        <td class="text-center">
+                            <label>sueldo de {{boleta.dias_laborales}}/{{boleta.dias_trabajados}} dias trabajados </label>
+                        </td>
+                        <td class="text-center">
+                            <label> {{boleta.salario_actual}} </label>
                         </td>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+
+                    {% if comision %}
+
+                        <tr class="alert alert-info">
+                            <td></td>
+                            <td class="text-center">
+                                COMISION
+                            </td>
+                            <td class="text-center">@ViewBag.comision</td>
+                        </tr>
+                    {% endif %}
+
+                    {% for ingreso in ingresos %}
+                        <tr>
+                            <td class="text-center">
+                                {% if activa %}
+                                    <form id="delete_descuento{{ingreso.id}}" action="{% url 'planilla:delete_ingreso' ingreso.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <input type="number" value="{{planilla_id}}" id="planilla" name="planilla" hidden=""/>
+                                        <input type="number" value="{{empleado.id}}" id="empleado" name="empleado" hidden=""/>
+                                        <button class="btn btn-outline-danger mr-2" type="submit"><i class="fa fa-remove icon-expe"></i></button>
+                                    </form>
+                                {% endif %}
+                            </td>
+                            <td class="text-center">
+                                <label>{{ingreso.ingreso.nombre}} </label>
+                            </td>
+                            <td class="text-center">
+                                {{ingreso.ingreso.ingreso}}
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    <tr class="alert alert-info">
+                        <td></td>
+                        <td class="text-center">
+                            Descuentos
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="alert alert-info">
+                        <td></td>
+                        <td class="text-center">
+                            Renta:
+                        </td>
+                        <td class="text-center">{{renta}} </td>
+                    </tr>
+
+                    {% for descuento in descuentos %}
+                        <tr>
+                            <td class="text-center">
+                                {% if activa %}
+                                    <form id="delete_descuento{{delete_descuento}}" action="{% url 'planilla:delete_descuento' descuento.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <input type="number" value="{{planilla_id}}" id="planilla" name="planilla" hidden=""/>
+                                        <input type="number" value="{{empleado.id}}" id="empleado" name="empleado" hidden=""/>
+                                        <button class="btn btn-outline-danger mr-2" type="submit"><i class="fa fa-remove icon-expe"></i></button>
+                                    </form>
+                                {% endif %}
+                            </td>
+                            <td class="text-center">
+                                <label>{{descuento.descuento.nombre}} </label>
+                            </td>
+                            <td class="text-center">
+                                {{descuento.descuento.descuento}}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <tr class="alert alert-info">
+                        <td></td>
+                        <td class="text-right">
+                            Total...
+                        </td>
+                        <td class="text-center"> {{total}} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         {% else %}
         <p>Planillas no disponibles</p>
         {% endif %}
     </div>
 </div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Ingrese descuento</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="{% url 'planilla:nuevo_descuento' %}" method="POST" id="catalogo_descuento">
+                {% csrf_token %}
+                <input type="number" value="{{planilla_id}}" id="planilla" name="planilla" hidden=""/>
+                <input type="number" value="{{empleado.id}}" id="empleado" name="empleado" hidden=""/>
+                <div class="col-md-8">
+                    <label for="Descuentos">Descuentos</label>
+                    <select class="form-control" id="descuento" name="descuento" required="">
+                        <option value="0">Seleccione una opcion</option>
+                        {% for d in descuento_activo %}
+                            <option value="{{d.id}}">{{d.nombre}} </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-success" data-dismiss="modal" value="Guardar" onclick="enviar_formulario()">
+                </div>
+            </form>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+  
+<div id="Myingreso" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Nuevo ingreso</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="{% url 'planilla:nuevo_ingreso' %}" method="POST" id="catalogo_ingreso">
+                {% csrf_token %}
+                <input type="number" value="{{planilla_id}}" id="planilla" name="planilla" hidden=""/>
+                <input type="number" value="{{empleado.id}}" id="empleado" name="empleado" hidden=""/>
+                <div class="col-md-8">
+                    <label for="Ingreso">Ingreso</label>
+                    <select class="form-control" id="ingreso" name="ingreso" required="">
+                        <option value="0">Seleccione una opcion</option>
+                        {% for d in ingreso_activo %}
+                            <option value="{{d.id}}">{{d.nombre}} </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-success" data-dismiss="modal" value="Guardar" onclick="enviar_ingreso()">
+                </div>
+            </form>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
 {% endblock contenido %}
 {% block plugins %}
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 <script>
-    $('#planilla').DataTable({
-        "order": [[ 0, "desc" ]],
-        "language": {
-            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
-        },
-    });
+    function enviar_formulario() {
+        $('#catalogo_descuento').submit();
+    }
+
+    function enviar_ingreso() {
+        $('#catalogo_ingreso').submit();
+    }
+
 </script>
 {% endblock plugins %}

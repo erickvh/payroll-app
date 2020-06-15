@@ -58,6 +58,7 @@ class CatalogoDescuento(models.Model):
 class DescuentoEmpleado(models.Model):
     activo  = models.BooleanField(default=True)
     empleado = models.ForeignKey(Empleado,on_delete=models.PROTECT)
+    planilla = models.ForeignKey(Planilla, on_delete=models.PROTECT)
     descuento = models.ForeignKey(CatalogoDescuento, on_delete=models.PROTECT)
 
     class Meta:
@@ -84,6 +85,7 @@ class CatalogoIngreso(models.Model):
 class IngresoEmpleado(models.Model):
     activo = models.BooleanField(default=True)
     empleado = models.ForeignKey(Empleado,on_delete=models.PROTECT)
+    planilla = models.ForeignKey(Planilla, on_delete=models.PROTECT)
     ingreso = models.ForeignKey(CatalogoIngreso, on_delete=models.PROTECT)
 
     class Meta:

@@ -27,14 +27,14 @@ create or replace function
 agregar_comision() 
 returns trigger as $tgr_comision$
 declare
-por numeric :=0;
+v_porcentaje numeric :=0;
 begin 
 if new.comision = True then
-	select round(avg(c.porcentaje)/100,2) into por from comisiones as c where new.ingreso between c.minimo and c.maximo;
+	select round(avg(c.porcentaje)/100,2) into v_porcentaje from comisiones as c where new.ingreso between c.minimo and c.maximo;
 end if;
 
-if por is not null then
-    new.porcentaje := por;
+if v_porcentaje is not null then
+    new.porcentaje := v_porcentaje;
 end if;
 
 return new;
