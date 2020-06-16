@@ -74,7 +74,7 @@ class CatalogoIngreso(models.Model):
     fecha_fin = models.DateField()
     ingreso = models.DecimalField(max_digits=8,decimal_places=2)
     comision = models.BooleanField(default=False)
-    porcentaje = models.DecimalField(max_digits=8,decimal_places=2)
+    porcentaje = models.DecimalField(max_digits=8,decimal_places=2, default=0.0)
 
     class Meta:
         db_table = "catalogo_ingreso"

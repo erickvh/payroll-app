@@ -1,0 +1,88 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Descuento
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Crear Descuento
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/planilla/catalogo_descuento">Descuentos</a></li>
+<li class="breadcrumb-item"><a href="{% url 'planilla:crear_descuento' %}">Crear Descuento</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="row">
+        <div class="col-lg-12">
+            {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>{% endif %}
+            <form action="{% url 'planilla:store_ingreso' %}" method="post">
+                {% csrf_token %}
+                <h4>Nuevo Descuento</h4>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="nombre">Descripcion</label>
+                                <input class="form-control  {% if errors.nombre %} is-invalid {% endif %}" id="nombre" type="text" name="nombre" placeholder="Descipcion del ingreso" value="{{data.nombree}}">
+                                {% if errors.nombre %}
+                                <div class=" form-control-feedback text-danger ">
+                                    {{errors.nombre.0}}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="fecha_inicio">Fecha de inicio</label>
+                                    <input class="form-control  {% if errors.fecha_inicio %} is-invalid {% endif %}" id="fecha_inicio" type="date" name="fecha_inicio" value="{{data.fecha_inicio}}" >
+                                    {% if errors.fecha_inicio %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.fecha_inicio.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="fecha_fin">Fecha de finalizacion</label>
+                                    <input class="form-control  {% if errors.fecha_fin %} is-invalid {% endif %}" id="fecha_fin" type="date" name="fecha_fin" value="{{data.fecha_fin}}" >
+                                    {% if errors.fecha_fin %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.fecha_fin.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="descuento_total">Ingreso total</label>
+                                    <input class="form-control  {% if errors.ingreso %} is-invalid {% endif %}" id="ingreso" type="number" name="ingreso" placeholder="Ingreso total" value="{{data.ingreso}}">
+                                    {% if errors.ingreso %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.ingreso.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="fijo">¿Comision?</label>
+                                    {{form.comision}}
+                                    {% if errors.comision %}
+                                    <div class=" form-control-feedback text-danger ">
+                                        {{errors.comision.0}}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                    </div>
+                <input class="btn btn-outline-success" type="submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock contenido %}
+{% block plugins %} 
+
+
+
+{% endblock plugins %}

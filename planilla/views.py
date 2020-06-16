@@ -2,9 +2,10 @@ from django.shortcuts import render
 from .models import *
 from django.shortcuts import get_object_or_404,render,redirect
 from django.contrib import messages
-from datetime import date
+from datetime import date, datetime
 from django.db import connection
 from empleado.models import Empleado
+from .forms import DescuentoForm, IngresoForm
 
 def home(request):
     planillas = Planilla.objects.all()
@@ -60,8 +61,13 @@ def boleta(request, empleado_id, planilla_id):
     empleado = get_object_or_404(Empleado,pk=empleado_id)
     boleta = BoletaPago.objects.filter(planilla_id=planilla.id, empleado_id = empleado.id).first()
     comision = False
+    print(datetime.now().strftime("%Y-%m-%d"))
+    ingreso_activo = CatalogoIngreso.objects.filter(comision = False, fecha_fin__gte = datetime.now().strftime("%Y-%m-%d"))
+
     if "Choice.EC" in empleado.tipo_empleado:
         comision = True
+        ingreso_activo = CatalogoIngreso.objects.filter(fecha_fin__gte = datetime.now().strftime("%Y-%m-%d"))
+    
     periodicidad = Periodicidad.objects.all().last()
     descuento = DescuentoEmpleado.objects.filter(planilla_id=planilla.id, empleado_id = empleado.id)
     ingreso = IngresoEmpleado.objects.filter(planilla_id=planilla.id, empleado_id = empleado.id)
@@ -75,8 +81,7 @@ def boleta(request, empleado_id, planilla_id):
         total += row[0]
         renta += row[1]
         total_descuento += row[2]
-    descuento_activo = CatalogoDescuento.objects.all()
-    ingreso_activo = CatalogoIngreso.objects.all()
+    descuento_activo = CatalogoDescuento.objects.filter(fecha_fin__gte = datetime.now().strftime("%Y-%m-%d"))
     context = {
         'empleado':empleado, 
         "boleta":boleta, 
@@ -121,11 +126,12 @@ def nuevo_descuento(request):
         return redirect("/planilla/")
 
 def delete_descuento(request, descuento_id):
-    print("borrando descuento")
-    planilla = request.POST.get("planilla", None)
-    empleado = request.POST.get("empleado", None)
-    descuento = get_object_or_404(DescuentoEmpleado,pk=descuento_id)
-    descuento.delete()
+    if request.method == 'POST':
+        print("borrando descuento")
+        planilla = request.POST.get("planilla", None)
+        empleado = request.POST.get("empleado", None)
+        descuento = get_object_or_404(DescuentoEmpleado,pk=descuento_id)
+        descuento.delete()
     return redirect("/planilla/"+str(empleado)+"/"+str(planilla)+"/boleta")
 
 
@@ -157,13 +163,95 @@ def nuevo_ingreso(request):
 
 
 def delete_ingreso(request, ingreso_id):
-    print("borrando descuento")
-    planilla = request.POST.get("planilla", None)
-    empleado = request.POST.get("empleado", None)
-    ingreso = get_object_or_404(IngresoEmpleado,pk=ingreso_id)
-    ingreso.delete()
+    if request.method == 'POST':
+        print("borrando ingreso adicional de empleado")
+        planilla = request.POST.get("planilla", None)
+        empleado = request.POST.get("empleado", None)
+        ingreso = get_object_or_404(IngresoEmpleado,pk=ingreso_id)
+        ingreso.delete()
     return redirect("/planilla/"+str(empleado)+"/"+str(planilla)+"/boleta")
 
+"""
+Catalogo de descuento, solo puede crearse y eliminarlo, esto por que cuando ya esta asignado a un empleado seria fraude si lo editan
+"""
 
+
+def catalogo_descuento(request):
+    descuentos = CatalogoDescuento.objects.all()
+    return render(request, 'planilla/catalogo_descuento.html', {'descuentos':descuentos})
+
+def crear_descuento(request):
+    form = DescuentoForm
+    return render(request, 'planilla/create_descuento.html', {'form':form})
+
+def store_descuento(request):
+    if request.method == 'POST':
+        form = DescuentoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Descuento Guardado correctamente')
+        else:
+            errors=form.errors
+            data=form.data
+            context={
+                'errors': errors, 
+                'data': data,
+                'form':form
+            }
+            return render(request, 'planilla/create_descuento.html', context)
+    return redirect('/planilla/catalogo_descuento')
+
+def delete_catalogo_descuento(request, descuento_id):
+    if request.method == 'POST':
+        print("borrando catalogo descuento")
+        descuento = get_object_or_404(CatalogoDescuento,pk=descuento_id)
+        try:
+            descuento.delete()
+            messages.success(request, 'Catalogo de descuento borrado correctamente')
+        except:
+            messages.error(request, 'Catalogo ya esta asignado')
+    return redirect('/planilla/catalogo_descuento')
+
+
+"""
+Catalogo de ingreso, solo puede crearse y eliminarlo, esto por que cuando ya esta asignado a un empleado seria fraude si lo editan
+"""
+
+
+def catalogo_ingreso(request):
+    ingresos = CatalogoIngreso.objects.all()
+    return render(request, 'planilla/catalogo_ingreso.html', {'ingresos':ingresos})
+
+def crear_ingreso(request):
+    form = IngresoForm
+    return render(request, 'planilla/create_ingreso.html', {'form':form})
+
+def store_ingreso(request):
+    if request.method == 'POST':
+        form = IngresoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Ingreso Guardado correctamente')
+        else:
+            errors=form.errors
+            data=form.data
+            context={
+                'errors': errors, 
+                'data': data,
+                'form':form
+            }
+            return render(request, 'planilla/create_ingreso.html', context)
+    return redirect('/planilla/catalogo_ingreso')
+
+def delete_catalogo_ingreso(request, ingreso_id):
+    if request.method == 'POST':
+        print("borrando catalogo ingreso")
+        ingreso = get_object_or_404(CatalogoIngreso,pk=ingreso_id)
+        try:
+            ingreso.delete()
+            messages.success(request, 'Catalogo de ingreso borrado correctamente')
+        except:
+            messages.error(request, 'Catalogo ya esta asignado')
+    return redirect('/planilla/catalogo_ingreso')
 
 

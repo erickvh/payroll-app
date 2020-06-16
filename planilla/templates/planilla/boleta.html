@@ -19,9 +19,10 @@ Boleta de pago
                     class="fa fa-plus icon-expe"></i>Agregar Ingreso</a>
                 <a class="btn btn-outline-info" href="#" data-toggle="modal" data-target="#myModal" ><i
                     class="fa fa-plus icon-expe"></i>Agregar Descuento</a>
+            {% else %}
+                <a class="btn btn-outline-info" href="#" onclick="imprimir('boleta')"><i
+                    class="fa fa-print icon-expe"></i>Imprimir</a>
             {% endif %}
-            <a class="btn btn-outline-info" href=""><i
-                class="fa fa-print icon-expe"></i>Imprimir</a>
             </div>
         </div>
         {% if messages %} 
@@ -238,6 +239,60 @@ Boleta de pago
 
     function enviar_ingreso() {
         $('#catalogo_ingreso').submit();
+    }
+
+    /*
+    ** Para imprimir, lo mas facil y sencillo que se puede en un corto tiempo
+    */
+
+    function imprimir(valor) {
+        var printContents = document.getElementById(valor).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+
+    /*
+    ** Por si quieren hacer algo mientras se esta imprimiendo
+    */
+
+    window.onbeforeprint = function(){
+        console.log("Impresión iniciada.");
+    }
+    window.onafterprint = function(){
+       console.log("Impresión terminada.");
+    }
+
+    /*
+    **  Tal vez si tengo tiempo haga que pueda descargar el pdf en un formato mejor, pero ahorita al menos es funcional 
+    */
+
+    function descargar(nombre) {
+        var source = document.getElementById('boleta');
+        var pdf = new jsPDF('p', 'pt', 'letter');
+        specialElementHandlers = {
+            '#bypassme': function (element, renderer) {
+                return true
+            }
+        };
+        margins = {
+            top: 20,
+            bottom: 10,
+            left: 10,
+            width: 1000
+        };
+        pdf.fromHTML(
+            source,
+            margins.left, 
+            margins.top, { 
+                'width': margins.width,
+                'elementHandlers': specialElementHandlers
+            },
+            function (dispose) {
+                pdf.save(nombre);
+            }, margins
+        );
     }
 
 </script>

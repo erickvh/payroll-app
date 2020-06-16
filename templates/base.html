@@ -68,8 +68,10 @@
              <li class="treeview ">
                 <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/payr.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Catálogos Planilla</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/planilla/"><i class="icon fa fa-circle-o"></i>Planillas</a></li>
                     <li><a class="treeview-item" href="/comision"><i class="icon fa fa-circle-o"></i>Comisiones</a></li>
-                   
+                    <li><a class="treeview-item" href="/planilla/catalogo_ingreso"><i class="icon fa fa-circle-o"></i>Ingresos</a></li>
+                    <li><a class="treeview-item" href="/planilla/catalogo_descuento"><i class="icon fa fa-circle-o"></i>Descuentos</a></li>
                 </ul>
             </li>
             <li>
@@ -104,6 +106,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="{% static 'js/plugins/pace.min.js' %}"></script>
+    <script src="{% static 'js/jspdf.min.js' %}"></script>
     {% block plugins %} {% endblock plugins %}
 </body>
 

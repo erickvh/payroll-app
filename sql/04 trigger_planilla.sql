@@ -45,7 +45,7 @@ v_renta NUMERIC :=0;
 begin 
 if new.activa = False then
 	for rec_empleado in select * from empleados loop
-		v_ingreso = get_ingreso_total_comision(rec_empleado.id, new.id);
+		v_ingreso = get_ingreso_total_de_catalogo(rec_empleado.id, new.id);
 		v_descuento = get_descuento_total(rec_empleado.id, new.id);
 		v_descuento_ley = get_descuento_ley(rec_empleado.salario);
 		v_comision = get_ingreso_total_comision(rec_empleado.id, new.id);
