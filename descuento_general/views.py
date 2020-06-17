@@ -13,7 +13,7 @@ def descuento_ley(request):
 def crear_descuento(request):
     if request.method == 'POST':
         descuento = request.POST.get('descuento', None)
-        porcentaje = request.POST.get('porcentaje', None)
+        porcentaje = int(request.POST.get('porcentaje', None))
         if descuento and porcentaje:
             if porcentaje>0 and porcentaje <100:
                 descuento_general = DescuentoGeneral(nombre = descuento, porcentaje=round(int(porcentaje)/100,2))
