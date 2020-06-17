@@ -20,8 +20,8 @@ Planillas
                 </div>
             {% else %}
             <div class="float-right ml-auto">
-                <a class="btn btn-outline-info" href="{% url 'planilla:ver_departamentos' planilla_id %}"><i
-                    class="fa fa-eye icon-expe"></i>Ver por departamento</a>
+                <a class="btn btn-outline-info" href="{% url 'planilla:show' planilla_id %}"><i
+                    class="fa fa-eye icon-expe"></i>Ver planilla general</a>
             </div>
             {% endif %}
         </div>
@@ -49,9 +49,6 @@ Planillas
                         {% for v in valores %}
                             <td> {{v}} </td>
                         {% endfor %}
-                        <td class="d-flex justify-content-center">
-                            <a class="btn btn-outline-primary mr-2" href="{% url 'planilla:boleta' valores.0 planilla_id %}"><i class="fa fa-eye icon-expe"></i></a>
-                        </td>
                     </tr>
                 {% endfor %}
             </tbody>

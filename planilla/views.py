@@ -67,8 +67,45 @@ def show_planilla(request, planilla_id):
         "planilla_id":planilla.id,
         'totales':totales,
         }
-
     return render(request, 'planilla/show.html', context)
+
+
+def ver_departamentos(request, planilla_id):
+    planilla = get_object_or_404(Planilla,pk=planilla_id)
+    descuento_general = DescuentoGeneral.objects.all()
+    cabeceras = ["Planilla","ID","Departamento","Salario","Otros_ingresos", "Comision" ,"Renta", "Total descuentos","Total",]
+    totales = [0, 0, 0, 0, 0, 0]
+    cuerpo = []
+    for d in descuento_general:
+        cabeceras.insert(6, d.nombre)
+        totales.insert(6, 0)
+    cursor = connection.cursor()
+    cursor.execute("SELECT planilla_id, id, nombre, total_salario, total_ingreso, total_comision, renta, total_descuento, total FROM vista_departamento where planilla_id = "+str(planilla.id)) 
+    for row in cursor.fetchall():
+        lista = list(row)
+        totales[0] += lista[3]
+        totales[1] += lista[4]
+        totales[2] += lista[5]
+        i = 0
+        for d in descuento_general:
+            lista.insert(6,round(d.porcentaje*lista[3], 2))
+            totales[-4 - i] += round(d.porcentaje*lista[3], 2)
+            i += 1
+        totales[-1] += lista[-1]
+        totales[-2] += lista[-2]
+        totales[-3] += lista[-3]
+        cuerpo.append(lista)
+
+    context = {
+        'cabeceras': cabeceras, 
+        'cuerpo':cuerpo, 
+        'codigo':planilla.codigo, 
+        'activa':planilla.activa, 
+        "planilla_id":planilla.id,
+        'totales':totales,
+        }
+    return render(request, 'planilla/ver_departamentos.html', context)
+
 
 
 def close_planilla(request, planilla_id):
