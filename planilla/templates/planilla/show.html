@@ -50,6 +50,15 @@ Planillas
                     </tr>
                 {% endfor %}
             </tbody>
+            <tfoot>
+                <tr style="background-color: aquamarine;">
+                    <td colspan="3">Totales</td>
+                    {% for valores in totales %}
+                        <td> {{valores}} </td>
+                    {% endfor %}
+                    
+                </tr>
+            </tfoot>
         </table>
         {% else %}
         <p>Planillas no disponibles</p>

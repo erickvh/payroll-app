@@ -77,19 +77,28 @@ Boleta de pago
                             <label> {{boleta.salario_actual}} </label>
                         </td>
                     </tr>
-
-                    {% if comision %}
-
+                    {% if ingresos %}
+                        {% if comision %}
                         <tr class="alert alert-info">
                             <td></td>
                             <td class="text-center">
-                                COMISION
+                                COMISION/otros ingresos
                             </td>
-                            <td class="text-center">@ViewBag.comision</td>
+                            <td class="text-center">Cantidad</td>
                         </tr>
-                    {% endif %}
+                        {% else %}
+                        <tr class="alert alert-info">
+                            <td></td>
+                            <td class="text-center">
+                                otros ingresos
+                            </td>
+                            <td class="text-center">Ingreso</td>
+                        </tr>
+                        {% endif %}
 
-                    {% for ingreso in ingresos %}
+                        {% for ingreso in ingresos %}
+                        {% if ingreso.ingreso.comision %}
+
                         <tr>
                             <td class="text-center">
                                 {% if activa %}
@@ -99,16 +108,24 @@ Boleta de pago
                                         <input type="number" value="{{empleado.id}}" id="empleado" name="empleado" hidden=""/>
                                         <button class="btn btn-outline-danger mr-2" type="submit"><i class="fa fa-remove icon-expe"></i></button>
                                     </form>
+                                {% else %}
+                                    {{ingreso.id}}
                                 {% endif %}
                             </td>
                             <td class="text-center">
                                 <label>{{ingreso.ingreso.nombre}} </label>
                             </td>
                             <td class="text-center">
-                                {{ingreso.ingreso.ingreso}}
+                                {% if ingreso.ingreso.comision %}
+                                    {{ingreso.comision}}
+                                {% else %}
+                                    {{ingreso.ingreso.ingreso}}
+                                {% endif %}
                             </td>
                         </tr>
-                    {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
 
                     <tr class="alert alert-info">
                         <td></td>
@@ -135,13 +152,19 @@ Boleta de pago
                                         <input type="number" value="{{empleado.id}}" id="empleado" name="empleado" hidden=""/>
                                         <button class="btn btn-outline-danger mr-2" type="submit"><i class="fa fa-remove icon-expe"></i></button>
                                     </form>
+                                {% else %}
+                                    {{descuento.id}}
                                 {% endif %}
                             </td>
                             <td class="text-center">
                                 <label>{{descuento.descuento.nombre}} </label>
                             </td>
                             <td class="text-center">
-                                {{descuento.descuento.descuento}}
+                                {% if descuento.descuento.fijo %}
+                                    {{descuento.descuento.descuento}}
+                                {% else %}
+                                    {{descuento.get_descuento_porcentaje}}
+                                {% endif %}
                             </td>
                         </tr>
                     {% endfor %}

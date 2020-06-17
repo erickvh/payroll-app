@@ -62,7 +62,11 @@ INSTALLED_APPS = [
     'centro_costo',
     'comision',
     'impuesto_renta',
+
+    #Etapa II
     'planilla',
+    'descuento_general',
+    
 ]
 
 MIDDLEWARE = [

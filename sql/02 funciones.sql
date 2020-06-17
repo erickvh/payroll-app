@@ -76,7 +76,7 @@ BEGIN
 		sum(
 			case 
 			when c.comision and e.tipo_empleado like '%EC' then 
-			e.salario * c.porcentaje 
+			c.ingreso * c.porcentaje 
 			else 0 end),2) 
 		into v_ingreso_comision 
 	from empleados as e 
@@ -100,7 +100,7 @@ DECLARE
 rec_descuento_gral RECORD;
 v_descuento_e NUMERIC := 0;
 BEGIN 
-	for rec_descuento_gral in select * from descuento_general loop
+	for rec_descuento_gral in select * from descuento_general where activo = true loop
 		v_descuento_e = v_descuento_e + p_monto * rec_descuento_gral.porcentaje;
 	end loop;
 RETURN v_descuento_e;

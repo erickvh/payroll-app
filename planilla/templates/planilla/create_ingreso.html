@@ -1,13 +1,13 @@
 {% extends 'base.html' %} 
 {% block head_title %} 
-Descuento
+Ingresos
 {% endblock head_title %} 
 {% block titulo_principal %} 
-Crear Descuento
+Crear Ingreso
 {% endblock titulo_principal %} 
 {% block enlace_actual %}
-<li class="breadcrumb-item"><a href="/planilla/catalogo_descuento">Descuentos</a></li>
-<li class="breadcrumb-item"><a href="{% url 'planilla:crear_descuento' %}">Crear Descuento</a></li> 
+<li class="breadcrumb-item"><a href="/planilla/catalogo_ingreso">Ingreso</a></li>
+<li class="breadcrumb-item"><a href="{% url 'planilla:crear_ingreso' %}">Crear Ingreso</a></li> 
 {% endblock enlace_actual %} 
 {% block contenido %}
 <div class="tile">
@@ -17,7 +17,7 @@ Crear Descuento
             <p><strong>{{ error_message }}</strong></p>{% endif %}
             <form action="{% url 'planilla:store_ingreso' %}" method="post">
                 {% csrf_token %}
-                <h4>Nuevo Descuento</h4>
+                <h4>Nuevo Ingreso</h4>
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-6">

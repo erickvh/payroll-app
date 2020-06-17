@@ -5,6 +5,7 @@ from django.contrib import messages
 from datetime import date, datetime
 from django.db import connection
 from empleado.models import Empleado
+from descuento_general.models import DescuentoGeneral, Periodicidad, SalarioMinimo
 from .forms import DescuentoForm, IngresoForm
 
 def home(request):
@@ -35,24 +36,48 @@ def create_planilla(request):
 def show_planilla(request, planilla_id):
     planilla = get_object_or_404(Planilla,pk=planilla_id)
     descuento_general = DescuentoGeneral.objects.all()
-    cabeceras = ["ID","Primer_nombre","Apellido_paterno","Salario","Otros_ingresos", "Comision" ,"Renta", "Descuento total","Total","Accion"]
+    cabeceras = ["ID","Primer_nombre","Apellido_paterno","Salario","Otros_ingresos", "Comision" ,"Renta", "Total descuentos","Total","Accion"]
+    totales = [0, 0, 0, 0, 0, 0]
     cuerpo = []
     for d in descuento_general:
         cabeceras.insert(6, d.nombre)
+        totales.insert(6, 0)
     cursor = connection.cursor()
     cursor.execute("SELECT id, primer_nombre, apellido_paterno, salario_actual, total_ingreso, total_comision, renta ,total_descuento ,total FROM vista_planilla where planilla_id = "+str(planilla.id)) 
     for row in cursor.fetchall():
         lista = list(row)
+        totales[0] += lista[3]
+        totales[1] += lista[4]
+        totales[2] += lista[5]
+        i = 0
         for d in descuento_general:
             lista.insert(6,round(d.porcentaje*lista[3], 2))
+            totales[-4 - i] += round(d.porcentaje*lista[3], 2)
+            i += 1
+        totales[-1] += lista[-1]
+        totales[-2] += lista[-2]
+        totales[-3] += lista[-3]
         cuerpo.append(lista)
-    return render(request, 'planilla/show.html', {'cabeceras': cabeceras, 'cuerpo':cuerpo, 'codigo':planilla.codigo, 'activa':planilla.activa, "planilla_id":planilla.id})
+
+    context = {
+        'cabeceras': cabeceras, 
+        'cuerpo':cuerpo, 
+        'codigo':planilla.codigo, 
+        'activa':planilla.activa, 
+        "planilla_id":planilla.id,
+        'totales':totales,
+        }
+
+    return render(request, 'planilla/show.html', context)
 
 
 def close_planilla(request, planilla_id):
-    planilla = get_object_or_404(Planilla,pk=planilla_id)
-    planilla.activa = False
-    planilla.save()
+    try:
+        planilla = get_object_or_404(Planilla,pk=planilla_id)
+        planilla.activa = False
+        planilla.save()
+    except:
+        messages.error(request, 'Error, no puedes cerrar planillas, el centro de costo esta en quiebra')
     return redirect("/planilla/")
 
 

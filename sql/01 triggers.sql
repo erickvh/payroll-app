@@ -52,3 +52,24 @@ execute procedure agregar_comision();
 */
 
 
+
+create or replace function 
+actualizar_centro_costo() 
+returns trigger as $tgr_costo$
+declare
+begin 
+if (new.remanente > new.presupuesto) then
+  raise exception '%','No se puede actualizar centro de costo';
+end if;
+return new;
+end;
+$tgr_costo$ language plpgsql;
+
+
+create trigger tgr_costo 
+before insert or update
+on centro_costos for each row
+execute procedure actualizar_centro_costo(); 
+
+
+
