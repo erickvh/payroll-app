@@ -2,10 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import get_object_or_404,render,redirect
 from django.contrib import messages
 from .models import * 
+from datetime import datetime as today
 
-# Create your views here.
-
-
+# Descuentos de ley
 def descuento_ley(request):
     descuentos = DescuentoGeneral.objects.all()
     return render(request, "descuento_general/descuento_ley.html",{'descuentos':descuentos})
@@ -53,5 +52,45 @@ def cerrar_descuento(request, descuento_id):
     else:
         messages.error(request, 'Error, metodo no valido, tiene que ser un metodo post')
     return redirect("/descuento/")
+
+
+#Periodicidad
+
+
+def periodicidad(request):
+    periodos = Periodicidad.objects.all()
+    return render(request, "periodicidad/periodicidad.html",{'periodos':periodos})
+
+def crear_periodo(request):
+    periodos = Periodicidad.objects.filter(activo=True)
+    if len(periodos)>0:
+        messages.error(request, 'Error, debe cerrar todos los periodos')
+        return redirect('/general/periodicidad')
+
+    if request.method == 'POST':
+        periodicidad = int(request.POST.get('periodicidad',None))
+        last_periodo = Periodicidad.objects.all().last()
+        if last_periodo.anio_periodo == today.now().year:
+            messages.error(request, 'Error, no deberias poder crear otro periodo, pero para fines de pruebas se le permite')
+        if periodicidad:
+            periodo = Periodicidad(anio_periodo=today.now().year)
+            if periodicidad == 2:
+                periodo.mensual = False
+            periodo.save()
+        else:
+            messages.error(request, 'Error, debe llenar los datos solicitados')
+    else:
+        messages.error(request, 'Error, debe llenar los datos')
+    return redirect("/general/periodicidad")
+
+def cerrar_periodo(request, periodo_id):
+    if request.method == 'POST':
+        periodo = get_object_or_404(Periodicidad,pk=periodo_id)
+        periodo.activo = False
+        periodo.save()
+        messages.success(request, 'Cierre exitoso')
+    else:
+        messages.error(request, 'Error, metodo no valido, tiene que ser un metodo post')
+    return redirect("/general/periodicidad")
 
 

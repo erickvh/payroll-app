@@ -2,8 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-# Tablas sin relaciones
-
 class SalarioMinimo(models.Model):
     monto = models.DecimalField(max_digits=8,decimal_places=2)
     activo = models.BooleanField(default=True)
@@ -16,7 +14,7 @@ class SalarioMinimo(models.Model):
 
 class Periodicidad(models.Model):
     anio_periodo = models.IntegerField()
-    quincenal = models.BooleanField(default=False)
+    activo = models.BooleanField(default=True)
     mensual = models.BooleanField(default=True)
 
     class Meta:

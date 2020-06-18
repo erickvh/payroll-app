@@ -107,15 +107,24 @@ def ver_departamentos(request, planilla_id):
     return render(request, 'planilla/ver_departamentos.html', context)
 
 
-
 def close_planilla(request, planilla_id):
     try:
-        planilla = get_object_or_404(Planilla,pk=planilla_id)
-        planilla.activa = False
-        planilla.save()
+        periodos = Periodicidad.objects.all()
+        if len(periodos) > 0:
+            last_periodo = Periodicidad.objects.all().last()
+            if last_periodo.mensual:
+                messages.success(request, 'El periodo es mensual, para fines de prueba se le permite cerrar planilla aunque aun no se termine el periodo')
+            else: 
+                messages.success(request, 'El periodo es quincenal, para fines de prueba se le permite cerrar planilla aunque aun no se termine el periodo')
+            planilla = get_object_or_404(Planilla,pk=planilla_id)
+            planilla.activa = False
+            planilla.save()
+        else:
+            messages.error(request, 'Error, NO TIENES PERIODOS CREADOS')
     except:
         messages.error(request, 'Error, no puedes cerrar planillas, el centro de costo esta en quiebra')
     return redirect("/planilla/")
+
 
 
 def boleta(request, empleado_id, planilla_id):

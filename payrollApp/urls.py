@@ -41,6 +41,6 @@ urlpatterns = [
 
     #Modulo de planilla
     path('planilla/', include(('planilla.urls', 'planilla'), namespace='planilla')),
-    path('descuento/', include(('descuento_general.urls', 'descuento_general'), namespace='descuento_general')),
+    path('general/', include(('descuento_general.urls', 'descuento_general'), namespace='descuento_general')),
 
 ]
