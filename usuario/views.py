@@ -236,3 +236,6 @@ def toggle_usuario(request,usuario_id):
         messages.warning(request, message)
 
     return redirect('/usuarios')
+
+
+

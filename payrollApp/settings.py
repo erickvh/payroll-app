@@ -78,6 +78,7 @@ MIDDLEWARE = [
     'login_required.middleware.LoginRequiredMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middleware.middleware.FilterMenu', 
 ]
 
 LOGIN_REQUIRED_IGNORE_PATHS = [

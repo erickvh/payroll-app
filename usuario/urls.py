@@ -1,5 +1,4 @@
 from django.urls import path
-
 from . import views
 
 app_name = 'usuario'
@@ -33,6 +32,7 @@ urlpatterns = [
     path('<int:menu_id>/delete_menu', views.delete_menu, name='delete_menu'),
     path('<int:group_id>/<int:menu_id>/asignar_menu/', views.asignar_menu, name='asignar_menu'),    
     path('<int:group_id>/add_menu/', views.add_menu, name='add_menu'),
-
-
 ]
+
+
+
