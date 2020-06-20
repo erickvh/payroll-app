@@ -6,14 +6,151 @@ from django.shortcuts import get_object_or_404,render,redirect
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.http import JsonResponse
+
+
 #imports del modelo
 from usuario.models import User
+from django.contrib.auth.models import Group, Permission
 from departamento_organizacion.models import DepartamentoOrganizacion
 from empleado.models import Empleado
 from .forms import UserForm, UserUpdateForm
 from django.contrib.auth.hashers import make_password
+from .models import Menu
 
-# Create your views here.
+# Roles o grupos
+
+def index_rol(request):
+    groups = Group.objects.all()
+    return render(request, 'usuarios/index_rol.html', {'groups':groups})
+
+def crear_rol(request):
+    if request.method == 'POST':
+        rol = request.POST.get('rol', None)
+        if rol:
+            group = Group(name = rol)
+            group.save()
+            messages.success(request, 'Rol/grupo creado correctamente')
+        else: 
+            messages.error(request, 'Debe llenar todos los campos')
+    return redirect('/usuarios/index_rol/')
+
+def delete_rol(request, group_id):
+    if request.method == 'POST':
+        group = get_object_or_404(Group, pk=group_id)
+        users = User.objects.filter(groups__name=group.name).exists()
+        if not users:
+            group.delete()
+            messages.success(request, 'Rol/grupo eliminado correctamente')
+        else:
+            messages.error(request, 'Rol/grupo no se puede eliminar, hay usuarios asociados')
+    return redirect('/usuarios/index_rol/')
+
+# permisos
+def index_permisos(request):
+    permisos = Permission.objects.all()
+    messages.success(request, 'Los permisos se agregan automaticamente, no puedes eliminarlos ni editarlos')
+    return render(request, 'usuarios/index_permisos.html', {'permisos':permisos})
+
+# Agregar permisos a roles
+def permiso_rol(request, group_id):
+    group = get_object_or_404(Group, pk=group_id)
+    permisos = Permission.objects.exclude(group=group)
+    mis_permisos = Permission.objects.filter(group=group)
+    return render(request, 'usuarios/permiso_rol.html', {'permisos':permisos, 'mis_permisos':mis_permisos, 'group':group})
+
+def asignar_permiso(request, permiso_id, group_id):
+    group = get_object_or_404(Group, pk=group_id)
+    permiso = get_object_or_404(Permission, pk=permiso_id)
+    if request.method == 'POST':
+        id_permiso = request.POST.get('id_permiso', None)
+        if id_permiso == 'agregar':
+            group.permissions.add(permiso)
+            group.save()
+        elif id_permiso == 'eliminar':
+            group.permissions.remove(permiso)
+            group.save()
+    mis_permisos = Permission.objects.filter(group=group)
+    return redirect('/usuarios/'+str(group_id)+'/permiso_rol/')
+
+# agregar roles a usuario
+def add_rol(request, user_id):
+    usuario = get_object_or_404(User, pk=user_id)
+    groups = Group.objects.exclude(user=usuario)
+    mis_groups = Group.objects.filter(user=usuario)
+    return render(request, 'usuarios/add_rol.html', {'groups':groups, 'mis_groups':mis_groups, 'usuario':usuario})
+
+def asignar_rol(request, usuario_id, group_id):
+    group = get_object_or_404(Group, pk=group_id)
+    user = get_object_or_404(User, pk=usuario_id)
+    if request.method == 'POST':
+        id_permiso = request.POST.get('id_permiso', None)
+        if id_permiso == 'agregar':
+            user.groups.add(group)
+            user.save()
+        elif id_permiso == 'eliminar':
+            user.groups.remove(group)
+            user.save()
+    return redirect('/usuarios/'+str(user.id)+'/add_rol/')
+
+# menus
+def index_menu(request):
+    menu_list = Menu.objects.filter(padre=None)
+    menus = Menu.objects.all()
+    return render(request, 'usuarios/index_menu.html', {'menu_list':menu_list, 'menus':menus})
+
+def crear_menu(request):
+    if request.method == 'POST':
+        menu_padre = int(request.POST.get('menu_padre', 0))
+        nombre = request.POST.get('nombre', None)
+        url = request.POST.get('url', None)
+        if menu_padre > 0 and nombre and url:
+            padre = get_object_or_404(Menu, pk=menu_padre)
+            menu = Menu(nombre=nombre, padre=padre, url= url)
+            menu.save()
+            messages.success(request, 'Submenu creado con exito')
+        elif menu_padre == 0 and nombre:
+            menu = Menu(nombre=nombre)
+            menu.save()
+            messages.success(request, 'Menu padre creado con exito')
+        else:
+            messages.error(request, 'No se pudo crear un nuevo menu')
+    return redirect('/usuarios/index_menu/')
+
+def delete_menu(request, menu_id):
+    if request.method == 'POST':
+        try:
+            menu = get_object_or_404(Menu, pk=menu_id)
+            if menu.groups.count() < 1:
+                menu.delete()
+                messages.success(request, 'Menu eliminado correctamente')
+            else:
+                messages.error(request, 'Menu no se puede eliminar, hay roles asociados')
+        except:
+            messages.error(request, 'No puedes eliminar un menu padre sin eliminar antes los hijos')
+    return redirect('/usuarios/index_menu/')
+
+def add_menu(request, group_id):
+    group = get_object_or_404(Group, pk=group_id)
+    menus = Menu.objects.filter(padre=None).exclude(groups=group)
+    mis_menus = Menu.objects.filter(groups=group)
+    return render(request, 'usuarios/add_menu.html', {'menus':menus, 'mis_menus':mis_menus, 'group':group})
+
+
+def asignar_menu(request, group_id, menu_id):
+    group = get_object_or_404(Group, pk=group_id)
+    menu = get_object_or_404(Menu, pk=menu_id)
+    if request.method == 'POST':
+        id_permiso = request.POST.get('id_permiso', None)
+        if id_permiso == 'agregar':
+            menu.groups.add(group)
+            menu.save()
+        elif id_permiso == 'eliminar':
+            menu.groups.remove(group)
+            menu.save()
+    return redirect('/usuarios/'+str(group_id)+'/add_menu/')
+
+
+# Usuarios
 def index_usuario(request):
     usuarios = User.objects.all().exclude(id=request.user.id).order_by('username')
     return render(request, 'usuarios/index.html', {'usuario_list': usuarios})

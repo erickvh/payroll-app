@@ -1,0 +1,109 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Grupos o roles
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Grupos / roles
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/usuarios/index_rol/">Roles/Grupos</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="tile-body table-responsive">
+        <div class="d-flex mb-2">
+            <h3 class="tile-title">Roles/Grupos</h3>
+            <div class="float-right ml-auto">
+                <a class="btn btn-outline-success" href="" data-toggle="modal" data-target="#rol_group" ><i
+                    class="fa fa-plus icon-expe"></i>Nuevo Rol/Grupo</a>
+            </div>
+        </div>
+        {% if messages %} 
+            {% for message in messages %}
+            {% if message.tags == 'error' %}
+            <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endif %}
+            {% endfor %} 
+        {% endif %} 
+        {% if groups %}
+        <table class="table table-striped text-center" id="planilla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for group in groups %}
+                <tr>
+                    <td>{{group.id}}</td>
+                    <td>{{group.name}}</td>
+                    <td class="d-flex justify-content-center">
+                        <form method="post" action="{% url 'usuario:delete_rol' group.id %}">
+                            {% csrf_token %}
+                            <a href="{% url 'usuario:permiso_rol' group.id %}" class="btn btn-outline-info mr-2" ><i class="fa fa-edit icon-expe"></i></a>
+                            <button type="submit" class="btn btn-outline-danger mr-2" ><i class="fa fa-remove icon-expe"></i></button>
+                            <a href="{% url 'usuario:add_menu' group.id %}" class="btn btn-outline-success mr-2" ><i class="fa fa-edit icon-expe"></i></a>
+                        </form> 
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>Roles/Grupos no disponibles</p>
+        {% endif %}
+    </div>
+</div>
+
+
+<div id="rol_group" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Nuevo grupo/rol</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="{% url 'usuario:crear_rol' %}" method="POST" id="new_rol">
+                {% csrf_token %}
+                <div class="col-md-8">
+                    <label for="Ingreso">Nombre del Rol/Grupo</label>
+                    <input class="form-control" id="rol" name="rol" required="true" type="text" placeholder="Nombre del rol" />
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-success" data-dismiss="modal" value="Guardar" onclick="crear_rol()">
+                </div>
+            </form>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+{% endblock contenido %}
+{% block plugins %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#planilla').DataTable({
+        "order": [[ 0, "desc" ]],
+        "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+        },
+    });
+
+    function crear_rol() {
+        $('#new_rol').submit();
+    }
+
+</script>
+
+
+{% endblock plugins %}

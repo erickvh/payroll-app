@@ -1,0 +1,126 @@
+{% extends 'base.html' %} 
+{% block head_title %} 
+Menus
+{% endblock head_title %} 
+{% block titulo_principal %} 
+Menus
+{% endblock titulo_principal %} 
+{% block enlace_actual %}
+<li class="breadcrumb-item"><a href="/usuarios/index_menu/">Menus</a></li> 
+{% endblock enlace_actual %} 
+{% block contenido %}
+<div class="tile">
+    <div class="tile-body table-responsive">
+        <div class="d-flex mb-2">
+            <h3 class="tile-title">Menus</h3>
+            <div class="float-right ml-auto">
+                <a class="btn btn-outline-success" href="" data-toggle="modal" data-target="#new_menu" ><i
+                    class="fa fa-plus icon-expe"></i>Nuevo menu</a>
+            </div>
+        </div>
+        {% if messages %} 
+            {% for message in messages %}
+            {% if message.tags == 'error' %}
+            <div class="alert {% if message.tags == 'error' %}alert-danger {% endif %}" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert {% if message.tags == 'success' %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div>
+            {% endif %}
+            {% endfor %} 
+        {% endif %} 
+        {% if menus %}
+        <table class="table table-striped text-center" id="menu">
+            <thead>
+                <tr>
+                    <th>Padre</th>
+                    <th>Nombre</th>
+                    <th>URL</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for menu in menus %}
+                <tr>
+                    {% if menu.padre %}
+                    <td>{{menu.padre}}</td>
+                    {% else %}
+                    <td>Es padre</td>
+                    {% endif %}
+                    <td>{{menu.nombre}}</td>
+                    <td>{{menu.url}}</td>
+                    <td class="d-flex justify-content-center">
+                        <form method="post" action="{% url 'usuario:delete_menu' menu.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-outline-danger mr-2" ><i class="fa fa-remove icon-expe"></i></button>
+                        </form> 
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>Menus no disponibles</p>
+        {% endif %}
+    </div>
+</div>
+
+
+<div id="new_menu" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Nuevo menu</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="{% url 'usuario:crear_menu' %}" method="POST" id="new_rol">
+                {% csrf_token %}
+                <div class="col-md-10">
+                    <label for="padre">Menu padre</label>
+                    <select class="form-control" id="menu_padre" name="menu_padre">
+                    <option value="0">Seleccione un menu padre</option>
+                    {% for menu in menu_list %}
+                        <option value="{{menu.id}}">{{ menu.nombre }} </option>
+                    {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-10">
+                    <label for="nombre">Nombre del menu</label>
+                    <input class="form-control" id="nombre" name="nombre" required="true" type="text" placeholder="Nombre del menu" />
+                </div>
+                <div class="col-md-10">
+                    <label for="url">URL</label>
+                    <input class="form-control" id="url" name="url" type="text" placeholder="url" />
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-success" data-dismiss="modal" value="Guardar" onclick="crear_menu()">
+                </div>
+            </form>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+{% endblock contenido %}
+{% block plugins %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#menu').DataTable({
+        "order": [[ 0, "desc" ]],
+        "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+        },
+    });
+
+    function crear_menu() {
+        $('#new_rol').submit();
+    }
+
+</script>
+
+
+{% endblock plugins %}

@@ -70,7 +70,7 @@ def crear_periodo(request):
     if request.method == 'POST':
         periodicidad = int(request.POST.get('periodicidad',None))
         last_periodo = Periodicidad.objects.all().last()
-        if last_periodo.anio_periodo == today.now().year:
+        if last_periodo and last_periodo.anio_periodo == today.now().year:
             messages.error(request, 'Error, no deberias poder crear otro periodo, pero para fines de pruebas se le permite')
         if periodicidad:
             periodo = Periodicidad(anio_periodo=today.now().year)

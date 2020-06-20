@@ -42,6 +42,10 @@
             </div>
         </div>        
         <ul class="app-menu">
+            {% if user.super_user %}
+                es superusuario
+            {% else %}
+            {% endif %}
             <li>
                 <a class="app-menu__item" href="/"><img src="{% static 'images/home.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Home</span></a>
             </li>
@@ -79,8 +83,17 @@
             <li>
                 <a class="app-menu__item" href="/empleado"><img src="{% static 'images/employee.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Empleados</span></a>
             </li>
+            <li class="treeview ">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/users.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Usuarios, roles y permisos</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="/usuarios"><i class="icon fa fa-circle-o"></i>Usuarios</a></li>
+                    <li><a class="app-menu__item" href="/usuarios/index_rol"><i class="icon fa fa-circle-o"></i>Roles/grupos</a></li>
+                    <li><a class="app-menu__item" href="/usuarios/index_permisos"><i class="icon fa fa-circle-o"></i>Permisos</a></li>
+                    <li><a class="app-menu__item" href="/usuarios/index_menu"><i class="icon fa fa-circle-o"></i>Menus</a></li>
+                </ul>
+            </li>
+
             <li>
-                <a class="app-menu__item" href="/usuarios"><img src="{% static 'images/users.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Usuarios</span></a>
             </li>
         </ul>
     </aside>
