@@ -20,13 +20,3 @@ class Menu(models.Model):
     def __str__(self):
         return self.nombre
 
-class DireccionUrl(models.Model):
-    nombre = models.TextField(max_length=75)
-    url = models.TextField(max_length=75)
-    permission = models.ForeignKey(Permission,on_delete=models.PROTECT)
-
-    class Meta:
-        db_table = "direccion_url"
-
-    def __str__(self):
-        return self.nombre

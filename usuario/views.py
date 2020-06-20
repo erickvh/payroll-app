@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404,render,redirect
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.http import JsonResponse
+from django.contrib.auth.decorators import permission_required
 
 
 #imports del modelo
@@ -150,7 +151,24 @@ def asignar_menu(request, group_id, menu_id):
     return redirect('/usuarios/'+str(group_id)+'/add_menu/')
 
 
+def set_all_menu(request, group_id):
+    group = get_object_or_404(Group, pk=group_id)
+    menus = Menu.objects.filter(padre=None)
+    if request.method == 'POST':
+        id_permiso = request.POST.get('id_permiso', None)
+        if id_permiso == 'agregar':
+            for menu in menus:
+                menu.groups.add(group)
+                menu.save()
+        elif id_permiso == 'eliminar':
+            for menu in menus:
+                menu.groups.remove(group)
+                menu.save()
+    return redirect('/usuarios/'+str(group_id)+'/add_menu/')
+
+
 # Usuarios
+@permission_required('view_user')
 def index_usuario(request):
     usuarios = User.objects.all().exclude(id=request.user.id).order_by('username')
     return render(request, 'usuarios/index.html', {'usuario_list': usuarios})

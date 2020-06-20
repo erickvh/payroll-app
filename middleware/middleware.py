@@ -17,6 +17,5 @@ def FilterMenu(get_response):
                         lista[me.nombre] = {m.nombre:m.url}
         request.session['lista'] = lista
         response = get_response(request)
-        print(request.session['lista'])
         return response
     return middleware

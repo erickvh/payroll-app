@@ -29,6 +29,14 @@ Menus
             <div class="col-md-6">
                 <div class="d-flex mb-2">
                     <h3 class="tile-title">Menus del rol</h3>
+                    <div class="float-right ml-auto">
+                        <form action="{% url 'usuario:set_all_menu' group.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="text" value="eliminar" id="id_permiso" name="id_permiso" hidden="" />
+                            <button class="btn btn-outline-danger" type="submit"><i
+                                class="fa fa-plus icon-expe"></i>Eliminar todos</button>
+                        </form>
+                    </div>
                 </div>
                 {% if mis_menus %}
                 <table class="table table-striped text-center" id="mis_permisos">
@@ -62,7 +70,15 @@ Menus
     
             <div class="col-md-6">
                 <div class="d-flex mb-2">
-                    <h3 class="tile-title">Seleccione los permisos que desea para este rol/grupo</h3>
+                    <h3 class="tile-title">Seleccione los menus que tendra este rol </h3>
+                    <div class="float-right ml-auto">
+                        <form action="{% url 'usuario:set_all_menu' group.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="text" value="agregar" id="id_permiso" name="id_permiso" hidden="" />
+                            <button class="btn btn-outline-success" type="submit"><i
+                                class="fa fa-plus icon-expe"></i>Agregar todos</button>
+                        </form>
+                    </div>
                 </div>
                 {% if menus %}
                 <table class="table table-striped text-center" id="permisos">
@@ -90,7 +106,7 @@ Menus
                     </tbody>
                 </table>
                 {% else %}
-                <p>Permisos no disponibles</p>
+                <p>Ya no hay menus</p>
                 {% endif %}
             </div>
 

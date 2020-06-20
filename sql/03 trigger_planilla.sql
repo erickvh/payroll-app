@@ -71,7 +71,7 @@ if new.activa = False then
 
 		UPDATE centro_costos
 			SET remanente = remanente + v_total_depto
-			WHERE id = rec_departamento.id;
+			WHERE departamento_organizacion_id = rec_departamento.id;
 	
 	end loop;
 	
