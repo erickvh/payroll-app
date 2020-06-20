@@ -55,16 +55,18 @@
         </ul>
         {% else %}
         <ul class="app-menu">
-            {% for k, menus in request.session.lista.items %}
-            <li class="treeview">
-                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/users.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">{{k}}</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-                <ul class="treeview-menu" >
-                {% for key, url in menus.items %}
-                    <li><a class="dropdown-item" href="{{url}}" style="color: aliceblue;"><i class="fa fa-cog fa-lg"></i>{{key}} </a></li>
+            {% if request.session.lista %}
+                {% for k, menus in request.session.lista.items %}
+                <li class="treeview">
+                    <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/users.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">{{k}}</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                    <ul class="treeview-menu" >
+                    {% for key, url in menus.items %}
+                        <li><a class="dropdown-item" href="{{url}}" style="color: white; background-color: #009688;"><i class="fa fa-cog fa-lg"></i>{{key}} </a></li>
+                    {% endfor %}
+                    </ul>
+                </li>
                 {% endfor %}
-                </ul>
-            </li>
-            {% endfor %}
+            {% endif %}
         </ul>
         {% endif %}    
     </aside>
