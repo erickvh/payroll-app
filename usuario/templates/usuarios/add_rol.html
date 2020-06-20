@@ -12,7 +12,7 @@ Roles
 <div class="tile">
     <div class="tile-body table-responsive">
         <div class="d-flex mb-2">
-            <h3 class="tile-title">Grupo/Rol: {{group.name}}</h3>
+            <h3 class="tile-title">Usuario: {{usuario.username}}</h3>
         </div>
         {% if messages %} 
             {% for message in messages %}
@@ -28,9 +28,9 @@ Roles
         <div class="row">
             <div class="col-md-6">
                 <div class="d-flex mb-2">
-                    <h3 class="tile-title">Menus del rol</h3>
+                    <h3 class="tile-title">Roles de este usuario</h3>
                 </div>
-                {% if mis_menus %}
+                {% if mis_groups %}
                 <table class="table table-striped text-center" id="mis_permisos">
                     <thead>
                         <tr>
@@ -40,12 +40,12 @@ Roles
                         </tr>
                     </thead>
                     <tbody>
-                        {% for menu in mis_menus %}
+                        {% for group in mis_groups %}
                         <tr>
-                            <td>{{menu.id}}</td>
-                            <td>{{menu.nombre}}</td>
+                            <td>{{group.id}}</td>
+                            <td>{{group.name}}</td>
                             <td class="d-flex justify-content-center">
-                                <form method="post" action="{% url 'usuario:asignar_menu' group.id menu.id %}">
+                                <form method="post" action="{% url 'usuario:asignar_rol' usuario.id group.id %}">
                                     {% csrf_token %}
                                     <input type="text" value="eliminar" id="id_permiso" name="id_permiso" hidden="" />
                                     <button type="submit" class="btn btn-outline-danger mr-2" ><i class="fa fa-remove icon-expe"></i></button>
@@ -56,15 +56,15 @@ Roles
                     </tbody>
                 </table>
                 {% else %}
-                <p>Este rol no tiene permisos</p>
+                <p>Este usuario no tiene roles</p>
                 {% endif %}
             </div>
     
             <div class="col-md-6">
                 <div class="d-flex mb-2">
-                    <h3 class="tile-title">Seleccione los permisos que desea para este rol/grupo</h3>
+                    <h3 class="tile-title">Seleccione los roles que desea para este usuario</h3>
                 </div>
-                {% if menus %}
+                {% if groups %}
                 <table class="table table-striped text-center" id="permisos">
                     <thead>
                         <tr>
@@ -74,12 +74,12 @@ Roles
                         </tr>
                     </thead>
                     <tbody>
-                        {% for menu in menus %}
+                        {% for group in groups %}
                         <tr>
-                            <td>{{menu.id}}</td>
-                            <td>{{menu.nombre}}</td>
+                            <td>{{group.id}}</td>
+                            <td>{{group.name}}</td>
                             <td class="d-flex justify-content-center">
-                                <form method="post" action="{% url 'usuario:asignar_menu' group.id menu.id %}">
+                                <form method="post" action="{% url 'usuario:asignar_rol' usuario.id group.id %}">
                                     {% csrf_token %}
                                     <input type="text" value="agregar" id="id_permiso" name="id_permiso" hidden="" />
                                     <button type="submit" class="btn btn-outline-info mr-2" ><i class="fa fa-check icon-expe"></i></button>
@@ -90,7 +90,7 @@ Roles
                     </tbody>
                 </table>
                 {% else %}
-                <p>Permisos no disponibles</p>
+                <p>No tiene roles disponibles</p>
                 {% endif %}
             </div>
 
