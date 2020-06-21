@@ -5,6 +5,7 @@ from django.contrib import messages
 from datetime import date, datetime
 from django.db import connection
 from empleado.models import Empleado
+from configuracion.models import Configuracion
 from descuento_general.models import DescuentoGeneral, Periodicidad, SalarioMinimo
 from .forms import DescuentoForm, IngresoForm
 
@@ -35,8 +36,9 @@ def create_planilla(request):
 
 def show_planilla(request, planilla_id):
     planilla = get_object_or_404(Planilla,pk=planilla_id)
+    configuracion = Configuracion.objects.all()
     descuento_general = DescuentoGeneral.objects.all()
-    cabeceras = ["ID","Primer_nombre","Apellido_paterno","Salario","Otros_ingresos", "Comision" ,"Renta", "Total descuentos","Total","Accion"]
+    cabeceras = ["ID","Primer_nombre","Apellido_paterno","Salario","Otros_ingresos", "Comision" ,"Renta", "Total descuentos","Total"]
     totales = [0, 0, 0, 0, 0, 0]
     cuerpo = []
     for d in descuento_general:
@@ -66,12 +68,14 @@ def show_planilla(request, planilla_id):
         'activa':planilla.activa, 
         "planilla_id":planilla.id,
         'totales':totales,
+        "configuracion":configuracion,
         }
     return render(request, 'planilla/show.html', context)
 
 
 def ver_departamentos(request, planilla_id):
     planilla = get_object_or_404(Planilla,pk=planilla_id)
+    configuracion = Configuracion.objects.all()
     descuento_general = DescuentoGeneral.objects.all()
     cabeceras = ["Planilla","ID","Departamento","Salario","Otros_ingresos", "Comision" ,"Renta", "Total descuentos","Total",]
     totales = [0, 0, 0, 0, 0, 0]
@@ -103,6 +107,7 @@ def ver_departamentos(request, planilla_id):
         'activa':planilla.activa, 
         "planilla_id":planilla.id,
         'totales':totales,
+        "configuracion":configuracion,
         }
     return render(request, 'planilla/ver_departamentos.html', context)
 
@@ -129,6 +134,7 @@ def close_planilla(request, planilla_id):
 
 def boleta(request, empleado_id, planilla_id):
     planilla = get_object_or_404(Planilla,pk=planilla_id)
+    configuracion = Configuracion.objects.all()
     empleado = get_object_or_404(Empleado,pk=empleado_id)
     boleta = BoletaPago.objects.filter(planilla_id=planilla.id, empleado_id = empleado.id).first()
     comision = False
@@ -168,6 +174,7 @@ def boleta(request, empleado_id, planilla_id):
         "descuento_activo":descuento_activo,
         "ingreso_activo":ingreso_activo,
         "planilla_id":planilla.id,
+        "configuracion":configuracion,
     }
     return render(request, 'planilla/boleta.html', context)
 

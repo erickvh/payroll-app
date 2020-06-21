@@ -36,7 +36,11 @@ Boleta de pago
         {% endif %} 
         {% if boleta %}
         <div id="boleta">
-            <h2 class="text-center" id="ocultar"> Empresa SA </h2>
+            <h2 class="text-center" id="ocultar">                
+                {% for empresa in configuracion %}
+                    {{empresa.sociedad}}
+                {% endfor %}
+            </h2>
             <h3 class="text-center" id="ocultar">Departamento de: {{empleado.departamento_organizacion}}</h3>
             <h4 class="text-right" id="ocultar">Tipo de pago: {% if periodicidad.quincenal %} quincenal {% else %} mensual {% endif %} <label class="alert-info">{{fecha}}</label> </h4>
             <h4 class="text-left" id="ocultar">Empleado: <label>{{empleado.apellido_paterno}} {{empleado.apellido_materno}}</label>, <label>{{empleado.primer_nombre}} {{empleado.segundo_nombre}}</label> </h4>

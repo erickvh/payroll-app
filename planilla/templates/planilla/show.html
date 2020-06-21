@@ -20,6 +20,8 @@ Planillas
                 </div>
             {% else %}
             <div class="float-right ml-auto">
+                <a class="btn btn-outline-info" href="#" onclick="imprimir('imprimir')"><i
+                    class="fa fa-print icon-expe"></i>Imprimir</a>
                 <a class="btn btn-outline-info" href="{% url 'planilla:ver_departamentos' planilla_id %}"><i
                     class="fa fa-eye icon-expe"></i>Ver por departamento</a>
             </div>
@@ -35,12 +37,14 @@ Planillas
             {% endfor %} 
         {% endif %} 
         {% if cabeceras %}
+
         <table class="table table-striped text-center" id="planilla">
             <thead>
                 <tr>
                     {% for cabecera in cabeceras %}
                         <th>{{cabecera}}</th>
                     {% endfor %}
+                        <th class="ocultar">Accion</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,7 +53,7 @@ Planillas
                         {% for v in valores %}
                             <td> {{v}} </td>
                         {% endfor %}
-                        <td class="d-flex justify-content-center">
+                        <td class="cultar">
                             <a class="btn btn-outline-primary mr-2" href="{% url 'planilla:boleta' valores.0 planilla_id %}"><i class="fa fa-eye icon-expe"></i></a>
                         </td>
                     </tr>
@@ -65,6 +69,36 @@ Planillas
                 </tr>
             </tfoot>
         </table>
+
+        <div id="imprimir" hidden="">
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        {% for cabecera in cabeceras %}
+                            <th>{{cabecera}}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for valores in cuerpo %}
+                        <tr>
+                            {% for v in valores %}
+                                <td> {{v}} </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr style="background-color: aquamarine;">
+                        <td colspan="3">Totales</td>
+                        {% for valores in totales %}
+                            <td> {{valores}} </td>
+                        {% endfor %}                        
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
         {% else %}
         <p>Planillas no disponibles</p>
         {% endif %}
@@ -75,11 +109,21 @@ Planillas
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 <script>
+
     $('#planilla').DataTable({
         "order": [[ 0, "desc" ]],
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
         },
     });
+
+    function imprimir(valor) {
+        var printContents = document.getElementById(valor).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+
 </script>
 {% endblock plugins %}
