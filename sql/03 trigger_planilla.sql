@@ -25,10 +25,6 @@ execute procedure crear_planilla();
 
 
 
-
-
-
-
 create or replace function 
 actualizar_planilla() 
 returns trigger as $tgr_update_planilla$
@@ -48,8 +44,8 @@ begin
 if new.activa = False then
 	for rec_departamento in select d.id, c.presupuesto, c.remanente from departamento_organizacion as d inner join centro_costos as c on d.id = c.departamento_organizacion_id loop
 		v_total_depto = 0;
-		v_is_correct = v_is_correct + 1;
 		for rec_empleado in select e.id, e.salario from empleados as e inner join boleta_pago as b on b.empleado_id = e.id and e.departamento_organizacion_id = rec_departamento.id and b.planilla_id=old.id loop
+			v_is_correct = v_is_correct + 1;
 			v_ingreso = get_ingreso_total_de_catalogo(rec_empleado.id, new.id);
 			v_descuento = get_descuento_total(rec_empleado.id, new.id);
 			v_descuento_ley = get_descuento_ley(rec_empleado.salario);
@@ -93,6 +89,10 @@ create trigger tgr_update_planilla
 before update
 on planilla for each row
 execute procedure actualizar_planilla(); 
+
+
+
+
 
 
 

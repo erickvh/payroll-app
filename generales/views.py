@@ -27,6 +27,7 @@ def send_email(request):
         body = 'Usuario: {} \n Email: {} \n Departamento: {} \n Rol: {}'.format(user_name, user_email, user_department,
                                                                                 user_rol)
         # Send mail(Subject, body, from, to, fail)
+        print(os.getenv('EMAIL'))
         send_mail(subject, body,  os.getenv('EMAIL'), [os.getenv('EMAIL')], fail_silently=False)
         messages.success(request,'Solicitud enviada con exito')
         return render(request, 'send_email.html', {})
