@@ -1,0 +1,14 @@
+INSERT INTO departamentos (id,codigo,nombre) values(1,1,'Ahuachapan');
+INSERT INTO departamentos (id,codigo,nombre) values(2,2,'Santa Ana');
+INSERT INTO departamentos (id,codigo,nombre) values(3,3,'Sonsonate');
+INSERT INTO departamentos (id,codigo,nombre) values(4,4,'Chalatenango');
+INSERT INTO departamentos (id,codigo,nombre) values(5,5,'Cuscatlan');
+INSERT INTO departamentos (id,codigo,nombre) values(6,6,'San Salvador');
+INSERT INTO departamentos (id,codigo,nombre) values(7,7,'La Libertad');
+INSERT INTO departamentos (id,codigo,nombre) values(8,8,'San Vicente');
+INSERT INTO departamentos (id,codigo,nombre) values(9,9,'Cabañas');
+INSERT INTO departamentos (id,codigo,nombre) values(10,10,'La Paz');
+INSERT INTO departamentos (id,codigo,nombre) values(11,11,'Usulutan');
+INSERT INTO departamentos (id,codigo,nombre) values(12,12,'San Miguel');
+INSERT INTO departamentos (id,codigo,nombre) values(13,13,'Morazan');
+INSERT INTO departamentos (id,codigo,nombre) values(14,14,'La Union');

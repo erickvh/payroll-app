@@ -1,0 +1,4 @@
+INSERT INTO estado_civil (id,nombre,descripcion) values(1,'Casado','Descripcion: 1abagail'); 
+INSERT INTO estado_civil (id,nombre,descripcion) values(2,'Soltero','Descripcion: 2abbe'); 
+INSERT INTO estado_civil (id,nombre,descripcion) values(3,'Viudo','Descripcion: 3abbey'); 
+INSERT INTO estado_civil (id,nombre,descripcion) values(4,'Acompañado','Descripcion: 4abbi'); 
