@@ -22,7 +22,7 @@ def crear_descuento(request):
                 messages.error(request, 'Error, porcentaje debe estar entre 1 y el 99%')
         else:
             messages.error(request, 'Error, debe llenar los datos para crear un nuevo descuento de ley')
-    return redirect("/descuento/")
+    return redirect("/general/")
 
 def edit_descuento(request):
     if request.method == 'POST':
@@ -40,7 +40,7 @@ def edit_descuento(request):
                 messages.error(request, 'Error, porcentaje debe estar entre 1 y el 99%')
         else:
             messages.error(request, 'Error, debe llenar los datos para crear un nuevo descuento de ley')
-    return redirect("/descuento/")
+    return redirect("/general/")
 
 
 def cerrar_descuento(request, descuento_id):
@@ -51,7 +51,7 @@ def cerrar_descuento(request, descuento_id):
         messages.success(request, 'Cambio exitoso')
     else:
         messages.error(request, 'Error, metodo no valido, tiene que ser un metodo post')
-    return redirect("/descuento/")
+    return redirect("/general/")
 
 
 #Periodicidad

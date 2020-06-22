@@ -58,7 +58,7 @@ def show_planilla(request, planilla_id):
             i += 1
         totales[-1] += lista[-1]
         totales[-2] += lista[-2]
-        totales[-3] += lista[-3]
+        totales[-3] += int(lista[-3])
         cuerpo.append(lista)
 
     context = {

@@ -1,0 +1,794 @@
+[
+{
+    "model": "profesion.profesion",
+    "pk": 1,
+    "fields": {
+        "nombre": "Analista de Presupuesto",
+        "descripcion": "Descripcion: 1abagail"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 2,
+    "fields": {
+        "nombre": "M\u00e9dico Veterinario",
+        "descripcion": "Descripcion: 2abbe"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 3,
+    "fields": {
+        "nombre": "Mec\u00e1nico Dental",
+        "descripcion": "Descripcion: 3abbey"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 4,
+    "fields": {
+        "nombre": "Instrumentista Folkl\u00f3rico",
+        "descripcion": "Descripcion: 4abbi"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 5,
+    "fields": {
+        "nombre": "Inspector de Obras",
+        "descripcion": "Descripcion: 5abbie"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 6,
+    "fields": {
+        "nombre": "Expendedor de Material Did\u00e1ctico",
+        "descripcion": "Descripcion: 6abby"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 7,
+    "fields": {
+        "nombre": "Cajero Jefe",
+        "descripcion": "Descripcion: 7abbye"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 8,
+    "fields": {
+        "nombre": "Asistente de Anatom\u00eda y Patolog\u00eda",
+        "descripcion": "Descripcion: 8abigael"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 9,
+    "fields": {
+        "nombre": "Soplador de Vidrio",
+        "descripcion": "Descripcion: 9abigail"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 10,
+    "fields": {
+        "nombre": "Bombero",
+        "descripcion": "Descripcion: 10abigale"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 11,
+    "fields": {
+        "nombre": "Especialista de Sistemas de Inform\u00e1tica",
+        "descripcion": "Descripcion: 11abra"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 12,
+    "fields": {
+        "nombre": "Director de Orquesta",
+        "descripcion": "Descripcion: 12ada"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 13,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Artes Pl\u00e1sticas",
+        "descripcion": "Descripcion: 13adah"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 14,
+    "fields": {
+        "nombre": "Director de Orquesta",
+        "descripcion": "Descripcion: 14adaline"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 15,
+    "fields": {
+        "nombre": "Coordinador Acad\u00e9mico",
+        "descripcion": "Descripcion: 15adan"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 16,
+    "fields": {
+        "nombre": "Ingeniero de Proyectos",
+        "descripcion": "Descripcion: 16adara"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 17,
+    "fields": {
+        "nombre": "Maquinista de Buque",
+        "descripcion": "Descripcion: 17adda"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 18,
+    "fields": {
+        "nombre": "Coordinador Acad\u00e9mico",
+        "descripcion": "Descripcion: 18addi"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 19,
+    "fields": {
+        "nombre": "Coordinador Acad\u00e9mico",
+        "descripcion": "Descripcion: 19addia"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 20,
+    "fields": {
+        "nombre": "Analista de Registro y Control Estad\u00edstico",
+        "descripcion": "Descripcion: 20addie"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 21,
+    "fields": {
+        "nombre": "Auditor",
+        "descripcion": "Descripcion: 21addy"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 22,
+    "fields": {
+        "nombre": "Asistente de Previsi\u00f3n y Desarrollo Social",
+        "descripcion": "Descripcion: 22adel"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 23,
+    "fields": {
+        "nombre": "Editor de Asuntos Audiovisuales",
+        "descripcion": "Descripcion: 23adela"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 24,
+    "fields": {
+        "nombre": "Asistente Financiero",
+        "descripcion": "Descripcion: 24adelaida"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 25,
+    "fields": {
+        "nombre": "Coordinador de Asuntos Literarios",
+        "descripcion": "Descripcion: 25adelaide"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 26,
+    "fields": {
+        "nombre": "Inspector de Control de P\u00e9rdidas",
+        "descripcion": "Descripcion: 26adele"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 27,
+    "fields": {
+        "nombre": "Ingeniero de Proyectos",
+        "descripcion": "Descripcion: 27adelheid"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 28,
+    "fields": {
+        "nombre": "Coordinador Sectorial de Cultura",
+        "descripcion": "Descripcion: 28adelice"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 29,
+    "fields": {
+        "nombre": "Maquinista de Buque",
+        "descripcion": "Descripcion: 29adelina"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 30,
+    "fields": {
+        "nombre": "Coordinador de Cine Club",
+        "descripcion": "Descripcion: 30adelind"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 31,
+    "fields": {
+        "nombre": "Supervisor de Servicios de Mantenimiento",
+        "descripcion": "Descripcion: 31adeline"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 32,
+    "fields": {
+        "nombre": "Coordinador de Desarrollo de Servicios Estudiant",
+        "descripcion": "Descripcion: 32adella"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 33,
+    "fields": {
+        "nombre": "Analista de Laboratorio de Protecci\u00f3n Ambiental",
+        "descripcion": "Descripcion: 33adelle"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 34,
+    "fields": {
+        "nombre": "Dibujante Jefe",
+        "descripcion": "Descripcion: 34adena"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 35,
+    "fields": {
+        "nombre": "Auditor",
+        "descripcion": "Descripcion: 35adey"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 36,
+    "fields": {
+        "nombre": "Jefe de Artes",
+        "descripcion": "Descripcion: 36adi"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 37,
+    "fields": {
+        "nombre": "Supervisor de Servicios Generales",
+        "descripcion": "Descripcion: 37adiana"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 38,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Idiomas",
+        "descripcion": "Descripcion: 38adina"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 39,
+    "fields": {
+        "nombre": "Auxiliar de Registro y Estad\u00edsticas de Servicios",
+        "descripcion": "Descripcion: 39adora"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 40,
+    "fields": {
+        "nombre": "Jefe de Informaci\u00f3n y Control Estudiantil",
+        "descripcion": "Descripcion: 40adore"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 41,
+    "fields": {
+        "nombre": "Especialista en Pasant\u00edas y Actividades Compleme",
+        "descripcion": "Descripcion: 41adoree"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 42,
+    "fields": {
+        "nombre": "Asistente de Laboratorio Cl\u00ednico",
+        "descripcion": "Descripcion: 42adorne"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 43,
+    "fields": {
+        "nombre": "Bombero Jefe",
+        "descripcion": "Descripcion: 43adrea"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 44,
+    "fields": {
+        "nombre": "Planificador de Informaci\u00f3n y Control Estudianti",
+        "descripcion": "Descripcion: 44adria"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 45,
+    "fields": {
+        "nombre": "Asistente de C\u00e1mara",
+        "descripcion": "Descripcion: 45adriaens"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 46,
+    "fields": {
+        "nombre": "Asistente Ejecutivo de Egreamigos",
+        "descripcion": "Descripcion: 46adrian"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 47,
+    "fields": {
+        "nombre": "Jefe de Emisi\u00f3n de Pagos",
+        "descripcion": "Descripcion: 47adriana"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 48,
+    "fields": {
+        "nombre": "Asistente de Mantenimiento de Equipos y Redes de",
+        "descripcion": "Descripcion: 48adriane"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 49,
+    "fields": {
+        "nombre": "Ingeniero Agr\u00f3nomo",
+        "descripcion": "Descripcion: 49adrianna"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 50,
+    "fields": {
+        "nombre": "Kinesi\u00f3logo",
+        "descripcion": "Descripcion: 50adrianne"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 51,
+    "fields": {
+        "nombre": "Analista de Colocaci\u00f3n y Seguimiento de Pasant\u00eda",
+        "descripcion": "Descripcion: 51adriena"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 52,
+    "fields": {
+        "nombre": "Administrador",
+        "descripcion": "Descripcion: 52adrienne"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 53,
+    "fields": {
+        "nombre": "Coordinador de Biblioteca",
+        "descripcion": "Descripcion: 53aeriel"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 54,
+    "fields": {
+        "nombre": "Coralista L\u00edder de Cuerdas",
+        "descripcion": "Descripcion: 54aeriela"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 55,
+    "fields": {
+        "nombre": "Jefe de Inform\u00e1tica",
+        "descripcion": "Descripcion: 55aeriell"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 56,
+    "fields": {
+        "nombre": "Investigador Ocupacional",
+        "descripcion": "Descripcion: 56afton"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 57,
+    "fields": {
+        "nombre": "Jefe Sectorial de Presupuesto",
+        "descripcion": "Descripcion: 57ag"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 58,
+    "fields": {
+        "nombre": "Almacenista (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 58agace"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 59,
+    "fields": {
+        "nombre": "Gerente de Promoci\u00f3n y Administraci\u00f3n de Espacio",
+        "descripcion": "Descripcion: 59agata"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 60,
+    "fields": {
+        "nombre": "Supervisor de Laboratorio",
+        "descripcion": "Descripcion: 60agatha"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 61,
+    "fields": {
+        "nombre": "Asistente de N\u00f3mina",
+        "descripcion": "Descripcion: 61agathe"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 62,
+    "fields": {
+        "nombre": "Jefe de Talleres de Obras",
+        "descripcion": "Descripcion: 62aggi"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 63,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias B\u00e1sicas, ",
+        "descripcion": "Descripcion: 63aggie"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 64,
+    "fields": {
+        "nombre": "Director de Coral",
+        "descripcion": "Descripcion: 64aggy"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 65,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n Ambiental",
+        "descripcion": "Descripcion: 65agna"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 66,
+    "fields": {
+        "nombre": "Supervisor de Costos de Obras",
+        "descripcion": "Descripcion: 66agnella"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 67,
+    "fields": {
+        "nombre": "Secretaria (o) Ejecutiva (o) Biling\u00fce",
+        "descripcion": "Descripcion: 67agnes"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 68,
+    "fields": {
+        "nombre": "Analista de Recursos Humanos",
+        "descripcion": "Descripcion: 68agnese"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 69,
+    "fields": {
+        "nombre": "Jefe de Seguridad Industrial e Higiene Ocupacion",
+        "descripcion": "Descripcion: 69agnesse"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 70,
+    "fields": {
+        "nombre": "Asistente de Veterinaria",
+        "descripcion": "Descripcion: 70agneta"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 71,
+    "fields": {
+        "nombre": "Soplador de Vidrio Jefe",
+        "descripcion": "Descripcion: 71agnola"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 72,
+    "fields": {
+        "nombre": "Asistente de Producci\u00f3n de Radiodifusora",
+        "descripcion": "Descripcion: 72agretha"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 73,
+    "fields": {
+        "nombre": "Especialista Organizacional",
+        "descripcion": "Descripcion: 73aida"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 74,
+    "fields": {
+        "nombre": "Ingeniero de Proyectos",
+        "descripcion": "Descripcion: 74aidan"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 75,
+    "fields": {
+        "nombre": "Coordinador de Pasant\u00edas y Actividades Complemen",
+        "descripcion": "Descripcion: 75aigneis"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 76,
+    "fields": {
+        "nombre": "Archivista",
+        "descripcion": "Descripcion: 76aila"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 77,
+    "fields": {
+        "nombre": "Enfermera (o) Instrumentista",
+        "descripcion": "Descripcion: 77aile"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 78,
+    "fields": {
+        "nombre": "Analista de Colocaci\u00f3n y Seguimiento de Pasant\u00eda",
+        "descripcion": "Descripcion: 78ailee"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 79,
+    "fields": {
+        "nombre": "Instrumentista Acad\u00e9mico L\u00edder de Cuerdas",
+        "descripcion": "Descripcion: 79aileen"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 80,
+    "fields": {
+        "nombre": "Abogado Especialista",
+        "descripcion": "Descripcion: 80ailene"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 81,
+    "fields": {
+        "nombre": "Investigador en Ciencias B\u00e1sicas, Naturales y Ap",
+        "descripcion": "Descripcion: 81ailey"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 82,
+    "fields": {
+        "nombre": "Consultor de Informaci\u00f3n y Control Estudiantil",
+        "descripcion": "Descripcion: 82aili"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 83,
+    "fields": {
+        "nombre": "Actor",
+        "descripcion": "Descripcion: 83ailina"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 84,
+    "fields": {
+        "nombre": "Jefe de Tesorer\u00eda",
+        "descripcion": "Descripcion: 84ailis"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 85,
+    "fields": {
+        "nombre": "Asistente Agropecuario",
+        "descripcion": "Descripcion: 85ailsun"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 86,
+    "fields": {
+        "nombre": "Planificador de Informaci\u00f3n y Control Estudianti",
+        "descripcion": "Descripcion: 86ailyn"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 87,
+    "fields": {
+        "nombre": "Inspector de Seguridad Industrial e Higiene Ocup",
+        "descripcion": "Descripcion: 87aime"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 88,
+    "fields": {
+        "nombre": "Comandante del Cuerpo de Bomberos",
+        "descripcion": "Descripcion: 88aimee"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 89,
+    "fields": {
+        "nombre": "Psic\u00f3logo",
+        "descripcion": "Descripcion: 89aimil"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 90,
+    "fields": {
+        "nombre": "Promotor de Cursos",
+        "descripcion": "Descripcion: 90aindrea"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 91,
+    "fields": {
+        "nombre": "Asistente de Preescolar",
+        "descripcion": "Descripcion: 91ainslee"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 92,
+    "fields": {
+        "nombre": "Asistente de Costos de Obras",
+        "descripcion": "Descripcion: 92ainsley"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 93,
+    "fields": {
+        "nombre": "Supervisor de Carpinter\u00eda (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 93ainslie"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 94,
+    "fields": {
+        "nombre": "Supervisor de Carpinter\u00eda (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 94ajay"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 95,
+    "fields": {
+        "nombre": "Asistente de Laboratorio Cl\u00ednico",
+        "descripcion": "Descripcion: 95alaine"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 96,
+    "fields": {
+        "nombre": "Jefe de Planes Operativos y Estrat\u00e9gicos",
+        "descripcion": "Descripcion: 96alameda"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 97,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Esc\u00e9nicas",
+        "descripcion": "Descripcion: 97alana"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 98,
+    "fields": {
+        "nombre": "Curador",
+        "descripcion": "Descripcion: 98alanah"
+    }
+},
+{
+    "model": "profesion.profesion",
+    "pk": 99,
+    "fields": {
+        "nombre": "Contabilista",
+        "descripcion": "Descripcion: 99alane"
+    }
+}
+]

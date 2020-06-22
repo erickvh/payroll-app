@@ -1,0 +1,41 @@
+[
+{
+    "model": "impuesto_renta.impuestorenta",
+    "pk": 1,
+    "fields": {
+        "porcentaje": 0,
+        "minimo": "487.60",
+        "maximo": "0.00",
+        "exceso": "0.00",
+        "cuota_fija": "0.00",
+        "tramo": "Tramo I",
+        "periocidad": "Mensual"
+    }
+},
+{
+    "model": "impuesto_renta.impuestorenta",
+    "pk": 2,
+    "fields": {
+        "porcentaje": 488,
+        "minimo": "642.85",
+        "maximo": "10.00",
+        "exceso": "487.60",
+        "cuota_fija": "17.48",
+        "tramo": "Tramo II",
+        "periocidad": "Mensual"
+    }
+},
+{
+    "model": "impuesto_renta.impuestorenta",
+    "pk": 3,
+    "fields": {
+        "porcentaje": 643,
+        "minimo": "915.81",
+        "maximo": "10.00",
+        "exceso": "642.85",
+        "cuota_fija": "32.70",
+        "tramo": "Tramo III",
+        "periocidad": "Mensual"
+    }
+}
+]

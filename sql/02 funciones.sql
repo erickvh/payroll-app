@@ -120,6 +120,9 @@ DECLARE
 v_descuento_e NUMERIC := 0;
 BEGIN 
 	select round(avg(porcentaje)*p_monto/100,2) + sum(cuota_fija) into v_descuento_e from impuesto_renta where p_monto between minimo and maximo;
+	if v_descuento_e is null then
+		v_descuento_e = 0;
+	end if;
 RETURN v_descuento_e;
 END;
 $$ LANGUAGE plpgsql;

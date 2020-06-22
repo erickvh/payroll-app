@@ -1,0 +1,250 @@
+[
+{
+    "model": "usuario.menu",
+    "pk": 1,
+    "fields": {
+        "nombre": "Cat\u00e1logos Empleado",
+        "url": "",
+        "padre": null,
+        "groups": [
+            4
+        ]
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 2,
+    "fields": {
+        "nombre": "Cat\u00e1logos Empresa",
+        "url": "",
+        "padre": null,
+        "groups": [
+            4
+        ]
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 3,
+    "fields": {
+        "nombre": "Cat\u00e1logos Planilla",
+        "url": "",
+        "padre": null,
+        "groups": [
+            4
+        ]
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 4,
+    "fields": {
+        "nombre": "Empleados",
+        "url": "",
+        "padre": null,
+        "groups": [
+            4
+        ]
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 5,
+    "fields": {
+        "nombre": "Profesiones",
+        "url": "/profesion",
+        "padre": 1,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 6,
+    "fields": {
+        "nombre": "Estado Civil",
+        "url": "/estadocivil",
+        "padre": 1,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 7,
+    "fields": {
+        "nombre": "Departamento Territorial",
+        "url": "/departamento",
+        "padre": 1,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 8,
+    "fields": {
+        "nombre": "Municipio Territorial",
+        "url": "/municipio",
+        "padre": 1,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 9,
+    "fields": {
+        "nombre": "Generos",
+        "url": "/genero",
+        "padre": 1,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 10,
+    "fields": {
+        "nombre": "Tipo Unidad",
+        "url": "/tipounidad",
+        "padre": 2,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 11,
+    "fields": {
+        "nombre": "epartamento Organizacional",
+        "url": "/departamento_organizacion",
+        "padre": 2,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 12,
+    "fields": {
+        "nombre": "Unidades",
+        "url": "/unidad",
+        "padre": 2,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 13,
+    "fields": {
+        "nombre": "Puestos",
+        "url": "/puesto",
+        "padre": 2,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 14,
+    "fields": {
+        "nombre": "Centro de Costos",
+        "url": "/centro_costo",
+        "padre": 2,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 15,
+    "fields": {
+        "nombre": "Planillas",
+        "url": "/planilla/",
+        "padre": 3,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 16,
+    "fields": {
+        "nombre": "Comisiones",
+        "url": "/comision",
+        "padre": 3,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 17,
+    "fields": {
+        "nombre": "Ingresos",
+        "url": "/planilla/catalogo_ingreso",
+        "padre": 3,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 18,
+    "fields": {
+        "nombre": "Descuentos",
+        "url": "/planilla/catalogo_descuento",
+        "padre": 3,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 19,
+    "fields": {
+        "nombre": "Descuentos de ley",
+        "url": "/general/",
+        "padre": 3,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 20,
+    "fields": {
+        "nombre": "Periodicidad",
+        "url": "/general/periodicidad",
+        "padre": 3,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 21,
+    "fields": {
+        "nombre": "Usuarios",
+        "url": "/usuarios",
+        "padre": 4,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 22,
+    "fields": {
+        "nombre": "Roles/grupos",
+        "url": "/usuarios/index_rol",
+        "padre": 4,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 23,
+    "fields": {
+        "nombre": "Permisos",
+        "url": "/usuarios/index_permisos",
+        "padre": 4,
+        "groups": []
+    }
+},
+{
+    "model": "usuario.menu",
+    "pk": 24,
+    "fields": {
+        "nombre": "Menus",
+        "url": "/usuarios/index_menu",
+        "padre": 4,
+        "groups": []
+    }
+}
+]

@@ -1,0 +1,992 @@
+[
+{
+    "model": "unidad.unidad",
+    "pk": 1,
+    "fields": {
+        "nombre": "Asistente de Laboratorio",
+        "dirigido": 1,
+        "tipo_unidad": 1,
+        "departamento_organizacion": 1
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 2,
+    "fields": {
+        "nombre": "Cal\u00edgrafo",
+        "dirigido": 2,
+        "tipo_unidad": 2,
+        "departamento_organizacion": 2
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 3,
+    "fields": {
+        "nombre": "Revisor de Contralor\u00eda",
+        "dirigido": 3,
+        "tipo_unidad": 3,
+        "departamento_organizacion": 3
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 4,
+    "fields": {
+        "nombre": "Instrumentista Acad\u00e9mico",
+        "dirigido": 4,
+        "tipo_unidad": 4,
+        "departamento_organizacion": 4
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 5,
+    "fields": {
+        "nombre": "Supervisor de Servicios de Mantenimiento",
+        "dirigido": 5,
+        "tipo_unidad": 5,
+        "departamento_organizacion": 5
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 6,
+    "fields": {
+        "nombre": "Supervisor de Asuntos Audiovisuales",
+        "dirigido": 6,
+        "tipo_unidad": 6,
+        "departamento_organizacion": 6
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 7,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Asuntos Literarios",
+        "dirigido": 7,
+        "tipo_unidad": 7,
+        "departamento_organizacion": 7
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 8,
+    "fields": {
+        "nombre": "Investigador en Ciencias Sociales",
+        "dirigido": 8,
+        "tipo_unidad": 8,
+        "departamento_organizacion": 8
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 9,
+    "fields": {
+        "nombre": "Archivista",
+        "dirigido": 9,
+        "tipo_unidad": 9,
+        "departamento_organizacion": 9
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 10,
+    "fields": {
+        "nombre": "Oficinista",
+        "dirigido": 10,
+        "tipo_unidad": 10,
+        "departamento_organizacion": 10
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 11,
+    "fields": {
+        "nombre": "Jefe de An\u00e1lisis y Procesamiento de Compras",
+        "dirigido": 11,
+        "tipo_unidad": 11,
+        "departamento_organizacion": 11
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 12,
+    "fields": {
+        "nombre": "Jefe de Correo",
+        "dirigido": 12,
+        "tipo_unidad": 12,
+        "departamento_organizacion": 12
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 13,
+    "fields": {
+        "nombre": "Jefe de Correo",
+        "dirigido": 13,
+        "tipo_unidad": 13,
+        "departamento_organizacion": 13
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 14,
+    "fields": {
+        "nombre": "Jefe de Unidades Nutricionales",
+        "dirigido": 14,
+        "tipo_unidad": 14,
+        "departamento_organizacion": 14
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 15,
+    "fields": {
+        "nombre": "Abogado Especialista",
+        "dirigido": 15,
+        "tipo_unidad": 15,
+        "departamento_organizacion": 15
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 16,
+    "fields": {
+        "nombre": "Promotor de Relaciones P\u00fablicas e Interinstituci",
+        "dirigido": 16,
+        "tipo_unidad": 16,
+        "departamento_organizacion": 16
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 17,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo de Recursos Humanos",
+        "dirigido": 17,
+        "tipo_unidad": 17,
+        "departamento_organizacion": 17
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 18,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n y Seguridad",
+        "dirigido": 18,
+        "tipo_unidad": 18,
+        "departamento_organizacion": 18
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 19,
+    "fields": {
+        "nombre": "Coordinador de Cine Club",
+        "dirigido": 19,
+        "tipo_unidad": 19,
+        "departamento_organizacion": 19
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 20,
+    "fields": {
+        "nombre": "Asistente de Protocolo",
+        "dirigido": 20,
+        "tipo_unidad": 20,
+        "departamento_organizacion": 20
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 21,
+    "fields": {
+        "nombre": "Investigador Ocupacional",
+        "dirigido": 21,
+        "tipo_unidad": 21,
+        "departamento_organizacion": 21
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 22,
+    "fields": {
+        "nombre": "Ingeniero de Proyectos",
+        "dirigido": 22,
+        "tipo_unidad": 22,
+        "departamento_organizacion": 22
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 23,
+    "fields": {
+        "nombre": "Jefe de Artes",
+        "dirigido": 23,
+        "tipo_unidad": 23,
+        "departamento_organizacion": 23
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 24,
+    "fields": {
+        "nombre": "Jefe de Operaciones Bomberiles",
+        "dirigido": 24,
+        "tipo_unidad": 24,
+        "departamento_organizacion": 24
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 25,
+    "fields": {
+        "nombre": "Asistente de Mantenimiento de Equipos y Redes de",
+        "dirigido": 25,
+        "tipo_unidad": 25,
+        "departamento_organizacion": 25
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 26,
+    "fields": {
+        "nombre": "Soplador de Vidrio Jefe",
+        "dirigido": 26,
+        "tipo_unidad": 26,
+        "departamento_organizacion": 26
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 27,
+    "fields": {
+        "nombre": "Supervisor de Protecci\u00f3n y Seguridad",
+        "dirigido": 27,
+        "tipo_unidad": 27,
+        "departamento_organizacion": 27
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 28,
+    "fields": {
+        "nombre": "Asistente de Presupuesto",
+        "dirigido": 28,
+        "tipo_unidad": 28,
+        "departamento_organizacion": 28
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 29,
+    "fields": {
+        "nombre": "Promotor de Relaciones P\u00fablicas e Interinstituci",
+        "dirigido": 29,
+        "tipo_unidad": 29,
+        "departamento_organizacion": 29
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 30,
+    "fields": {
+        "nombre": "Administrador",
+        "dirigido": 30,
+        "tipo_unidad": 30,
+        "departamento_organizacion": 30
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 31,
+    "fields": {
+        "nombre": "Archivista",
+        "dirigido": 31,
+        "tipo_unidad": 31,
+        "departamento_organizacion": 31
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 32,
+    "fields": {
+        "nombre": "Cart\u00f3grafo",
+        "dirigido": 32,
+        "tipo_unidad": 32,
+        "departamento_organizacion": 32
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 33,
+    "fields": {
+        "nombre": "Serigrafista",
+        "dirigido": 33,
+        "tipo_unidad": 33,
+        "departamento_organizacion": 33
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 34,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo de Recursos Humanos",
+        "dirigido": 34,
+        "tipo_unidad": 34,
+        "departamento_organizacion": 34
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 35,
+    "fields": {
+        "nombre": "Promotor Social",
+        "dirigido": 35,
+        "tipo_unidad": 35,
+        "departamento_organizacion": 35
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 36,
+    "fields": {
+        "nombre": "Editor Hist\u00f3rico",
+        "dirigido": 36,
+        "tipo_unidad": 36,
+        "departamento_organizacion": 36
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 37,
+    "fields": {
+        "nombre": "Jefe de Prensa",
+        "dirigido": 37,
+        "tipo_unidad": 37,
+        "departamento_organizacion": 37
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 38,
+    "fields": {
+        "nombre": "Coordinador de Asuntos Literarios",
+        "dirigido": 38,
+        "tipo_unidad": 38,
+        "departamento_organizacion": 38
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 39,
+    "fields": {
+        "nombre": "Oficinista",
+        "dirigido": 39,
+        "tipo_unidad": 39,
+        "departamento_organizacion": 39
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 40,
+    "fields": {
+        "nombre": "Jefe de N\u00f3mina",
+        "dirigido": 40,
+        "tipo_unidad": 40,
+        "departamento_organizacion": 40
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 41,
+    "fields": {
+        "nombre": "Serigrafista Principal",
+        "dirigido": 41,
+        "tipo_unidad": 41,
+        "departamento_organizacion": 41
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 42,
+    "fields": {
+        "nombre": "Coordinador de Publicaciones",
+        "dirigido": 42,
+        "tipo_unidad": 42,
+        "departamento_organizacion": 42
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 43,
+    "fields": {
+        "nombre": "Diagramador",
+        "dirigido": 43,
+        "tipo_unidad": 43,
+        "departamento_organizacion": 43
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 44,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias Sociales",
+        "dirigido": 44,
+        "tipo_unidad": 44,
+        "departamento_organizacion": 44
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 45,
+    "fields": {
+        "nombre": "Analista Central de Presupuesto",
+        "dirigido": 45,
+        "tipo_unidad": 45,
+        "departamento_organizacion": 45
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 46,
+    "fields": {
+        "nombre": "Administrador Jefe",
+        "dirigido": 46,
+        "tipo_unidad": 46,
+        "departamento_organizacion": 46
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 47,
+    "fields": {
+        "nombre": "Analista de Colocaci\u00f3n y Seguimiento de Pasant\u00eda",
+        "dirigido": 47,
+        "tipo_unidad": 47,
+        "departamento_organizacion": 47
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 48,
+    "fields": {
+        "nombre": "Investigador en Ciencias Sociales",
+        "dirigido": 48,
+        "tipo_unidad": 48,
+        "departamento_organizacion": 48
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 49,
+    "fields": {
+        "nombre": "Auditor",
+        "dirigido": 49,
+        "tipo_unidad": 49,
+        "departamento_organizacion": 49
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 50,
+    "fields": {
+        "nombre": "Inspector de Protecci\u00f3n Ambiental",
+        "dirigido": 50,
+        "tipo_unidad": 50,
+        "departamento_organizacion": 50
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 51,
+    "fields": {
+        "nombre": "Comandante del Cuerpo de Bomberos",
+        "dirigido": 51,
+        "tipo_unidad": 51,
+        "departamento_organizacion": 51
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 52,
+    "fields": {
+        "nombre": "Secretaria (o) Biling\u00fce",
+        "dirigido": 52,
+        "tipo_unidad": 52,
+        "departamento_organizacion": 52
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 53,
+    "fields": {
+        "nombre": "Serigrafista Principal",
+        "dirigido": 53,
+        "tipo_unidad": 53,
+        "departamento_organizacion": 53
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 54,
+    "fields": {
+        "nombre": "Asistente de C\u00e1mara",
+        "dirigido": 54,
+        "tipo_unidad": 54,
+        "departamento_organizacion": 54
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 55,
+    "fields": {
+        "nombre": "Asistente de Publicaciones",
+        "dirigido": 55,
+        "tipo_unidad": 55,
+        "departamento_organizacion": 55
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 56,
+    "fields": {
+        "nombre": "Microfilmador",
+        "dirigido": 56,
+        "tipo_unidad": 56,
+        "departamento_organizacion": 56
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 57,
+    "fields": {
+        "nombre": "Asistente de Seguro de Transporte Automotor",
+        "dirigido": 57,
+        "tipo_unidad": 57,
+        "departamento_organizacion": 57
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 58,
+    "fields": {
+        "nombre": "Auxiliar de Servicios para el Arte",
+        "dirigido": 58,
+        "tipo_unidad": 58,
+        "departamento_organizacion": 58
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 59,
+    "fields": {
+        "nombre": "Abogado Especialista",
+        "dirigido": 59,
+        "tipo_unidad": 59,
+        "departamento_organizacion": 59
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 60,
+    "fields": {
+        "nombre": "Cajero Jefe",
+        "dirigido": 60,
+        "tipo_unidad": 60,
+        "departamento_organizacion": 60
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 61,
+    "fields": {
+        "nombre": "Concertino",
+        "dirigido": 61,
+        "tipo_unidad": 61,
+        "departamento_organizacion": 61
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 62,
+    "fields": {
+        "nombre": "Jefe de Proyectos Arquitect\u00f3nicos y de Ingenier\u00ed",
+        "dirigido": 62,
+        "tipo_unidad": 62,
+        "departamento_organizacion": 62
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 63,
+    "fields": {
+        "nombre": "M\u00e9dico Especialista",
+        "dirigido": 63,
+        "tipo_unidad": 63,
+        "departamento_organizacion": 63
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 64,
+    "fields": {
+        "nombre": "Mec\u00e1nico Dental",
+        "dirigido": 64,
+        "tipo_unidad": 64,
+        "departamento_organizacion": 64
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 65,
+    "fields": {
+        "nombre": "Asistente de Topograf\u00eda",
+        "dirigido": 65,
+        "tipo_unidad": 65,
+        "departamento_organizacion": 65
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 66,
+    "fields": {
+        "nombre": "Contabilista",
+        "dirigido": 66,
+        "tipo_unidad": 66,
+        "departamento_organizacion": 66
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 67,
+    "fields": {
+        "nombre": "Asistente de Recursos Humanos",
+        "dirigido": 67,
+        "tipo_unidad": 67,
+        "departamento_organizacion": 67
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 68,
+    "fields": {
+        "nombre": "Analista Especialista de Recursos Humanos",
+        "dirigido": 68,
+        "tipo_unidad": 68,
+        "departamento_organizacion": 68
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 69,
+    "fields": {
+        "nombre": "Promotor Vendedor de Material Did\u00e1ctico",
+        "dirigido": 69,
+        "tipo_unidad": 69,
+        "departamento_organizacion": 69
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 70,
+    "fields": {
+        "nombre": "Programador de Sistemas",
+        "dirigido": 70,
+        "tipo_unidad": 70,
+        "departamento_organizacion": 70
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 71,
+    "fields": {
+        "nombre": "Asistente de Costos de Obras",
+        "dirigido": 71,
+        "tipo_unidad": 71,
+        "departamento_organizacion": 71
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 72,
+    "fields": {
+        "nombre": "Jefe de Salud Integral",
+        "dirigido": 72,
+        "tipo_unidad": 72,
+        "departamento_organizacion": 72
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 73,
+    "fields": {
+        "nombre": "Coordinador de Publicaciones",
+        "dirigido": 73,
+        "tipo_unidad": 73,
+        "departamento_organizacion": 73
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 74,
+    "fields": {
+        "nombre": "Comprador",
+        "dirigido": 74,
+        "tipo_unidad": 74,
+        "departamento_organizacion": 74
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 75,
+    "fields": {
+        "nombre": "Higienista Dental",
+        "dirigido": 75,
+        "tipo_unidad": 75,
+        "departamento_organizacion": 75
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 76,
+    "fields": {
+        "nombre": "Coordinador de Producci\u00f3n de Radiodifusora",
+        "dirigido": 76,
+        "tipo_unidad": 76,
+        "departamento_organizacion": 76
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 77,
+    "fields": {
+        "nombre": "Archivista Jefe",
+        "dirigido": 77,
+        "tipo_unidad": 77,
+        "departamento_organizacion": 77
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 78,
+    "fields": {
+        "nombre": "Jefe de Asesoramiento, Apoyo y Orientaci\u00f3n",
+        "dirigido": 78,
+        "tipo_unidad": 78,
+        "departamento_organizacion": 78
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 79,
+    "fields": {
+        "nombre": "Jefe de Unidades Nutricionales",
+        "dirigido": 79,
+        "tipo_unidad": 79,
+        "departamento_organizacion": 79
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 80,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias Sociales",
+        "dirigido": 80,
+        "tipo_unidad": 80,
+        "departamento_organizacion": 80
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 81,
+    "fields": {
+        "nombre": "Director de Teatro",
+        "dirigido": 81,
+        "tipo_unidad": 81,
+        "departamento_organizacion": 81
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 82,
+    "fields": {
+        "nombre": "Planificador de Informaci\u00f3n y Control Estudianti",
+        "dirigido": 82,
+        "tipo_unidad": 82,
+        "departamento_organizacion": 82
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 83,
+    "fields": {
+        "nombre": "Asistente de Recursos Humanos",
+        "dirigido": 83,
+        "tipo_unidad": 83,
+        "departamento_organizacion": 83
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 84,
+    "fields": {
+        "nombre": "Docente de Artes Auditivas",
+        "dirigido": 84,
+        "tipo_unidad": 84,
+        "departamento_organizacion": 84
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 85,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Auditivas",
+        "dirigido": 85,
+        "tipo_unidad": 85,
+        "departamento_organizacion": 85
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 86,
+    "fields": {
+        "nombre": "Supervisor de Laboratorio",
+        "dirigido": 86,
+        "tipo_unidad": 86,
+        "departamento_organizacion": 86
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 87,
+    "fields": {
+        "nombre": "Mec\u00e1nico Dental",
+        "dirigido": 87,
+        "tipo_unidad": 87,
+        "departamento_organizacion": 87
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 88,
+    "fields": {
+        "nombre": "Jefe de Relaciones P\u00fablicas",
+        "dirigido": 88,
+        "tipo_unidad": 88,
+        "departamento_organizacion": 88
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 89,
+    "fields": {
+        "nombre": "Animador Cultural",
+        "dirigido": 89,
+        "tipo_unidad": 89,
+        "departamento_organizacion": 89
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 90,
+    "fields": {
+        "nombre": "Asistente de Especialista en Informaci\u00f3n",
+        "dirigido": 90,
+        "tipo_unidad": 90,
+        "departamento_organizacion": 90
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 91,
+    "fields": {
+        "nombre": "Coordinador de Publicaciones",
+        "dirigido": 91,
+        "tipo_unidad": 91,
+        "departamento_organizacion": 91
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 92,
+    "fields": {
+        "nombre": "Asistente de Topograf\u00eda",
+        "dirigido": 92,
+        "tipo_unidad": 92,
+        "departamento_organizacion": 92
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 93,
+    "fields": {
+        "nombre": "Jefe de N\u00f3mina",
+        "dirigido": 93,
+        "tipo_unidad": 93,
+        "departamento_organizacion": 93
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 94,
+    "fields": {
+        "nombre": "Entrenador Deportivo",
+        "dirigido": 94,
+        "tipo_unidad": 94,
+        "departamento_organizacion": 94
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 95,
+    "fields": {
+        "nombre": "Asistente de N\u00f3mina",
+        "dirigido": 95,
+        "tipo_unidad": 95,
+        "departamento_organizacion": 95
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 96,
+    "fields": {
+        "nombre": "Oficinista",
+        "dirigido": 96,
+        "tipo_unidad": 96,
+        "departamento_organizacion": 96
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 97,
+    "fields": {
+        "nombre": "Evaluador Curricular",
+        "dirigido": 97,
+        "tipo_unidad": 97,
+        "departamento_organizacion": 97
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 98,
+    "fields": {
+        "nombre": "Ayudante de Taller de Artes del Fuego",
+        "dirigido": 98,
+        "tipo_unidad": 98,
+        "departamento_organizacion": 98
+    }
+},
+{
+    "model": "unidad.unidad",
+    "pk": 99,
+    "fields": {
+        "nombre": "Director de Titeres y Marionetas",
+        "dirigido": 99,
+        "tipo_unidad": 99,
+        "departamento_organizacion": 99
+    }
+}
+]

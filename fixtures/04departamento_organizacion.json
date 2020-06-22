@@ -1,0 +1,695 @@
+[
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 1,
+    "fields": {
+        "nombre": "Abogado Jefe"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 2,
+    "fields": {
+        "nombre": "Asistente de Histolog\u00eda"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 3,
+    "fields": {
+        "nombre": "Dise\u00f1ador Gr\u00e1fico"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 4,
+    "fields": {
+        "nombre": "Director de Agrupaci\u00f3n Musical"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 5,
+    "fields": {
+        "nombre": "Citotecn\u00f3logo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 6,
+    "fields": {
+        "nombre": "Asistente de Informaci\u00f3n y Control Estudiantil"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 7,
+    "fields": {
+        "nombre": "Analista de Presupuesto"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 8,
+    "fields": {
+        "nombre": "Jefe de Salud Integral"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 9,
+    "fields": {
+        "nombre": "Especialista en Pasant\u00edas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 10,
+    "fields": {
+        "nombre": "Operador de Audio"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 11,
+    "fields": {
+        "nombre": "Operador de Audio"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 12,
+    "fields": {
+        "nombre": "Fot\u00f3grafo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 13,
+    "fields": {
+        "nombre": "Docente de Artes Auditivas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 14,
+    "fields": {
+        "nombre": "Jefe de Seguros"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 15,
+    "fields": {
+        "nombre": "Asistente de Publicaciones"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 16,
+    "fields": {
+        "nombre": "Jefe de Organizaci\u00f3n y Sistemas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 17,
+    "fields": {
+        "nombre": "Dietista"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 18,
+    "fields": {
+        "nombre": "Analista de Higiene y Seguridad Industrial"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 19,
+    "fields": {
+        "nombre": "Inspector de Protecci\u00f3n Ambiental"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 20,
+    "fields": {
+        "nombre": "Jefe Sectorial de Presupuesto"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 21,
+    "fields": {
+        "nombre": "Analista Programador de Sistemas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 22,
+    "fields": {
+        "nombre": "Analista Programador de Sistemas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 23,
+    "fields": {
+        "nombre": "Cal\u00edgrafo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 24,
+    "fields": {
+        "nombre": "Auxiliar de Biblioteca"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 25,
+    "fields": {
+        "nombre": "Enfermera (o) Instrumentista"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 26,
+    "fields": {
+        "nombre": "Asistente de Campo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 27,
+    "fields": {
+        "nombre": "Fotolit\u00f3grafo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 28,
+    "fields": {
+        "nombre": "Auxiliar de Registro y Estad\u00edsticas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 29,
+    "fields": {
+        "nombre": "Investigador en Ciencias B\u00e1sicas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 30,
+    "fields": {
+        "nombre": "Oficial de Correo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 31,
+    "fields": {
+        "nombre": "Oficial de Correo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 32,
+    "fields": {
+        "nombre": "Auxiliar de Laboratorio"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 33,
+    "fields": {
+        "nombre": "Director de Agrupaci\u00f3n Musical"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 34,
+    "fields": {
+        "nombre": "Recepcionista"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 35,
+    "fields": {
+        "nombre": "Higienista Dental"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 36,
+    "fields": {
+        "nombre": "Contador Jefe"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 37,
+    "fields": {
+        "nombre": "Jefe de Relaciones Interinstitucionales"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 38,
+    "fields": {
+        "nombre": "Cajero"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 39,
+    "fields": {
+        "nombre": "Especialista de Sistemas de Inform\u00e1tica"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 40,
+    "fields": {
+        "nombre": "Asistente Ejecutivo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 41,
+    "fields": {
+        "nombre": "Camar\u00f3grafo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 42,
+    "fields": {
+        "nombre": "Capell\u00e1n"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 43,
+    "fields": {
+        "nombre": "Consultor de Informaci\u00f3n"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 44,
+    "fields": {
+        "nombre": "Inspector de Seguridad"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 45,
+    "fields": {
+        "nombre": "Cal\u00edgrafo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 46,
+    "fields": {
+        "nombre": "Analista Financiero"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 47,
+    "fields": {
+        "nombre": "Serigrafista"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 48,
+    "fields": {
+        "nombre": "Administrador Jefe"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 49,
+    "fields": {
+        "nombre": "Investigador en Ciencias"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 50,
+    "fields": {
+        "nombre": "Analista Financiero"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 51,
+    "fields": {
+        "nombre": "Asistente Financiero"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 52,
+    "fields": {
+        "nombre": "Capell\u00e1n"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 53,
+    "fields": {
+        "nombre": "Orientador"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 54,
+    "fields": {
+        "nombre": "Jefe de Proyectos"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 55,
+    "fields": {
+        "nombre": "Cal\u00edgrafo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 56,
+    "fields": {
+        "nombre": "Docente en Artes Esc\u00e9nicas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 57,
+    "fields": {
+        "nombre": "Asistente de Histolog\u00eda"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 58,
+    "fields": {
+        "nombre": "Asistente de Laboratorio Cl\u00ednico"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 59,
+    "fields": {
+        "nombre": "Odont\u00f3logo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 60,
+    "fields": {
+        "nombre": "Jefe de Prevenci\u00f3n"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 61,
+    "fields": {
+        "nombre": "Diagramador"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 62,
+    "fields": {
+        "nombre": "Supervisor de Registro y Apoyo Asistencial"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 63,
+    "fields": {
+        "nombre": "Promotor Vendedor de Material Did\u00e1ctico"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 64,
+    "fields": {
+        "nombre": "Cajero"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 65,
+    "fields": {
+        "nombre": "Director de Orquesta"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 66,
+    "fields": {
+        "nombre": "Supervisor de Costos de Obras"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 67,
+    "fields": {
+        "nombre": "Planificador Central"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 68,
+    "fields": {
+        "nombre": "Jefe Sectorial de Presupuesto"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 69,
+    "fields": {
+        "nombre": "Enfermera (o)"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 70,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias Sociales"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 71,
+    "fields": {
+        "nombre": "Supervisor de Asuntos Audiovisuales"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 72,
+    "fields": {
+        "nombre": "M\u00e9dico Especialista"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 73,
+    "fields": {
+        "nombre": "Supervisor de Protecci\u00f3n y Seguridad"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 74,
+    "fields": {
+        "nombre": "Secretaria (o)"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 75,
+    "fields": {
+        "nombre": "Ingeniero Forestal"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 76,
+    "fields": {
+        "nombre": "Entrenador Deportivo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 77,
+    "fields": {
+        "nombre": "Estudios para Graduados"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 78,
+    "fields": {
+        "nombre": "Analista de Colocaci\u00f3n"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 79,
+    "fields": {
+        "nombre": "Administraci\u00f3n de Espacios"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 80,
+    "fields": {
+        "nombre": "Especialista Organizacional"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 81,
+    "fields": {
+        "nombre": "Asistente Administrativo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 82,
+    "fields": {
+        "nombre": "Asistente Administrativo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 83,
+    "fields": {
+        "nombre": "Jefe de Organizaci\u00f3n y Sistemas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 84,
+    "fields": {
+        "nombre": "Especialista de Sistemas de Inform\u00e1tica"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 85,
+    "fields": {
+        "nombre": "Asistente de Biolog\u00eda"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 86,
+    "fields": {
+        "nombre": "Higienista Dental"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 87,
+    "fields": {
+        "nombre": "Asistente de Publicidad y Mercadeo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 88,
+    "fields": {
+        "nombre": "Soplador de Vidrio"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 89,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Artes Pl\u00e1sticas"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 90,
+    "fields": {
+        "nombre": "Ec\u00f3nomo"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 91,
+    "fields": {
+        "nombre": "Planificador Central"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 92,
+    "fields": {
+        "nombre": "Jefe de Higiene Ocupacional"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 93,
+    "fields": {
+        "nombre": "Precios de Alimentos"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 94,
+    "fields": {
+        "nombre": "Inspector de Protecci\u00f3n Ambiental"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 95,
+    "fields": {
+        "nombre": "Analista de Asuntos Audiovisuales"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 96,
+    "fields": {
+        "nombre": "Jefe de Proyectos de Ingenier\u00eda"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 97,
+    "fields": {
+        "nombre": "Operador de Computaci\u00f3n"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 98,
+    "fields": {
+        "nombre": "Analista de Higiene y Seguridad Industrial"
+    }
+},
+{
+    "model": "departamento_organizacion.departamentoorganizacion",
+    "pk": 99,
+    "fields": {
+        "nombre": "Dise\u00f1ador Gr\u00e1fico"
+    }
+}
+]

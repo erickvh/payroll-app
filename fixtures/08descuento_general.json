@@ -1,0 +1,11 @@
+[
+{
+    "model": "descuento_general.periodicidad",
+    "pk": 1,
+    "fields": {
+        "anio_periodo": 2020,
+        "activo": true,
+        "mensual": true
+    }
+}
+]

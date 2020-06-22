@@ -1,0 +1,794 @@
+[
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 1,
+    "fields": {
+        "nombre": "Maquetista",
+        "descripcion": "Descripcion: 1abagail"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 2,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Computaci\u00f3n",
+        "descripcion": "Descripcion: 2abbe"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 3,
+    "fields": {
+        "nombre": "Ingeniero de Proyectos",
+        "descripcion": "Descripcion: 3abbey"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 4,
+    "fields": {
+        "nombre": "Jefe de Unidades Nutricionales",
+        "descripcion": "Descripcion: 4abbi"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 5,
+    "fields": {
+        "nombre": "Asistente de Recursos Humanos",
+        "descripcion": "Descripcion: 5abbie"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 6,
+    "fields": {
+        "nombre": "Jefe de Taller Metalmec\u00e1nico",
+        "descripcion": "Descripcion: 6abby"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 7,
+    "fields": {
+        "nombre": "Investigador Ocupacional",
+        "descripcion": "Descripcion: 7abbye"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 8,
+    "fields": {
+        "nombre": "Jefe de Relaciones Interinstitucionales",
+        "descripcion": "Descripcion: 8abigael"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 9,
+    "fields": {
+        "nombre": "Dibujante Ilustrador",
+        "descripcion": "Descripcion: 9abigail"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 10,
+    "fields": {
+        "nombre": "Diagramador",
+        "descripcion": "Descripcion: 10abigale"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 11,
+    "fields": {
+        "nombre": "Jefe de Mantenimiento y Reparaciones",
+        "descripcion": "Descripcion: 11abra"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 12,
+    "fields": {
+        "nombre": "Asistente de Preescolar",
+        "descripcion": "Descripcion: 12ada"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 13,
+    "fields": {
+        "nombre": "Coordinador de Asuntos Literarios",
+        "descripcion": "Descripcion: 13adah"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 14,
+    "fields": {
+        "nombre": "Asistente de Histolog\u00eda",
+        "descripcion": "Descripcion: 14adaline"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 15,
+    "fields": {
+        "nombre": "Enfermera Comunitaria",
+        "descripcion": "Descripcion: 15adan"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 16,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Idiomas",
+        "descripcion": "Descripcion: 16adara"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 17,
+    "fields": {
+        "nombre": "Director de Orfe\u00f3n Universitario",
+        "descripcion": "Descripcion: 17adda"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 18,
+    "fields": {
+        "nombre": "Jefe de Salud Integral",
+        "descripcion": "Descripcion: 18addi"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 19,
+    "fields": {
+        "nombre": "Jefe de Control Previo y/o Posterior",
+        "descripcion": "Descripcion: 19addia"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 20,
+    "fields": {
+        "nombre": "Concertino",
+        "descripcion": "Descripcion: 20addie"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 21,
+    "fields": {
+        "nombre": "Jefe de Operaciones Bomberiles",
+        "descripcion": "Descripcion: 21addy"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 22,
+    "fields": {
+        "nombre": "M\u00e9dico General",
+        "descripcion": "Descripcion: 22adel"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 23,
+    "fields": {
+        "nombre": "Jefe de Tesorer\u00eda",
+        "descripcion": "Descripcion: 23adela"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 24,
+    "fields": {
+        "nombre": "Enfermera Comunitaria",
+        "descripcion": "Descripcion: 24adelaida"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 25,
+    "fields": {
+        "nombre": "Asistente de N\u00f3mina",
+        "descripcion": "Descripcion: 25adelaide"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 26,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Idiomas",
+        "descripcion": "Descripcion: 26adele"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 27,
+    "fields": {
+        "nombre": "Diagramador",
+        "descripcion": "Descripcion: 27adelheid"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 28,
+    "fields": {
+        "nombre": "Analista de Presupuesto",
+        "descripcion": "Descripcion: 28adelice"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 29,
+    "fields": {
+        "nombre": "Docente de Artes Auditivas",
+        "descripcion": "Descripcion: 29adelina"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 30,
+    "fields": {
+        "nombre": "Director de Agrupaci\u00f3n Musical",
+        "descripcion": "Descripcion: 30adelind"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 31,
+    "fields": {
+        "nombre": "Especialista en Mtto. de Equipos de Computaci\u00f3n",
+        "descripcion": "Descripcion: 31adeline"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 32,
+    "fields": {
+        "nombre": "Psicopedagogo",
+        "descripcion": "Descripcion: 32adella"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 33,
+    "fields": {
+        "nombre": "Contador",
+        "descripcion": "Descripcion: 33adelle"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 34,
+    "fields": {
+        "nombre": "Asistente de Tesorer\u00eda",
+        "descripcion": "Descripcion: 34adena"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 35,
+    "fields": {
+        "nombre": "Locutor",
+        "descripcion": "Descripcion: 35adey"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 36,
+    "fields": {
+        "nombre": "Capitan de Buque",
+        "descripcion": "Descripcion: 36adi"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 37,
+    "fields": {
+        "nombre": "Citotecn\u00f3logo",
+        "descripcion": "Descripcion: 37adiana"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 38,
+    "fields": {
+        "nombre": "Coordinador Sectorial de Cultura",
+        "descripcion": "Descripcion: 38adina"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 39,
+    "fields": {
+        "nombre": "Asistente de Histolog\u00eda",
+        "descripcion": "Descripcion: 39adora"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 40,
+    "fields": {
+        "nombre": "Analista de Asuntos Audiovisuales",
+        "descripcion": "Descripcion: 40adore"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 41,
+    "fields": {
+        "nombre": "Jefe de Relaciones P\u00fablicas",
+        "descripcion": "Descripcion: 41adoree"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 42,
+    "fields": {
+        "nombre": "Cal\u00edgrafo",
+        "descripcion": "Descripcion: 42adorne"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 43,
+    "fields": {
+        "nombre": "Promotor de Cursos",
+        "descripcion": "Descripcion: 43adrea"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 44,
+    "fields": {
+        "nombre": "Soplador de Vidrio",
+        "descripcion": "Descripcion: 44adria"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 45,
+    "fields": {
+        "nombre": "Analista de N\u00f3mina",
+        "descripcion": "Descripcion: 45adriaens"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 46,
+    "fields": {
+        "nombre": "Coordinador Sectorial de Cultura",
+        "descripcion": "Descripcion: 46adrian"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 47,
+    "fields": {
+        "nombre": "Dise\u00f1ador Curricular",
+        "descripcion": "Descripcion: 47adriana"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 48,
+    "fields": {
+        "nombre": "Investigador en Ciencias Sociales",
+        "descripcion": "Descripcion: 48adriane"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 49,
+    "fields": {
+        "nombre": "Jefe de Asistencia Socio-econ\u00f3mica Estudiantil",
+        "descripcion": "Descripcion: 49adrianna"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 50,
+    "fields": {
+        "nombre": "Asistente de Presupuesto",
+        "descripcion": "Descripcion: 50adrianne"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 51,
+    "fields": {
+        "nombre": "Promotor Cultural",
+        "descripcion": "Descripcion: 51adriena"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 52,
+    "fields": {
+        "nombre": "Inspector de Higiene y Control de Precios de Ali",
+        "descripcion": "Descripcion: 52adrienne"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 53,
+    "fields": {
+        "nombre": "Docente de Aula",
+        "descripcion": "Descripcion: 53aeriel"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 54,
+    "fields": {
+        "nombre": "Jefe de Salud Integral",
+        "descripcion": "Descripcion: 54aeriela"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 55,
+    "fields": {
+        "nombre": "Coordinador de Deporte",
+        "descripcion": "Descripcion: 55aeriell"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 56,
+    "fields": {
+        "nombre": "Asistente de Publicaciones",
+        "descripcion": "Descripcion: 56afton"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 57,
+    "fields": {
+        "nombre": "Odont\u00f3logo",
+        "descripcion": "Descripcion: 57ag"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 58,
+    "fields": {
+        "nombre": "Abogado Especialista Sectorial",
+        "descripcion": "Descripcion: 58agace"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 59,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n Ambiental",
+        "descripcion": "Descripcion: 59agata"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 60,
+    "fields": {
+        "nombre": "Asistente de Contabilidad",
+        "descripcion": "Descripcion: 60agatha"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 61,
+    "fields": {
+        "nombre": "Investigador Ocupacional",
+        "descripcion": "Descripcion: 61agathe"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 62,
+    "fields": {
+        "nombre": "Kinesi\u00f3logo",
+        "descripcion": "Descripcion: 62aggi"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 63,
+    "fields": {
+        "nombre": "Asistente de Laboratorio Cl\u00ednico",
+        "descripcion": "Descripcion: 63aggie"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 64,
+    "fields": {
+        "nombre": "Jefe de Organizaci\u00f3n y Sistemas",
+        "descripcion": "Descripcion: 64aggy"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 65,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Idiomas",
+        "descripcion": "Descripcion: 65agna"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 66,
+    "fields": {
+        "nombre": "Psic\u00f3logo",
+        "descripcion": "Descripcion: 66agnella"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 67,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Computaci\u00f3n",
+        "descripcion": "Descripcion: 67agnes"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 68,
+    "fields": {
+        "nombre": "Jefe de Asesoramiento, Apoyo y Orientaci\u00f3n",
+        "descripcion": "Descripcion: 68agnese"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 69,
+    "fields": {
+        "nombre": "Secretaria (o) Ejecutiva (o) Biling\u00fce",
+        "descripcion": "Descripcion: 69agnesse"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 70,
+    "fields": {
+        "nombre": "Concertino",
+        "descripcion": "Descripcion: 70agneta"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 71,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Idiomas",
+        "descripcion": "Descripcion: 71agnola"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 72,
+    "fields": {
+        "nombre": "Gerente de Promoci\u00f3n y Administraci\u00f3n de Espacio",
+        "descripcion": "Descripcion: 72agretha"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 73,
+    "fields": {
+        "nombre": "Dietista",
+        "descripcion": "Descripcion: 73aida"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 74,
+    "fields": {
+        "nombre": "Ingeniero de Proyectos",
+        "descripcion": "Descripcion: 74aidan"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 75,
+    "fields": {
+        "nombre": "Jefe de Relaciones P\u00fablicas",
+        "descripcion": "Descripcion: 75aigneis"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 76,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Esc\u00e9nicas",
+        "descripcion": "Descripcion: 76aila"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 77,
+    "fields": {
+        "nombre": "Abogado Jefe",
+        "descripcion": "Descripcion: 77aile"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 78,
+    "fields": {
+        "nombre": "Capell\u00e1n",
+        "descripcion": "Descripcion: 78ailee"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 79,
+    "fields": {
+        "nombre": "Recepcionista",
+        "descripcion": "Descripcion: 79aileen"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 80,
+    "fields": {
+        "nombre": "Director de Orquesta",
+        "descripcion": "Descripcion: 80ailene"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 81,
+    "fields": {
+        "nombre": "Evaluador Curricular",
+        "descripcion": "Descripcion: 81ailey"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 82,
+    "fields": {
+        "nombre": "Asistente de farmacia",
+        "descripcion": "Descripcion: 82aili"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 83,
+    "fields": {
+        "nombre": "Dise\u00f1ador Gr\u00e1fico",
+        "descripcion": "Descripcion: 83ailina"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 84,
+    "fields": {
+        "nombre": "Oficial de Correo",
+        "descripcion": "Descripcion: 84ailis"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 85,
+    "fields": {
+        "nombre": "Supervisor de Costos de Obras",
+        "descripcion": "Descripcion: 85ailsun"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 86,
+    "fields": {
+        "nombre": "Director de Agrupaci\u00f3n Musical",
+        "descripcion": "Descripcion: 86ailyn"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 87,
+    "fields": {
+        "nombre": "Oficial de Correo",
+        "descripcion": "Descripcion: 87aime"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 88,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias B\u00e1sicas, ",
+        "descripcion": "Descripcion: 88aimee"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 89,
+    "fields": {
+        "nombre": "Administrador Jefe",
+        "descripcion": "Descripcion: 89aimil"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 90,
+    "fields": {
+        "nombre": "Ingeniero Forestal",
+        "descripcion": "Descripcion: 90aindrea"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 91,
+    "fields": {
+        "nombre": "Fotolit\u00f3grafo",
+        "descripcion": "Descripcion: 91ainslee"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 92,
+    "fields": {
+        "nombre": "Coordinador de Pasant\u00edas y Actividades Complemen",
+        "descripcion": "Descripcion: 92ainsley"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 93,
+    "fields": {
+        "nombre": "Analista de Informaci\u00f3n y Control Estudiantil Je",
+        "descripcion": "Descripcion: 93ainslie"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 94,
+    "fields": {
+        "nombre": "Asistente de Publicidad y Mercadeo",
+        "descripcion": "Descripcion: 94ajay"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 95,
+    "fields": {
+        "nombre": "Dibujante Ilustrador Jefe",
+        "descripcion": "Descripcion: 95alaine"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 96,
+    "fields": {
+        "nombre": "Especialista en Informaci\u00f3n Jefe",
+        "descripcion": "Descripcion: 96alameda"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 97,
+    "fields": {
+        "nombre": "Auxiliar de Archivo",
+        "descripcion": "Descripcion: 97alana"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 98,
+    "fields": {
+        "nombre": "Jefe de Asesoramiento, Apoyo y Orientaci\u00f3n",
+        "descripcion": "Descripcion: 98alanah"
+    }
+},
+{
+    "model": "tipo_unidad.tipounidad",
+    "pk": 99,
+    "fields": {
+        "nombre": "Asistente de farmacia",
+        "descripcion": "Descripcion: 99alane"
+    }
+}
+]

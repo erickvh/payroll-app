@@ -1,0 +1,992 @@
+[
+{
+    "model": "puesto.puesto",
+    "pk": 1,
+    "fields": {
+        "nombre": "Asistente de Publicaciones",
+        "descripcion": "Descripcion: 1abagail",
+        "minimo": "69.00",
+        "maximo": "92.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 2,
+    "fields": {
+        "nombre": "Instrumentista Acad\u00e9mico",
+        "descripcion": "Descripcion: 2abbe",
+        "minimo": "210.00",
+        "maximo": "484.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 3,
+    "fields": {
+        "nombre": "Bioanalista",
+        "descripcion": "Descripcion: 3abbey",
+        "minimo": "350.00",
+        "maximo": "188.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 4,
+    "fields": {
+        "nombre": "Asistente de Director de Orfe\u00f3n Universitario",
+        "descripcion": "Descripcion: 4abbi",
+        "minimo": "428.00",
+        "maximo": "442.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 5,
+    "fields": {
+        "nombre": "Promotor Vendedor de Material Did\u00e1ctico",
+        "descripcion": "Descripcion: 5abbie",
+        "minimo": "349.00",
+        "maximo": "496.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 6,
+    "fields": {
+        "nombre": "Inspector de Higiene y Control de Precios de Ali",
+        "descripcion": "Descripcion: 6abby",
+        "minimo": "481.00",
+        "maximo": "193.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 7,
+    "fields": {
+        "nombre": "Fisioterapeuta",
+        "descripcion": "Descripcion: 7abbye",
+        "minimo": "126.00",
+        "maximo": "58.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 8,
+    "fields": {
+        "nombre": "Jefe de Protocolo",
+        "descripcion": "Descripcion: 8abigael",
+        "minimo": "116.00",
+        "maximo": "522.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 9,
+    "fields": {
+        "nombre": "Comprador Jefe",
+        "descripcion": "Descripcion: 9abigail",
+        "minimo": "472.00",
+        "maximo": "255.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 10,
+    "fields": {
+        "nombre": "Jefe de Operaciones Bomberiles",
+        "descripcion": "Descripcion: 10abigale",
+        "minimo": "203.00",
+        "maximo": "213.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 11,
+    "fields": {
+        "nombre": "Coordinador de Deporte",
+        "descripcion": "Descripcion: 11abra",
+        "minimo": "316.00",
+        "maximo": "378.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 12,
+    "fields": {
+        "nombre": "Programador de Sistemas",
+        "descripcion": "Descripcion: 12ada",
+        "minimo": "239.00",
+        "maximo": "406.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 13,
+    "fields": {
+        "nombre": "Asistente de Tesorer\u00eda",
+        "descripcion": "Descripcion: 13adah",
+        "minimo": "264.00",
+        "maximo": "2.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 14,
+    "fields": {
+        "nombre": "Analista de Asuntos Audiovisuales",
+        "descripcion": "Descripcion: 14adaline",
+        "minimo": "561.00",
+        "maximo": "68.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 15,
+    "fields": {
+        "nombre": "Operador de Equipos de Telecomunicaciones",
+        "descripcion": "Descripcion: 15adan",
+        "minimo": "7.00",
+        "maximo": "279.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 16,
+    "fields": {
+        "nombre": "Coordinador de Cine Club",
+        "descripcion": "Descripcion: 16adara",
+        "minimo": "92.00",
+        "maximo": "252.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 17,
+    "fields": {
+        "nombre": "Soplador de Vidrio",
+        "descripcion": "Descripcion: 17adda",
+        "minimo": "23.00",
+        "maximo": "269.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 18,
+    "fields": {
+        "nombre": "Instrumentista Folkl\u00f3rico",
+        "descripcion": "Descripcion: 18addi",
+        "minimo": "339.00",
+        "maximo": "497.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 19,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n Ambiental",
+        "descripcion": "Descripcion: 19addia",
+        "minimo": "136.00",
+        "maximo": "121.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 20,
+    "fields": {
+        "nombre": "Instrumentista Folkl\u00f3rico",
+        "descripcion": "Descripcion: 20addie",
+        "minimo": "203.00",
+        "maximo": "234.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 21,
+    "fields": {
+        "nombre": "Asistente de Seguros",
+        "descripcion": "Descripcion: 21addy",
+        "minimo": "272.00",
+        "maximo": "543.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 22,
+    "fields": {
+        "nombre": "Orientador",
+        "descripcion": "Descripcion: 22adel",
+        "minimo": "282.00",
+        "maximo": "335.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 23,
+    "fields": {
+        "nombre": "Docente de Artes Auditivas",
+        "descripcion": "Descripcion: 23adela",
+        "minimo": "549.00",
+        "maximo": "372.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 24,
+    "fields": {
+        "nombre": "Asistente de Contabilidad",
+        "descripcion": "Descripcion: 24adelaida",
+        "minimo": "89.00",
+        "maximo": "597.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 25,
+    "fields": {
+        "nombre": "Soplador de Vidrio",
+        "descripcion": "Descripcion: 25adelaide",
+        "minimo": "474.00",
+        "maximo": "293.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 26,
+    "fields": {
+        "nombre": "Analista de Organizaci\u00f3n y Sistemas",
+        "descripcion": "Descripcion: 26adele",
+        "minimo": "88.00",
+        "maximo": "258.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 27,
+    "fields": {
+        "nombre": "Asistente de C\u00e1mara",
+        "descripcion": "Descripcion: 27adelheid",
+        "minimo": "231.00",
+        "maximo": "370.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 28,
+    "fields": {
+        "nombre": "Gerente de Promoci\u00f3n y Administraci\u00f3n de Espacio",
+        "descripcion": "Descripcion: 28adelice",
+        "minimo": "296.00",
+        "maximo": "121.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 29,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo de Recursos Humanos",
+        "descripcion": "Descripcion: 29adelina",
+        "minimo": "289.00",
+        "maximo": "377.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 30,
+    "fields": {
+        "nombre": "Jefe de Recursos Humanos",
+        "descripcion": "Descripcion: 30adelind",
+        "minimo": "24.00",
+        "maximo": "436.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 31,
+    "fields": {
+        "nombre": "Jefe Sectorial de Compras",
+        "descripcion": "Descripcion: 31adeline",
+        "minimo": "276.00",
+        "maximo": "205.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 32,
+    "fields": {
+        "nombre": "Asistente Agropecuario",
+        "descripcion": "Descripcion: 32adella",
+        "minimo": "425.00",
+        "maximo": "51.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 33,
+    "fields": {
+        "nombre": "Auditor",
+        "descripcion": "Descripcion: 33adelle",
+        "minimo": "387.00",
+        "maximo": "162.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 34,
+    "fields": {
+        "nombre": "Jefe de An\u00e1lisis y Control Financiero",
+        "descripcion": "Descripcion: 34adena",
+        "minimo": "151.00",
+        "maximo": "264.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 35,
+    "fields": {
+        "nombre": "Inspector General de los Servicios Bomberiles",
+        "descripcion": "Descripcion: 35adey",
+        "minimo": "293.00",
+        "maximo": "342.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 36,
+    "fields": {
+        "nombre": "Asistente de Entomolog\u00eda",
+        "descripcion": "Descripcion: 36adi",
+        "minimo": "461.00",
+        "maximo": "76.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 37,
+    "fields": {
+        "nombre": "Analista de Organizaci\u00f3n y Sistemas",
+        "descripcion": "Descripcion: 37adiana",
+        "minimo": "119.00",
+        "maximo": "182.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 38,
+    "fields": {
+        "nombre": "Jefe de Tr\u00e1fico",
+        "descripcion": "Descripcion: 38adina",
+        "minimo": "611.00",
+        "maximo": "164.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 39,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias B\u00e1sicas, ",
+        "descripcion": "Descripcion: 39adora",
+        "minimo": "195.00",
+        "maximo": "519.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 40,
+    "fields": {
+        "nombre": "Contabilista",
+        "descripcion": "Descripcion: 40adore",
+        "minimo": "14.00",
+        "maximo": "346.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 41,
+    "fields": {
+        "nombre": "Mec\u00e1nico Dental",
+        "descripcion": "Descripcion: 41adoree",
+        "minimo": "182.00",
+        "maximo": "135.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 42,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias Sociales",
+        "descripcion": "Descripcion: 42adorne",
+        "minimo": "209.00",
+        "maximo": "279.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 43,
+    "fields": {
+        "nombre": "Jefe de Prevenci\u00f3n, Investigaci\u00f3n e Inspecci\u00f3n d",
+        "descripcion": "Descripcion: 43adrea",
+        "minimo": "319.00",
+        "maximo": "609.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 44,
+    "fields": {
+        "nombre": "Secretaria (o)",
+        "descripcion": "Descripcion: 44adria",
+        "minimo": "461.00",
+        "maximo": "406.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 45,
+    "fields": {
+        "nombre": "Psic\u00f3logo",
+        "descripcion": "Descripcion: 45adriaens",
+        "minimo": "315.00",
+        "maximo": "123.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 46,
+    "fields": {
+        "nombre": "Dibujante Jefe",
+        "descripcion": "Descripcion: 46adrian",
+        "minimo": "185.00",
+        "maximo": "499.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 47,
+    "fields": {
+        "nombre": "Jefe de Producci\u00f3n de Audiovisuales",
+        "descripcion": "Descripcion: 47adriana",
+        "minimo": "479.00",
+        "maximo": "48.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 48,
+    "fields": {
+        "nombre": "Corrector de Publicaciones",
+        "descripcion": "Descripcion: 48adriane",
+        "minimo": "471.00",
+        "maximo": "112.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 49,
+    "fields": {
+        "nombre": "Bombero",
+        "descripcion": "Descripcion: 49adrianna",
+        "minimo": "230.00",
+        "maximo": "182.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 50,
+    "fields": {
+        "nombre": "Analista de Colocaci\u00f3n y Seguimiento de Pasant\u00eda",
+        "descripcion": "Descripcion: 50adrianne",
+        "minimo": "635.00",
+        "maximo": "779.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 51,
+    "fields": {
+        "nombre": "Analista de Organizaci\u00f3n y Sistemas",
+        "descripcion": "Descripcion: 51adriena",
+        "minimo": "440.00",
+        "maximo": "144.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 52,
+    "fields": {
+        "nombre": "Director de Coral",
+        "descripcion": "Descripcion: 52adrienne",
+        "minimo": "164.00",
+        "maximo": "411.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 53,
+    "fields": {
+        "nombre": "Asistente de Biolog\u00eda",
+        "descripcion": "Descripcion: 53aeriel",
+        "minimo": "354.00",
+        "maximo": "205.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 54,
+    "fields": {
+        "nombre": "Operador de M\u00e1quina de Reproducci\u00f3n (C\u00f3digo Tran",
+        "descripcion": "Descripcion: 54aeriela",
+        "minimo": "32.00",
+        "maximo": "169.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 55,
+    "fields": {
+        "nombre": "Operador de Computaci\u00f3n",
+        "descripcion": "Descripcion: 55aeriell",
+        "minimo": "159.00",
+        "maximo": "480.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 56,
+    "fields": {
+        "nombre": "Asistente de farmacia",
+        "descripcion": "Descripcion: 56afton",
+        "minimo": "284.00",
+        "maximo": "405.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 57,
+    "fields": {
+        "nombre": "Soplador de Vidrio Jefe",
+        "descripcion": "Descripcion: 57ag",
+        "minimo": "334.00",
+        "maximo": "484.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 58,
+    "fields": {
+        "nombre": "Supervisor de Pintores (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 58agace",
+        "minimo": "80.00",
+        "maximo": "282.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 59,
+    "fields": {
+        "nombre": "Jefe Central de Presupuesto",
+        "descripcion": "Descripcion: 59agata",
+        "minimo": "135.00",
+        "maximo": "184.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 60,
+    "fields": {
+        "nombre": "M\u00e9dico General",
+        "descripcion": "Descripcion: 60agatha",
+        "minimo": "298.00",
+        "maximo": "215.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 61,
+    "fields": {
+        "nombre": "Coordinador de Publicaciones",
+        "descripcion": "Descripcion: 61agathe",
+        "minimo": "14.00",
+        "maximo": "229.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 62,
+    "fields": {
+        "nombre": "Asistente Financiero",
+        "descripcion": "Descripcion: 62aggi",
+        "minimo": "320.00",
+        "maximo": "291.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 63,
+    "fields": {
+        "nombre": "Sub-director Educativo",
+        "descripcion": "Descripcion: 63aggie",
+        "minimo": "581.00",
+        "maximo": "165.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 64,
+    "fields": {
+        "nombre": "Jefe Central de Presupuesto",
+        "descripcion": "Descripcion: 64aggy",
+        "minimo": "98.00",
+        "maximo": "58.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 65,
+    "fields": {
+        "nombre": "Coordinador de Deporte",
+        "descripcion": "Descripcion: 65agna",
+        "minimo": "111.00",
+        "maximo": "348.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 66,
+    "fields": {
+        "nombre": "Enfermera (o)",
+        "descripcion": "Descripcion: 66agnella",
+        "minimo": "208.00",
+        "maximo": "257.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 67,
+    "fields": {
+        "nombre": "Almacenista (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 67agnes",
+        "minimo": "404.00",
+        "maximo": "722.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 68,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n y Seguridad",
+        "descripcion": "Descripcion: 68agnese",
+        "minimo": "111.00",
+        "maximo": "215.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 69,
+    "fields": {
+        "nombre": "Animador Cultural",
+        "descripcion": "Descripcion: 69agnesse",
+        "minimo": "694.00",
+        "maximo": "209.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 70,
+    "fields": {
+        "nombre": "Supervisor de Pintores (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 70agneta",
+        "minimo": "448.00",
+        "maximo": "463.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 71,
+    "fields": {
+        "nombre": "Jefe de An\u00e1lisis y Control Financiero",
+        "descripcion": "Descripcion: 71agnola",
+        "minimo": "81.00",
+        "maximo": "494.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 72,
+    "fields": {
+        "nombre": "Soplador de Vidrio Jefe",
+        "descripcion": "Descripcion: 72agretha",
+        "minimo": "252.00",
+        "maximo": "443.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 73,
+    "fields": {
+        "nombre": "Administrador de Redes y Recursos de Inform\u00e1tica",
+        "descripcion": "Descripcion: 73aida",
+        "minimo": "353.00",
+        "maximo": "534.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 74,
+    "fields": {
+        "nombre": "Cajero Jefe",
+        "descripcion": "Descripcion: 74aidan",
+        "minimo": "10.00",
+        "maximo": "189.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 75,
+    "fields": {
+        "nombre": "Especialista de Sistemas de Inform\u00e1tica",
+        "descripcion": "Descripcion: 75aigneis",
+        "minimo": "37.00",
+        "maximo": "143.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 76,
+    "fields": {
+        "nombre": "Bombero Jefe",
+        "descripcion": "Descripcion: 76aila",
+        "minimo": "156.00",
+        "maximo": "76.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 77,
+    "fields": {
+        "nombre": "Almacenista (C\u00f3digo Transitorio)",
+        "descripcion": "Descripcion: 77aile",
+        "minimo": "189.00",
+        "maximo": "614.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 78,
+    "fields": {
+        "nombre": "Asistente de Biolog\u00eda",
+        "descripcion": "Descripcion: 78ailee",
+        "minimo": "157.00",
+        "maximo": "283.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 79,
+    "fields": {
+        "nombre": "Jefe de Planes Operativos y Estrat\u00e9gicos",
+        "descripcion": "Descripcion: 79aileen",
+        "minimo": "74.00",
+        "maximo": "110.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 80,
+    "fields": {
+        "nombre": "Asistente de Preescolar",
+        "descripcion": "Descripcion: 80ailene",
+        "minimo": "40.00",
+        "maximo": "323.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 81,
+    "fields": {
+        "nombre": "Jefe de Salud Integral",
+        "descripcion": "Descripcion: 81ailey",
+        "minimo": "474.00",
+        "maximo": "163.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 82,
+    "fields": {
+        "nombre": "Contador Jefe",
+        "descripcion": "Descripcion: 82aili",
+        "minimo": "159.00",
+        "maximo": "470.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 83,
+    "fields": {
+        "nombre": "Jefe de Recursos Humanos",
+        "descripcion": "Descripcion: 83ailina",
+        "minimo": "359.00",
+        "maximo": "168.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 84,
+    "fields": {
+        "nombre": "Luminot\u00e9cnico",
+        "descripcion": "Descripcion: 84ailis",
+        "minimo": "340.00",
+        "maximo": "441.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 85,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Auditivas",
+        "descripcion": "Descripcion: 85ailsun",
+        "minimo": "375.00",
+        "maximo": "124.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 86,
+    "fields": {
+        "nombre": "Jefe de Correo",
+        "descripcion": "Descripcion: 86ailyn",
+        "minimo": "87.00",
+        "maximo": "348.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 87,
+    "fields": {
+        "nombre": "Investigador Ocupacional",
+        "descripcion": "Descripcion: 87aime",
+        "minimo": "297.00",
+        "maximo": "205.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 88,
+    "fields": {
+        "nombre": "Arquitecto",
+        "descripcion": "Descripcion: 88aimee",
+        "minimo": "160.00",
+        "maximo": "289.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 89,
+    "fields": {
+        "nombre": "Sub-director Educativo",
+        "descripcion": "Descripcion: 89aimil",
+        "minimo": "547.00",
+        "maximo": "326.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 90,
+    "fields": {
+        "nombre": "Psic\u00f3logo",
+        "descripcion": "Descripcion: 90aindrea",
+        "minimo": "102.00",
+        "maximo": "146.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 91,
+    "fields": {
+        "nombre": "Supervisor de Registro y Control de Bienes",
+        "descripcion": "Descripcion: 91ainslee",
+        "minimo": "42.00",
+        "maximo": "533.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 92,
+    "fields": {
+        "nombre": "Supervisor de Biblioteca",
+        "descripcion": "Descripcion: 92ainsley",
+        "minimo": "13.00",
+        "maximo": "229.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 93,
+    "fields": {
+        "nombre": "M\u00e9dico Veterinario",
+        "descripcion": "Descripcion: 93ainslie",
+        "minimo": "219.00",
+        "maximo": "454.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 94,
+    "fields": {
+        "nombre": "Secretaria (o)",
+        "descripcion": "Descripcion: 94ajay",
+        "minimo": "383.00",
+        "maximo": "188.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 95,
+    "fields": {
+        "nombre": "Almacenista Jefe",
+        "descripcion": "Descripcion: 95alaine",
+        "minimo": "249.00",
+        "maximo": "184.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 96,
+    "fields": {
+        "nombre": "Asistente de Laboratorio",
+        "descripcion": "Descripcion: 96alameda",
+        "minimo": "20.00",
+        "maximo": "1.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 97,
+    "fields": {
+        "nombre": "Jefe de Prensa",
+        "descripcion": "Descripcion: 97alana",
+        "minimo": "292.00",
+        "maximo": "65.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 98,
+    "fields": {
+        "nombre": "Analista Programador de Sistemas",
+        "descripcion": "Descripcion: 98alanah",
+        "minimo": "171.00",
+        "maximo": "477.00"
+    }
+},
+{
+    "model": "puesto.puesto",
+    "pk": 99,
+    "fields": {
+        "nombre": "Fotolit\u00f3grafo",
+        "descripcion": "Descripcion: 99alane",
+        "minimo": "400.00",
+        "maximo": "415.00"
+    }
+}
+]

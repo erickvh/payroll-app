@@ -1,0 +1,34 @@
+[
+{
+    "model": "estado_civil.estadocivil",
+    "pk": 1,
+    "fields": {
+        "nombre": "Casado",
+        "descripcion": "Descripcion: 1abagail"
+    }
+},
+{
+    "model": "estado_civil.estadocivil",
+    "pk": 2,
+    "fields": {
+        "nombre": "Soltero",
+        "descripcion": "Descripcion: 2abbe"
+    }
+},
+{
+    "model": "estado_civil.estadocivil",
+    "pk": 3,
+    "fields": {
+        "nombre": "Viudo",
+        "descripcion": "Descripcion: 3abbey"
+    }
+},
+{
+    "model": "estado_civil.estadocivil",
+    "pk": 4,
+    "fields": {
+        "nombre": "Acompa\u00f1ado",
+        "descripcion": "Descripcion: 4abbi"
+    }
+}
+]

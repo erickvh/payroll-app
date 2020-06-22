@@ -1,2 +1,0 @@
-INSERT INTO periodicidad (id,anio_periodo,mensual,activo) values(1,2020,true,true);
- 

@@ -1,3 +1,0 @@
-INSERT INTO impuesto_renta (id,porcentaje,minimo,maximo,exceso,cuota_fija,tramo,periocidad) values(1,0.01,487.60,0,0,0,'Tramo I','Mensual'); 
-INSERT INTO impuesto_renta (id,porcentaje,minimo,maximo,exceso,cuota_fija,tramo,periocidad) values(1,487.61,642.85,10,487.60,17.48,'Tramo II','Mensual'); 
-INSERT INTO impuesto_renta (id,porcentaje,minimo,maximo,exceso,cuota_fija,tramo,periocidad) values(1,642.86,915.81,10,642.85,32.70,'Tramo III','Mensual'); 

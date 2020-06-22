@@ -1,3 +1,0 @@
-INSERT INTO descuento_general (id,nombre,porcentaje,activo) values(1,'ISSS',0.03,true); 
-INSERT INTO descuento_general (id,nombre,porcentaje,activo) values(2,'AFP',0.06,true); 
-

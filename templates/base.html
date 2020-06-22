@@ -43,6 +43,43 @@
         </div> 
         {% if user.is_superuser %}
         <ul class="app-menu">
+            <li>
+                <a class="app-menu__item" href="/"><img src="{% static 'images/home.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Home</span></a>
+            </li>
+            <li class="treeview ">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/lista.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Catálogos Empleado</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/profesion"><i class="icon fa fa-circle-o"></i> Profesiones</a></li>
+                    <li><a class="treeview-item" href="/estadocivil"><i class="icon fa fa-circle-o"></i>Estado Civil</a></li>
+                    <li><a class="treeview-item" href="/departamento"><i class="icon fa fa-circle-o"></i> Departamento Territorial</a></li>
+                     <li><a class="treeview-item" href="/municipio"><i class="icon fa fa-circle-o"></i> Municipio Territorial</a></li>
+                    <li><a class="treeview-item" href="/genero"><i class="icon fa fa-circle-o"></i>Generos</a></li>
+                </ul>
+            </li>
+            <li class="treeview ">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/sociedad.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Catálogos Empresa</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/tipounidad"><i class="icon fa fa-circle-o"></i> Tipo Unidad</a></li>
+                    <li><a class="treeview-item" href="/departamento_organizacion"><i class="icon fa fa-circle-o"></i>Departamento Organizacional</a></li>
+                     <li><a class="treeview-item" href="/unidad"><i class="icon fa fa-circle-o"></i> Unidades</a></li>
+                    <li><a class="treeview-item" href="/puesto"><i class="icon fa fa-circle-o"></i> Puestos</a></li>
+                    <li><a class="treeview-item" href="/centro_costo"><i class="icon fa fa-circle-o"></i> Centro de Costos</a></li>
+                </ul>
+            </li>
+             <li class="treeview ">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/payr.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Catálogos Planilla</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/planilla/"><i class="icon fa fa-circle-o"></i>Planillas</a></li>
+                    <li><a class="treeview-item" href="/comision"><i class="icon fa fa-circle-o"></i>Comisiones</a></li>
+                    <li><a class="treeview-item" href="/planilla/catalogo_ingreso"><i class="icon fa fa-circle-o"></i>Ingresos</a></li>
+                    <li><a class="treeview-item" href="/planilla/catalogo_descuento"><i class="icon fa fa-circle-o"></i>Descuentos</a></li>
+                    <li><a class="treeview-item" href="/general/"><i class="icon fa fa-circle-o"></i>Descuentos de ley</a></li>
+                    <li><a class="treeview-item" href="/general/periodicidad"><i class="icon fa fa-circle-o"></i>Periodicidad</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="app-menu__item" href="/empleado"><img src="{% static 'images/employee.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Empleados</span></a>
+            </li>
             <li class="treeview ">
                 <a class="app-menu__item" href="#" data-toggle="treeview"><img src="{% static 'images/users.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Usuarios, roles y permisos</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
@@ -55,6 +92,9 @@
         </ul>
         {% else %}
         <ul class="app-menu">
+            <li>
+                <a class="app-menu__item" href="/"><img src="{% static 'images/home.svg' %}" alt="" width="25px">&nbsp; &nbsp;<span class="app-menu__label">Home</span></a>
+            </li>
             {% if request.session.lista %}
                 {% for k, menus in request.session.lista.items %}
                 <li class="treeview">

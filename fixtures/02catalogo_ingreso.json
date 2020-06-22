@@ -1,0 +1,1190 @@
+[
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 1,
+    "fields": {
+        "nombre": "Asistente Ejecutivo de Egreamigos",
+        "fecha_inicio": "2015-03-29",
+        "fecha_fin": "2018-06-05",
+        "ingreso": "286.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 2,
+    "fields": {
+        "nombre": "Jefe de Taller Automotor",
+        "fecha_inicio": "2012-02-21",
+        "fecha_fin": "2017-07-01",
+        "ingreso": "196.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 3,
+    "fields": {
+        "nombre": "Interprete Vocal",
+        "fecha_inicio": "2013-03-29",
+        "fecha_fin": "2018-12-29",
+        "ingreso": "302.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 4,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Esc\u00e9nicas",
+        "fecha_inicio": "2017-03-08",
+        "fecha_fin": "2018-07-22",
+        "ingreso": "299.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 5,
+    "fields": {
+        "nombre": "Abogado Especialista",
+        "fecha_inicio": "2013-01-11",
+        "fecha_fin": "2018-07-18",
+        "ingreso": "81.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 6,
+    "fields": {
+        "nombre": "Jefe de Planes Operativos y Estrat\u00e9gicos",
+        "fecha_inicio": "2014-03-15",
+        "fecha_fin": "2017-11-23",
+        "ingreso": "400.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 7,
+    "fields": {
+        "nombre": "Jefe de Seguros",
+        "fecha_inicio": "2017-02-20",
+        "fecha_fin": "2018-09-06",
+        "ingreso": "581.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 8,
+    "fields": {
+        "nombre": "Promotor de Relaciones P\u00fablicas e Interinstitucionales",
+        "fecha_inicio": "2015-01-03",
+        "fecha_fin": "2017-06-29",
+        "ingreso": "110.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 9,
+    "fields": {
+        "nombre": "Revisor de Contralor\u00eda",
+        "fecha_inicio": "2013-01-13",
+        "fecha_fin": "2018-11-19",
+        "ingreso": "617.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 10,
+    "fields": {
+        "nombre": "porentaje de capital",
+        "fecha_inicio": "2015-02-10",
+        "fecha_fin": "2017-10-11",
+        "ingreso": "159.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 11,
+    "fields": {
+        "nombre": "Oficinista",
+        "fecha_inicio": "2015-04-01",
+        "fecha_fin": "2018-09-17",
+        "ingreso": "503.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 12,
+    "fields": {
+        "nombre": "Entrenador Deportivo",
+        "fecha_inicio": "2015-01-15",
+        "fecha_fin": "2017-11-24",
+        "ingreso": "251.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 13,
+    "fields": {
+        "nombre": "Jefe Central de Presupuesto",
+        "fecha_inicio": "2015-05-19",
+        "fecha_fin": "2018-07-25",
+        "ingreso": "85.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 14,
+    "fields": {
+        "nombre": "Enfermera (o)",
+        "fecha_inicio": "2017-02-16",
+        "fecha_fin": "2018-06-06",
+        "ingreso": "32.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 15,
+    "fields": {
+        "nombre": "Planificador",
+        "fecha_inicio": "2015-03-02",
+        "fecha_fin": "2018-12-17",
+        "ingreso": "227.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 16,
+    "fields": {
+        "nombre": "Oficial de Correo",
+        "fecha_inicio": "2012-03-07",
+        "fecha_fin": "2018-12-02",
+        "ingreso": "696.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 17,
+    "fields": {
+        "nombre": "Jefe de Asesoramiento, Apoyo y Orientaci\u00f3n",
+        "fecha_inicio": "2011-02-21",
+        "fecha_fin": "2018-12-08",
+        "ingreso": "82.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 18,
+    "fields": {
+        "nombre": "Dietista",
+        "fecha_inicio": "2011-02-27",
+        "fecha_fin": "2017-06-04",
+        "ingreso": "211.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 19,
+    "fields": {
+        "nombre": "Asistente de Laboratorio Cl\u00ednico",
+        "fecha_inicio": "2017-05-04",
+        "fecha_fin": "2018-10-21",
+        "ingreso": "498.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 20,
+    "fields": {
+        "nombre": "Asistente de Publicaciones",
+        "fecha_inicio": "2015-01-04",
+        "fecha_fin": "2017-07-21",
+        "ingreso": "120.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 21,
+    "fields": {
+        "nombre": "Asistente de Investigaci\u00f3n en Ciencias B\u00e1sicas, Naturales y Aplicadas",
+        "fecha_inicio": "2013-02-03",
+        "fecha_fin": "2018-10-03",
+        "ingreso": "26.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 22,
+    "fields": {
+        "nombre": "Asistente de Biolog\u00eda",
+        "fecha_inicio": "2014-02-13",
+        "fecha_fin": "2017-09-04",
+        "ingreso": "134.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 23,
+    "fields": {
+        "nombre": "Secretaria (o) Ejecutiva (o) Biling\u00fce",
+        "fecha_inicio": "2016-01-05",
+        "fecha_fin": "2017-10-27",
+        "ingreso": "670.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 24,
+    "fields": {
+        "nombre": "porcentaje participativos",
+        "fecha_inicio": "2011-05-04",
+        "fecha_fin": "2018-11-04",
+        "ingreso": "83.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 25,
+    "fields": {
+        "nombre": "Cal\u00edgrafo",
+        "fecha_inicio": "2012-01-15",
+        "fecha_fin": "2017-06-28",
+        "ingreso": "12.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 26,
+    "fields": {
+        "nombre": "Promotor Cultural",
+        "fecha_inicio": "2016-04-09",
+        "fecha_fin": "2018-10-14",
+        "ingreso": "578.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 27,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Pl\u00e1sticas",
+        "fecha_inicio": "2012-03-18",
+        "fecha_fin": "2017-09-27",
+        "ingreso": "117.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 28,
+    "fields": {
+        "nombre": "Concertino",
+        "fecha_inicio": "2013-01-06",
+        "fecha_fin": "2018-11-05",
+        "ingreso": "9.00",
+        "comision": true,
+        "porcentaje": "243.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 29,
+    "fields": {
+        "nombre": "porcentaje participativos",
+        "fecha_inicio": "2016-01-13",
+        "fecha_fin": "2018-09-21",
+        "ingreso": "62.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 30,
+    "fields": {
+        "nombre": "Enfermera (o)",
+        "fecha_inicio": "2014-01-24",
+        "fecha_fin": "2018-08-16",
+        "ingreso": "99.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 31,
+    "fields": {
+        "nombre": "Asistente de Biolog\u00eda",
+        "fecha_inicio": "2016-05-07",
+        "fecha_fin": "2017-09-25",
+        "ingreso": "83.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 32,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Computaci\u00f3n",
+        "fecha_inicio": "2012-02-03",
+        "fecha_fin": "2018-09-02",
+        "ingreso": "562.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 33,
+    "fields": {
+        "nombre": "Jefe de Mantenimiento y Reparaciones",
+        "fecha_inicio": "2015-02-24",
+        "fecha_fin": "2018-07-28",
+        "ingreso": "307.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 34,
+    "fields": {
+        "nombre": "Coordinador Acad\u00e9mico",
+        "fecha_inicio": "2015-02-27",
+        "fecha_fin": "2018-12-25",
+        "ingreso": "326.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 35,
+    "fields": {
+        "nombre": "Jefe de Inventarios",
+        "fecha_inicio": "2013-01-11",
+        "fecha_fin": "2017-06-23",
+        "ingreso": "117.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 36,
+    "fields": {
+        "nombre": "Asistente de Biblioteca",
+        "fecha_inicio": "2013-02-28",
+        "fecha_fin": "2018-09-15",
+        "ingreso": "314.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 37,
+    "fields": {
+        "nombre": "porcentaje de gases",
+        "fecha_inicio": "2014-02-20",
+        "fecha_fin": "2018-11-01",
+        "ingreso": "160.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 38,
+    "fields": {
+        "nombre": "Cart\u00f3grafo",
+        "fecha_inicio": "2014-04-16",
+        "fecha_fin": "2017-06-24",
+        "ingreso": "254.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 39,
+    "fields": {
+        "nombre": "Soplador de Vidrio",
+        "fecha_inicio": "2012-02-28",
+        "fecha_fin": "2017-09-26",
+        "ingreso": "141.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 40,
+    "fields": {
+        "nombre": "Asistente Ejecutivo de Estudios para Graduados",
+        "fecha_inicio": "2014-05-11",
+        "fecha_fin": "2018-10-12",
+        "ingreso": "17.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 41,
+    "fields": {
+        "nombre": "Jefe Central de Presupuesto",
+        "fecha_inicio": "2016-01-01",
+        "fecha_fin": "2017-11-18",
+        "ingreso": "256.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 42,
+    "fields": {
+        "nombre": "Cajero",
+        "fecha_inicio": "2014-03-24",
+        "fecha_fin": "2017-12-28",
+        "ingreso": "271.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 43,
+    "fields": {
+        "nombre": "Analista Especialista de Recursos Humanos",
+        "fecha_inicio": "2017-02-03",
+        "fecha_fin": "2018-07-24",
+        "ingreso": "411.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 44,
+    "fields": {
+        "nombre": "Kinesi\u00f3logo",
+        "fecha_inicio": "2014-03-05",
+        "fecha_fin": "2017-08-08",
+        "ingreso": "394.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 45,
+    "fields": {
+        "nombre": "Dibujante",
+        "fecha_inicio": "2014-05-06",
+        "fecha_fin": "2017-09-27",
+        "ingreso": "166.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 46,
+    "fields": {
+        "nombre": "Fot\u00f3grafo",
+        "fecha_inicio": "2012-01-21",
+        "fecha_fin": "2018-08-28",
+        "ingreso": "387.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 47,
+    "fields": {
+        "nombre": "Asistente de Biblioteca",
+        "fecha_inicio": "2011-03-18",
+        "fecha_fin": "2017-08-20",
+        "ingreso": "169.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 48,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Artes Esc\u00e9nicas",
+        "fecha_inicio": "2016-03-07",
+        "fecha_fin": "2018-06-01",
+        "ingreso": "260.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 49,
+    "fields": {
+        "nombre": "Jefe de Unidades Nutricionales",
+        "fecha_inicio": "2013-02-19",
+        "fecha_fin": "2018-11-10",
+        "ingreso": "226.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 50,
+    "fields": {
+        "nombre": "Coordinador de Desarrollo de Servicios Estudiantiles",
+        "fecha_inicio": "2014-01-25",
+        "fecha_fin": "2017-12-06",
+        "ingreso": "115.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 51,
+    "fields": {
+        "nombre": "Abogado Especialista",
+        "fecha_inicio": "2013-02-23",
+        "fecha_fin": "2018-12-08",
+        "ingreso": "391.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 52,
+    "fields": {
+        "nombre": "Asistente de Seguros",
+        "fecha_inicio": "2015-01-09",
+        "fecha_fin": "2018-11-22",
+        "ingreso": "218.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 53,
+    "fields": {
+        "nombre": "Asistente Administrativo",
+        "fecha_inicio": "2016-05-09",
+        "fecha_fin": "2018-07-09",
+        "ingreso": "545.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 54,
+    "fields": {
+        "nombre": "Kinesi\u00f3logo",
+        "fecha_inicio": "2015-04-12",
+        "fecha_fin": "2018-07-10",
+        "ingreso": "547.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 55,
+    "fields": {
+        "nombre": "Almacenista (C\u00f3digo Transitorio)",
+        "fecha_inicio": "2017-05-18",
+        "fecha_fin": "2018-11-03",
+        "ingreso": "55.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 56,
+    "fields": {
+        "nombre": "Promotor de Relaciones P\u00fablicas e Interinstitucionales",
+        "fecha_inicio": "2015-02-03",
+        "fecha_fin": "2018-08-08",
+        "ingreso": "571.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 57,
+    "fields": {
+        "nombre": "Jefe de Fotograf\u00eda",
+        "fecha_inicio": "2011-03-04",
+        "fecha_fin": "2017-08-26",
+        "ingreso": "560.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 58,
+    "fields": {
+        "nombre": "Especialista en Informaci\u00f3n",
+        "fecha_inicio": "2017-02-11",
+        "fecha_fin": "2018-06-10",
+        "ingreso": "212.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 59,
+    "fields": {
+        "nombre": "Administrador de Redes y Recursos de Inform\u00e1tica",
+        "fecha_inicio": "2014-01-03",
+        "fecha_fin": "2018-10-19",
+        "ingreso": "183.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 60,
+    "fields": {
+        "nombre": "Archivista",
+        "fecha_inicio": "2013-05-24",
+        "fecha_fin": "2017-06-04",
+        "ingreso": "219.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 61,
+    "fields": {
+        "nombre": "Cal\u00edgrafo",
+        "fecha_inicio": "2017-03-18",
+        "fecha_fin": "2018-06-14",
+        "ingreso": "297.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 62,
+    "fields": {
+        "nombre": "Entrenador Deportivo",
+        "fecha_inicio": "2014-02-04",
+        "fecha_fin": "2018-11-05",
+        "ingreso": "137.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 63,
+    "fields": {
+        "nombre": "Asistente de Recursos Humanos",
+        "fecha_inicio": "2011-05-06",
+        "fecha_fin": "2017-11-08",
+        "ingreso": "380.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 64,
+    "fields": {
+        "nombre": "Dibujante Ilustrador Jefe",
+        "fecha_inicio": "2013-03-23",
+        "fecha_fin": "2017-09-17",
+        "ingreso": "114.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 65,
+    "fields": {
+        "nombre": "Analista de Presupuesto",
+        "fecha_inicio": "2016-02-10",
+        "fecha_fin": "2018-11-18",
+        "ingreso": "59.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 66,
+    "fields": {
+        "nombre": "Asistente de Organizaci\u00f3n Cultural",
+        "fecha_inicio": "2014-05-07",
+        "fecha_fin": "2017-10-13",
+        "ingreso": "216.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 67,
+    "fields": {
+        "nombre": "Contador",
+        "fecha_inicio": "2016-03-16",
+        "fecha_fin": "2018-08-23",
+        "ingreso": "50.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 68,
+    "fields": {
+        "nombre": "Jefe de Relaciones P\u00fablicas",
+        "fecha_inicio": "2013-01-14",
+        "fecha_fin": "2018-11-19",
+        "ingreso": "304.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 69,
+    "fields": {
+        "nombre": "Analista Central de Presupuesto",
+        "fecha_inicio": "2011-05-19",
+        "fecha_fin": "2018-06-15",
+        "ingreso": "71.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 70,
+    "fields": {
+        "nombre": "Asistente de N\u00f3mina",
+        "fecha_inicio": "2011-02-26",
+        "fecha_fin": "2018-11-21",
+        "ingreso": "362.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 71,
+    "fields": {
+        "nombre": "Enfermera (o) Jefe",
+        "fecha_inicio": "2015-03-10",
+        "fecha_fin": "2018-10-27",
+        "ingreso": "46.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 72,
+    "fields": {
+        "nombre": "Serigrafista",
+        "fecha_inicio": "2013-05-13",
+        "fecha_fin": "2017-10-13",
+        "ingreso": "47.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 73,
+    "fields": {
+        "nombre": "Jefe de Tesorer\u00eda",
+        "fecha_inicio": "2014-02-04",
+        "fecha_fin": "2017-06-15",
+        "ingreso": "9.00",
+        "comision": true,
+        "porcentaje": "240.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 74,
+    "fields": {
+        "nombre": "Psic\u00f3logo",
+        "fecha_inicio": "2017-02-19",
+        "fecha_fin": "2018-11-19",
+        "ingreso": "276.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 75,
+    "fields": {
+        "nombre": "Asistente de Asuntos Literarios",
+        "fecha_inicio": "2011-03-06",
+        "fecha_fin": "2018-11-24",
+        "ingreso": "578.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 76,
+    "fields": {
+        "nombre": "Coralista L\u00edder de Cuerdas",
+        "fecha_inicio": "2012-02-10",
+        "fecha_fin": "2017-11-29",
+        "ingreso": "56.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 77,
+    "fields": {
+        "nombre": "Documentalista de Bienes Inmuebles",
+        "fecha_inicio": "2013-04-14",
+        "fecha_fin": "2018-06-13",
+        "ingreso": "379.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 78,
+    "fields": {
+        "nombre": "Maquetista",
+        "fecha_inicio": "2011-05-29",
+        "fecha_fin": "2017-11-25",
+        "ingreso": "260.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 79,
+    "fields": {
+        "nombre": "Coordinador de Asuntos Literarios",
+        "fecha_inicio": "2016-03-29",
+        "fecha_fin": "2018-12-04",
+        "ingreso": "40.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 80,
+    "fields": {
+        "nombre": "Farmac\u00e9utico",
+        "fecha_inicio": "2016-04-14",
+        "fecha_fin": "2017-08-14",
+        "ingreso": "620.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 81,
+    "fields": {
+        "nombre": "Analista de Presupuesto",
+        "fecha_inicio": "2013-02-26",
+        "fecha_fin": "2018-11-12",
+        "ingreso": "205.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 82,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Auditivas",
+        "fecha_inicio": "2013-01-29",
+        "fecha_fin": "2018-12-19",
+        "ingreso": "308.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 83,
+    "fields": {
+        "nombre": "Auxiliar de Servicios para el Arte",
+        "fecha_inicio": "2013-04-19",
+        "fecha_fin": "2017-10-19",
+        "ingreso": "225.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 84,
+    "fields": {
+        "nombre": "Administrador",
+        "fecha_inicio": "2011-05-12",
+        "fecha_fin": "2018-09-19",
+        "ingreso": "594.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 85,
+    "fields": {
+        "nombre": "Dise\u00f1ador Gr\u00e1fico",
+        "fecha_inicio": "2016-02-16",
+        "fecha_fin": "2017-10-02",
+        "ingreso": "429.00",
+        "comision": true,
+        "porcentaje": "0.20"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 86,
+    "fields": {
+        "nombre": "Jefe de Emisi\u00f3n de Pagos",
+        "fecha_inicio": "2012-05-15",
+        "fecha_fin": "2017-07-06",
+        "ingreso": "179.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 87,
+    "fields": {
+        "nombre": "Analista de Presupuesto",
+        "fecha_inicio": "2012-04-20",
+        "fecha_fin": "2017-11-20",
+        "ingreso": "293.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 88,
+    "fields": {
+        "nombre": "Asistente de N\u00f3mina",
+        "fecha_inicio": "2014-03-04",
+        "fecha_fin": "2018-07-10",
+        "ingreso": "124.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 89,
+    "fields": {
+        "nombre": "Instrumentista Acad\u00e9mico L\u00edder de Cuerdas",
+        "fecha_inicio": "2012-05-28",
+        "fecha_fin": "2017-08-29",
+        "ingreso": "41.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 90,
+    "fields": {
+        "nombre": "Jefe de An\u00e1lisis y Procesamiento de Compras",
+        "fecha_inicio": "2017-03-08",
+        "fecha_fin": "2017-11-19",
+        "ingreso": "69.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 91,
+    "fields": {
+        "nombre": "Operador de Audio",
+        "fecha_inicio": "2017-05-06",
+        "fecha_fin": "2018-07-09",
+        "ingreso": "139.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 92,
+    "fields": {
+        "nombre": "Jefe de Inventarios",
+        "fecha_inicio": "2014-02-21",
+        "fecha_fin": "2017-11-23",
+        "ingreso": "219.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 93,
+    "fields": {
+        "nombre": "Asistente de Publicidad y Mercadeo",
+        "fecha_inicio": "2015-04-03",
+        "fecha_fin": "2018-07-18",
+        "ingreso": "251.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 94,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Artes Esc\u00e9nicas",
+        "fecha_inicio": "2014-05-24",
+        "fecha_fin": "2017-11-12",
+        "ingreso": "408.00",
+        "comision": true,
+        "porcentaje": "0.20"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 95,
+    "fields": {
+        "nombre": "Coordinador de Producci\u00f3n de Radiodifusora",
+        "fecha_inicio": "2011-02-22",
+        "fecha_fin": "2017-09-22",
+        "ingreso": "139.00",
+        "comision": true,
+        "porcentaje": "0.10"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 96,
+    "fields": {
+        "nombre": "Jefe de Planes Operativos y Estrat\u00e9gicos",
+        "fecha_inicio": "2014-04-21",
+        "fecha_fin": "2017-07-19",
+        "ingreso": "516.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 97,
+    "fields": {
+        "nombre": "Asistente Ejecutivo de Estudios para Graduados",
+        "fecha_inicio": "2013-04-12",
+        "fecha_fin": "2017-10-03",
+        "ingreso": "296.00",
+        "comision": true,
+        "porcentaje": "0.15"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 98,
+    "fields": {
+        "nombre": "Cajero",
+        "fecha_inicio": "2017-01-11",
+        "fecha_fin": "2017-10-17",
+        "ingreso": "325.00",
+        "comision": false,
+        "porcentaje": "0.00"
+    }
+},
+{
+    "model": "planilla.catalogoingreso",
+    "pk": 99,
+    "fields": {
+        "nombre": "Jefe de Organizaci\u00f3n y Sistemas",
+        "fecha_inicio": "2016-04-21",
+        "fecha_fin": "2017-08-14",
+        "ingreso": "700.00",
+        "comision": true,
+        "porcentaje": "0.25"
+    }
+}
+]

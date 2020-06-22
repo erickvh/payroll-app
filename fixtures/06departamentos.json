@@ -1,0 +1,114 @@
+[
+{
+    "model": "departamento.departamento",
+    "pk": 1,
+    "fields": {
+        "codigo": "1",
+        "nombre": "Ahuachapan"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 2,
+    "fields": {
+        "codigo": "2",
+        "nombre": "Santa Ana"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 3,
+    "fields": {
+        "codigo": "3",
+        "nombre": "Sonsonate"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 4,
+    "fields": {
+        "codigo": "4",
+        "nombre": "Chalatenango"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 5,
+    "fields": {
+        "codigo": "5",
+        "nombre": "Cuscatlan"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 6,
+    "fields": {
+        "codigo": "6",
+        "nombre": "San Salvador"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 7,
+    "fields": {
+        "codigo": "7",
+        "nombre": "La Libertad"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 8,
+    "fields": {
+        "codigo": "8",
+        "nombre": "San Vicente"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 9,
+    "fields": {
+        "codigo": "9",
+        "nombre": "Caba\u00f1as"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 10,
+    "fields": {
+        "codigo": "10",
+        "nombre": "La Paz"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 11,
+    "fields": {
+        "codigo": "11",
+        "nombre": "Usulutan"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 12,
+    "fields": {
+        "codigo": "12",
+        "nombre": "San Miguel"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 13,
+    "fields": {
+        "codigo": "13",
+        "nombre": "Morazan"
+    }
+},
+{
+    "model": "departamento.departamento",
+    "pk": 14,
+    "fields": {
+        "codigo": "14",
+        "nombre": "La Union"
+    }
+}
+]

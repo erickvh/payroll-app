@@ -1,0 +1,92 @@
+[
+{
+    "model": "comision.comision",
+    "pk": 1,
+    "fields": {
+        "porcentaje": 10,
+        "minimo": "10.00",
+        "maximo": "200.00",
+        "descripcion": "Descripcion: 1abbey"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 2,
+    "fields": {
+        "porcentaje": 15,
+        "minimo": "201.00",
+        "maximo": "400.00",
+        "descripcion": "Descripcion: 2abbi"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 3,
+    "fields": {
+        "porcentaje": 20,
+        "minimo": "401.00",
+        "maximo": "500.00",
+        "descripcion": "Descripcion: 3abbie"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 4,
+    "fields": {
+        "porcentaje": 25,
+        "minimo": "501.00",
+        "maximo": "900.00",
+        "descripcion": "Descripcion: 4abby"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 5,
+    "fields": {
+        "porcentaje": 30,
+        "minimo": "901.00",
+        "maximo": "1500.00",
+        "descripcion": "Descripcion: 5abbye"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 6,
+    "fields": {
+        "porcentaje": 35,
+        "minimo": "1501.00",
+        "maximo": "2000.00",
+        "descripcion": "Descripcion: 6abigael"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 7,
+    "fields": {
+        "porcentaje": 40,
+        "minimo": "2001.00",
+        "maximo": "5000.00",
+        "descripcion": "Descripcion: 7abigail"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 8,
+    "fields": {
+        "porcentaje": 45,
+        "minimo": "5001.00",
+        "maximo": "10000.00",
+        "descripcion": "Descripcion: 8abigale"
+    }
+},
+{
+    "model": "comision.comision",
+    "pk": 9,
+    "fields": {
+        "porcentaje": 50,
+        "minimo": "10001.00",
+        "maximo": "999999.00",
+        "descripcion": "Descripcion: 9abra"
+    }
+}
+]

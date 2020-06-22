@@ -1,0 +1,2360 @@
+[
+{
+    "model": "municipio.municipio",
+    "pk": 1,
+    "fields": {
+        "codigo": "1",
+        "nombre": "Ahuachap\u00e1n",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 2,
+    "fields": {
+        "codigo": "2",
+        "nombre": "Apaneca",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 3,
+    "fields": {
+        "codigo": "3",
+        "nombre": "Atiquizaya",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 4,
+    "fields": {
+        "codigo": "4",
+        "nombre": "Concepci\u00f3n de Ataco",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 5,
+    "fields": {
+        "codigo": "5",
+        "nombre": "El Refugio",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 6,
+    "fields": {
+        "codigo": "6",
+        "nombre": "Guaymango",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 7,
+    "fields": {
+        "codigo": "7",
+        "nombre": "Jujutla",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 8,
+    "fields": {
+        "codigo": "8",
+        "nombre": "San Francisco Men\u00e9ndez",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 9,
+    "fields": {
+        "codigo": "9",
+        "nombre": "San Lorenzo",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 10,
+    "fields": {
+        "codigo": "10",
+        "nombre": "San Pedro Puxtla",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 11,
+    "fields": {
+        "codigo": "11",
+        "nombre": "Tacuba",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 12,
+    "fields": {
+        "codigo": "12",
+        "nombre": "Tur\u00edn",
+        "departamento": 1
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 13,
+    "fields": {
+        "codigo": "13",
+        "nombre": "Candelaria de la Frontera",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 14,
+    "fields": {
+        "codigo": "14",
+        "nombre": "Chalchuapa",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 15,
+    "fields": {
+        "codigo": "15",
+        "nombre": "Coatepeque",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 16,
+    "fields": {
+        "codigo": "16",
+        "nombre": "El Congo",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 17,
+    "fields": {
+        "codigo": "17",
+        "nombre": "El Porvenir",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 18,
+    "fields": {
+        "codigo": "18",
+        "nombre": "Masahuat",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 19,
+    "fields": {
+        "codigo": "19",
+        "nombre": "Metap\u00e1n",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 20,
+    "fields": {
+        "codigo": "20",
+        "nombre": "San Antonio Pajonal",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 21,
+    "fields": {
+        "codigo": "21",
+        "nombre": "San Sebasti\u00e1n Salitrillo",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 22,
+    "fields": {
+        "codigo": "22",
+        "nombre": "Santa Ana",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 23,
+    "fields": {
+        "codigo": "23",
+        "nombre": "Santa Rosa Guachipil\u00edn",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 24,
+    "fields": {
+        "codigo": "24",
+        "nombre": "Santiago de la Frontera",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 25,
+    "fields": {
+        "codigo": "25",
+        "nombre": "Texistepeque",
+        "departamento": 2
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 26,
+    "fields": {
+        "codigo": "26",
+        "nombre": "Acajutla",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 27,
+    "fields": {
+        "codigo": "27",
+        "nombre": "Armenia",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 28,
+    "fields": {
+        "codigo": "28",
+        "nombre": "Caluco",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 29,
+    "fields": {
+        "codigo": "29",
+        "nombre": "Cuisnahuat",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 30,
+    "fields": {
+        "codigo": "30",
+        "nombre": "Izalco",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 31,
+    "fields": {
+        "codigo": "31",
+        "nombre": "Juay\u00faa",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 32,
+    "fields": {
+        "codigo": "32",
+        "nombre": "Nahuizalco",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 33,
+    "fields": {
+        "codigo": "33",
+        "nombre": "Nahulingo",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 34,
+    "fields": {
+        "codigo": "34",
+        "nombre": "Salcoatit\u00e1n",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 35,
+    "fields": {
+        "codigo": "35",
+        "nombre": "San Antonio del Monte",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 36,
+    "fields": {
+        "codigo": "36",
+        "nombre": "San Juli\u00e1n",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 37,
+    "fields": {
+        "codigo": "37",
+        "nombre": "Santa Catarina Masahuat",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 38,
+    "fields": {
+        "codigo": "38",
+        "nombre": "Santa Isabel Ishuat\u00e1n",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 39,
+    "fields": {
+        "codigo": "39",
+        "nombre": "Santo Domingo Guzm\u00e1n",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 40,
+    "fields": {
+        "codigo": "40",
+        "nombre": "Sonsonate",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 41,
+    "fields": {
+        "codigo": "41",
+        "nombre": "Sonzacate",
+        "departamento": 3
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 42,
+    "fields": {
+        "codigo": "42",
+        "nombre": "Agua Caliente",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 43,
+    "fields": {
+        "codigo": "43",
+        "nombre": "Arcatao",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 44,
+    "fields": {
+        "codigo": "44",
+        "nombre": "Azacualpa",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 45,
+    "fields": {
+        "codigo": "45",
+        "nombre": "Chalatenango (ciudad)",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 46,
+    "fields": {
+        "codigo": "46",
+        "nombre": "Comalapa",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 47,
+    "fields": {
+        "codigo": "47",
+        "nombre": "Cital\u00e1",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 48,
+    "fields": {
+        "codigo": "48",
+        "nombre": "Concepci\u00f3n Quezaltepeque",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 49,
+    "fields": {
+        "codigo": "49",
+        "nombre": "Dulce Nombre de Mar\u00eda",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 50,
+    "fields": {
+        "codigo": "50",
+        "nombre": "El Carrizal",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 51,
+    "fields": {
+        "codigo": "51",
+        "nombre": "El Para\u00edso",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 52,
+    "fields": {
+        "codigo": "52",
+        "nombre": "La Laguna",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 53,
+    "fields": {
+        "codigo": "53",
+        "nombre": "La Palma",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 54,
+    "fields": {
+        "codigo": "54",
+        "nombre": "La Reina",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 55,
+    "fields": {
+        "codigo": "55",
+        "nombre": "Las Vueltas",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 56,
+    "fields": {
+        "codigo": "56",
+        "nombre": "Nueva Concepci\u00f3n",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 57,
+    "fields": {
+        "codigo": "57",
+        "nombre": "Nueva Trinidad",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 58,
+    "fields": {
+        "codigo": "58",
+        "nombre": "Nombre de Jes\u00fas",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 59,
+    "fields": {
+        "codigo": "59",
+        "nombre": "Ojos de Agua",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 60,
+    "fields": {
+        "codigo": "60",
+        "nombre": "Potonico",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 61,
+    "fields": {
+        "codigo": "61",
+        "nombre": "San Antonio de la Cruz",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 62,
+    "fields": {
+        "codigo": "62",
+        "nombre": "San Antonio Los Ranchos",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 63,
+    "fields": {
+        "codigo": "63",
+        "nombre": "San Fernando",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 64,
+    "fields": {
+        "codigo": "64",
+        "nombre": "San Francisco Lempa",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 65,
+    "fields": {
+        "codigo": "65",
+        "nombre": "San Francisco Moraz\u00e1n",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 66,
+    "fields": {
+        "codigo": "66",
+        "nombre": "San Ignacio",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 67,
+    "fields": {
+        "codigo": "67",
+        "nombre": "San Isidro Labrador",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 68,
+    "fields": {
+        "codigo": "68",
+        "nombre": "San Jos\u00e9 Cancasque",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 69,
+    "fields": {
+        "codigo": "69",
+        "nombre": "San Jos\u00e9 Las Flores",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 70,
+    "fields": {
+        "codigo": "70",
+        "nombre": "San Luis del Carmen",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 71,
+    "fields": {
+        "codigo": "71",
+        "nombre": "San Miguel de Mercedes",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 72,
+    "fields": {
+        "codigo": "72",
+        "nombre": "San Rafael",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 73,
+    "fields": {
+        "codigo": "73",
+        "nombre": "Santa Rita",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 74,
+    "fields": {
+        "codigo": "74",
+        "nombre": "Tejutla",
+        "departamento": 4
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 75,
+    "fields": {
+        "codigo": "75",
+        "nombre": "Candelaria",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 76,
+    "fields": {
+        "codigo": "76",
+        "nombre": "Cojutepeque",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 77,
+    "fields": {
+        "codigo": "77",
+        "nombre": "El Carmen",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 78,
+    "fields": {
+        "codigo": "78",
+        "nombre": "El Rosario",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 79,
+    "fields": {
+        "codigo": "79",
+        "nombre": "Monte San Juan",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 80,
+    "fields": {
+        "codigo": "80",
+        "nombre": "Oratorio de Concepci\u00f3n",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 81,
+    "fields": {
+        "codigo": "81",
+        "nombre": "San Bartolom\u00e9 Perulap\u00eda",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 82,
+    "fields": {
+        "codigo": "82",
+        "nombre": "San Crist\u00f3bal",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 83,
+    "fields": {
+        "codigo": "83",
+        "nombre": "San Jos\u00e9 Guayabal",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 84,
+    "fields": {
+        "codigo": "84",
+        "nombre": "San Pedro Perulap\u00e1n",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 85,
+    "fields": {
+        "codigo": "85",
+        "nombre": "San Rafael Cedros",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 86,
+    "fields": {
+        "codigo": "86",
+        "nombre": "San Ram\u00f3n",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 87,
+    "fields": {
+        "codigo": "87",
+        "nombre": "Santa Cruz Analquito",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 88,
+    "fields": {
+        "codigo": "88",
+        "nombre": "Santa Cruz Michapa",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 89,
+    "fields": {
+        "codigo": "89",
+        "nombre": "Suchitoto",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 90,
+    "fields": {
+        "codigo": "90",
+        "nombre": "Tenancingo",
+        "departamento": 5
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 91,
+    "fields": {
+        "codigo": "91",
+        "nombre": "Aguilares",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 92,
+    "fields": {
+        "codigo": "92",
+        "nombre": "Apopa",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 93,
+    "fields": {
+        "codigo": "93",
+        "nombre": "Ayutuxtepeque",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 94,
+    "fields": {
+        "codigo": "94",
+        "nombre": "Cuscatancingo",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 95,
+    "fields": {
+        "codigo": "95",
+        "nombre": "Ciudad Delgado",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 96,
+    "fields": {
+        "codigo": "96",
+        "nombre": "El Paisnal",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 97,
+    "fields": {
+        "codigo": "97",
+        "nombre": "Guazapa",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 98,
+    "fields": {
+        "codigo": "98",
+        "nombre": "Ilopango",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 99,
+    "fields": {
+        "codigo": "99",
+        "nombre": "Mejicanos",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 100,
+    "fields": {
+        "codigo": "100",
+        "nombre": "Nejapa",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 101,
+    "fields": {
+        "codigo": "101",
+        "nombre": "Panchimalco",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 102,
+    "fields": {
+        "codigo": "102",
+        "nombre": "Rosario de Mora",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 103,
+    "fields": {
+        "codigo": "103",
+        "nombre": "San Marcos",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 104,
+    "fields": {
+        "codigo": "104",
+        "nombre": "San Mart\u00edn",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 105,
+    "fields": {
+        "codigo": "105",
+        "nombre": "San Salvador",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 106,
+    "fields": {
+        "codigo": "106",
+        "nombre": "Santiago Texacuangos",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 107,
+    "fields": {
+        "codigo": "107",
+        "nombre": "Santo Tom\u00e1s",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 108,
+    "fields": {
+        "codigo": "108",
+        "nombre": "Soyapango",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 109,
+    "fields": {
+        "codigo": "109",
+        "nombre": "Tonacatepeque",
+        "departamento": 6
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 110,
+    "fields": {
+        "codigo": "110",
+        "nombre": "Antiguo Cuscatl\u00e1n",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 111,
+    "fields": {
+        "codigo": "111",
+        "nombre": "Chiltiup\u00e1n",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 112,
+    "fields": {
+        "codigo": "112",
+        "nombre": "Ciudad Arce",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 113,
+    "fields": {
+        "codigo": "113",
+        "nombre": "Col\u00f3n",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 114,
+    "fields": {
+        "codigo": "114",
+        "nombre": "Comasagua",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 115,
+    "fields": {
+        "codigo": "115",
+        "nombre": "Huiz\u00facar",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 116,
+    "fields": {
+        "codigo": "116",
+        "nombre": "Jayaque",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 117,
+    "fields": {
+        "codigo": "117",
+        "nombre": "Jicalapa",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 118,
+    "fields": {
+        "codigo": "118",
+        "nombre": "La Libertad",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 119,
+    "fields": {
+        "codigo": "119",
+        "nombre": "Nueva San Salvador (Santa Tecla)",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 120,
+    "fields": {
+        "codigo": "120",
+        "nombre": "Nuevo Cuscatl\u00e1n",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 121,
+    "fields": {
+        "codigo": "121",
+        "nombre": "San Juan Opico",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 122,
+    "fields": {
+        "codigo": "122",
+        "nombre": "Quezaltepeque",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 123,
+    "fields": {
+        "codigo": "123",
+        "nombre": "Sacacoyo",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 124,
+    "fields": {
+        "codigo": "124",
+        "nombre": "San Jos\u00e9 Villanueva",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 125,
+    "fields": {
+        "codigo": "125",
+        "nombre": "San Mat\u00edas",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 126,
+    "fields": {
+        "codigo": "126",
+        "nombre": "San Pablo Tacachico",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 127,
+    "fields": {
+        "codigo": "127",
+        "nombre": "Talnique",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 128,
+    "fields": {
+        "codigo": "128",
+        "nombre": "Tamanique",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 129,
+    "fields": {
+        "codigo": "129",
+        "nombre": "Teotepeque",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 130,
+    "fields": {
+        "codigo": "130",
+        "nombre": "Tepecoyo",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 131,
+    "fields": {
+        "codigo": "131",
+        "nombre": "Zaragoza",
+        "departamento": 7
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 132,
+    "fields": {
+        "codigo": "132",
+        "nombre": "Apastepeque",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 133,
+    "fields": {
+        "codigo": "133",
+        "nombre": "Guadalupe",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 134,
+    "fields": {
+        "codigo": "134",
+        "nombre": "San Cayetano Istepeque",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 135,
+    "fields": {
+        "codigo": "135",
+        "nombre": "San Esteban Catarina",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 136,
+    "fields": {
+        "codigo": "136",
+        "nombre": "San Ildefonso",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 137,
+    "fields": {
+        "codigo": "137",
+        "nombre": "San Lorenzo",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 138,
+    "fields": {
+        "codigo": "138",
+        "nombre": "San Sebasti\u00e1n",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 139,
+    "fields": {
+        "codigo": "139",
+        "nombre": "San Vicente",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 140,
+    "fields": {
+        "codigo": "140",
+        "nombre": "Santa Clara",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 141,
+    "fields": {
+        "codigo": "141",
+        "nombre": "Santo Domingo",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 142,
+    "fields": {
+        "codigo": "142",
+        "nombre": "Tecoluca",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 143,
+    "fields": {
+        "codigo": "143",
+        "nombre": "Tepetit\u00e1n",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 144,
+    "fields": {
+        "codigo": "144",
+        "nombre": "Verapaz",
+        "departamento": 8
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 145,
+    "fields": {
+        "codigo": "145",
+        "nombre": "Cinquera",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 146,
+    "fields": {
+        "codigo": "146",
+        "nombre": "Dolores",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 147,
+    "fields": {
+        "codigo": "147",
+        "nombre": "Guacotecti",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 148,
+    "fields": {
+        "codigo": "148",
+        "nombre": "Ilobasco",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 149,
+    "fields": {
+        "codigo": "149",
+        "nombre": "Jutiapa",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 150,
+    "fields": {
+        "codigo": "150",
+        "nombre": "San Isidro",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 151,
+    "fields": {
+        "codigo": "151",
+        "nombre": "Sensuntepeque",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 152,
+    "fields": {
+        "codigo": "152",
+        "nombre": "Tejutepeque",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 153,
+    "fields": {
+        "codigo": "153",
+        "nombre": "Victoria",
+        "departamento": 9
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 154,
+    "fields": {
+        "codigo": "154",
+        "nombre": "Cuyultit\u00e1n",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 155,
+    "fields": {
+        "codigo": "155",
+        "nombre": "El Rosario",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 156,
+    "fields": {
+        "codigo": "156",
+        "nombre": "Jerusal\u00e9n",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 157,
+    "fields": {
+        "codigo": "157",
+        "nombre": "Mercedes La Ceiba",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 158,
+    "fields": {
+        "codigo": "158",
+        "nombre": "Olocuilta",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 159,
+    "fields": {
+        "codigo": "159",
+        "nombre": "Para\u00edso de Osorio",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 161,
+    "fields": {
+        "codigo": "161",
+        "nombre": "San Antonio Masahuat",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 162,
+    "fields": {
+        "codigo": "162",
+        "nombre": "San Emigdio",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 163,
+    "fields": {
+        "codigo": "163",
+        "nombre": "San Francisco Chinameca",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 164,
+    "fields": {
+        "codigo": "164",
+        "nombre": "San Juan Nonualco",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 165,
+    "fields": {
+        "codigo": "165",
+        "nombre": "San Juan Talpa",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 166,
+    "fields": {
+        "codigo": "166",
+        "nombre": "San Juan Tepezontes",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 167,
+    "fields": {
+        "codigo": "167",
+        "nombre": "San Luis Talpa",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 168,
+    "fields": {
+        "codigo": "168",
+        "nombre": "San Luis La Herradura",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 169,
+    "fields": {
+        "codigo": "169",
+        "nombre": "San Miguel Tepezontes",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 170,
+    "fields": {
+        "codigo": "170",
+        "nombre": "San Pedro Masahuat",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 171,
+    "fields": {
+        "codigo": "171",
+        "nombre": "San Pedro Nonualco",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 172,
+    "fields": {
+        "codigo": "172",
+        "nombre": "San Rafael Obrajuelo",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 173,
+    "fields": {
+        "codigo": "173",
+        "nombre": "Santa Mar\u00eda Ostuma",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 174,
+    "fields": {
+        "codigo": "174",
+        "nombre": "Santiago Nonualco",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 175,
+    "fields": {
+        "codigo": "175",
+        "nombre": "Tapalhuaca",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 176,
+    "fields": {
+        "codigo": "176",
+        "nombre": "Zacatecoluca",
+        "departamento": 10
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 177,
+    "fields": {
+        "codigo": "177",
+        "nombre": "Alegr\u00eda",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 178,
+    "fields": {
+        "codigo": "178",
+        "nombre": "Berl\u00edn",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 179,
+    "fields": {
+        "codigo": "179",
+        "nombre": "California",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 180,
+    "fields": {
+        "codigo": "180",
+        "nombre": "Concepci\u00f3n Batres",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 181,
+    "fields": {
+        "codigo": "181",
+        "nombre": "El Triunfo",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 182,
+    "fields": {
+        "codigo": "182",
+        "nombre": "Ereguayqu\u00edn",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 183,
+    "fields": {
+        "codigo": "183",
+        "nombre": "Estanzuelas",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 184,
+    "fields": {
+        "codigo": "184",
+        "nombre": "Jiquilisco",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 185,
+    "fields": {
+        "codigo": "185",
+        "nombre": "Jucuapa",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 186,
+    "fields": {
+        "codigo": "186",
+        "nombre": "Jucuar\u00e1n",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 187,
+    "fields": {
+        "codigo": "187",
+        "nombre": "Mercedes Uma\u00f1a",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 188,
+    "fields": {
+        "codigo": "188",
+        "nombre": "Nueva Granada",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 189,
+    "fields": {
+        "codigo": "189",
+        "nombre": "Ozatl\u00e1n",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 190,
+    "fields": {
+        "codigo": "190",
+        "nombre": "Puerto El Triunfo",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 191,
+    "fields": {
+        "codigo": "191",
+        "nombre": "San Agust\u00edn",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 192,
+    "fields": {
+        "codigo": "192",
+        "nombre": "San Buenaventura",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 193,
+    "fields": {
+        "codigo": "193",
+        "nombre": "San Dionisio",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 194,
+    "fields": {
+        "codigo": "194",
+        "nombre": "San Francisco Javier",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 195,
+    "fields": {
+        "codigo": "195",
+        "nombre": "Santa Elena",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 196,
+    "fields": {
+        "codigo": "196",
+        "nombre": "Santa Mar\u00eda",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 197,
+    "fields": {
+        "codigo": "197",
+        "nombre": "Santiago de Mar\u00eda",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 198,
+    "fields": {
+        "codigo": "198",
+        "nombre": "Tecap\u00e1n",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 199,
+    "fields": {
+        "codigo": "199",
+        "nombre": "Usulut\u00e1n",
+        "departamento": 11
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 201,
+    "fields": {
+        "codigo": "201",
+        "nombre": "Carolina",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 202,
+    "fields": {
+        "codigo": "202",
+        "nombre": "Chapeltique",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 203,
+    "fields": {
+        "codigo": "203",
+        "nombre": "Chinameca",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 204,
+    "fields": {
+        "codigo": "204",
+        "nombre": "Chirilagua",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 205,
+    "fields": {
+        "codigo": "205",
+        "nombre": "Ciudad Barrios",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 206,
+    "fields": {
+        "codigo": "206",
+        "nombre": "Comacar\u00e1n",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 207,
+    "fields": {
+        "codigo": "207",
+        "nombre": "El Tr\u00e1nsito",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 208,
+    "fields": {
+        "codigo": "208",
+        "nombre": "Lolotique",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 209,
+    "fields": {
+        "codigo": "209",
+        "nombre": "Moncagua",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 210,
+    "fields": {
+        "codigo": "210",
+        "nombre": "Nueva Guadalupe",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 211,
+    "fields": {
+        "codigo": "211",
+        "nombre": "Nuevo Ed\u00e9n de San Juan",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 212,
+    "fields": {
+        "codigo": "212",
+        "nombre": "Quelepa",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 213,
+    "fields": {
+        "codigo": "213",
+        "nombre": "San Antonio del Mosco",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 214,
+    "fields": {
+        "codigo": "214",
+        "nombre": "San Gerardo",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 215,
+    "fields": {
+        "codigo": "215",
+        "nombre": "San Jorge",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 216,
+    "fields": {
+        "codigo": "216",
+        "nombre": "San Luis de la Reina",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 217,
+    "fields": {
+        "codigo": "217",
+        "nombre": "San Miguel",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 218,
+    "fields": {
+        "codigo": "218",
+        "nombre": "San Rafael Oriente",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 219,
+    "fields": {
+        "codigo": "219",
+        "nombre": "Sesori",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 220,
+    "fields": {
+        "codigo": "220",
+        "nombre": "Uluazapa",
+        "departamento": 12
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 221,
+    "fields": {
+        "codigo": "221",
+        "nombre": "Arambala",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 222,
+    "fields": {
+        "codigo": "222",
+        "nombre": "Cacaopera",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 223,
+    "fields": {
+        "codigo": "223",
+        "nombre": "Chilanga",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 224,
+    "fields": {
+        "codigo": "224",
+        "nombre": "Corinto",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 225,
+    "fields": {
+        "codigo": "225",
+        "nombre": "Delicias de Concepci\u00f3n",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 226,
+    "fields": {
+        "codigo": "226",
+        "nombre": "El Divisadero",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 227,
+    "fields": {
+        "codigo": "227",
+        "nombre": "El Rosario",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 228,
+    "fields": {
+        "codigo": "228",
+        "nombre": "Gualococti",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 229,
+    "fields": {
+        "codigo": "229",
+        "nombre": "Guatajiagua",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 230,
+    "fields": {
+        "codigo": "230",
+        "nombre": "Joateca",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 231,
+    "fields": {
+        "codigo": "231",
+        "nombre": "Jocoaitique",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 232,
+    "fields": {
+        "codigo": "232",
+        "nombre": "Jocoro",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 233,
+    "fields": {
+        "codigo": "233",
+        "nombre": "Lolotiquillo",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 234,
+    "fields": {
+        "codigo": "234",
+        "nombre": "Meanguera",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 235,
+    "fields": {
+        "codigo": "235",
+        "nombre": "Osicala",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 236,
+    "fields": {
+        "codigo": "236",
+        "nombre": "Perqu\u00edn",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 237,
+    "fields": {
+        "codigo": "237",
+        "nombre": "San Carlos",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 238,
+    "fields": {
+        "codigo": "238",
+        "nombre": "San Fernando",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 239,
+    "fields": {
+        "codigo": "239",
+        "nombre": "San Francisco Gotera",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 240,
+    "fields": {
+        "codigo": "240",
+        "nombre": "San Isidro",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 241,
+    "fields": {
+        "codigo": "241",
+        "nombre": "San Sim\u00f3n",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 242,
+    "fields": {
+        "codigo": "242",
+        "nombre": "Sensembra",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 243,
+    "fields": {
+        "codigo": "243",
+        "nombre": "Sociedad",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 244,
+    "fields": {
+        "codigo": "244",
+        "nombre": "Torola",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 245,
+    "fields": {
+        "codigo": "245",
+        "nombre": "Yamabal",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 246,
+    "fields": {
+        "codigo": "246",
+        "nombre": "Yoloaiqu\u00edn",
+        "departamento": 13
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 247,
+    "fields": {
+        "codigo": "247",
+        "nombre": "Anamor\u00f3s",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 248,
+    "fields": {
+        "codigo": "248",
+        "nombre": "Bolivar",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 249,
+    "fields": {
+        "codigo": "249",
+        "nombre": "Concepci\u00f3n de Oriente",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 250,
+    "fields": {
+        "codigo": "250",
+        "nombre": "Conchagua",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 251,
+    "fields": {
+        "codigo": "251",
+        "nombre": "El Carmen",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 252,
+    "fields": {
+        "codigo": "252",
+        "nombre": "El Sauce",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 253,
+    "fields": {
+        "codigo": "253",
+        "nombre": "Intipuc\u00e1",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 254,
+    "fields": {
+        "codigo": "254",
+        "nombre": "La Uni\u00f3n",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 255,
+    "fields": {
+        "codigo": "255",
+        "nombre": "Lislique",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 256,
+    "fields": {
+        "codigo": "256",
+        "nombre": "Meanguera del Golfo",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 257,
+    "fields": {
+        "codigo": "257",
+        "nombre": "Nueva Esparta",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 258,
+    "fields": {
+        "codigo": "258",
+        "nombre": "Pasaquina",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 259,
+    "fields": {
+        "codigo": "259",
+        "nombre": "Polor\u00f3s",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 260,
+    "fields": {
+        "codigo": "260",
+        "nombre": "San Alejo",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 261,
+    "fields": {
+        "codigo": "261",
+        "nombre": "San Jos\u00e9",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 262,
+    "fields": {
+        "codigo": "262",
+        "nombre": "Santa Rosa de Lima",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 263,
+    "fields": {
+        "codigo": "263",
+        "nombre": "Yayantique",
+        "departamento": 14
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 264,
+    "fields": {
+        "codigo": "264",
+        "nombre": "Yucuaiqu\u00edn",
+        "departamento": 14
+    }
+}
+]

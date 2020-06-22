@@ -1,0 +1,1289 @@
+[
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 1,
+    "fields": {
+        "nombre": "Docente de Artes Auditivas",
+        "fecha_inicio": "2015-02-21",
+        "fecha_fin": "2018-12-23",
+        "descuento_total": "244.00",
+        "cantidad_descontada": "1.00",
+        "descuento": "11.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 2,
+    "fields": {
+        "nombre": "Asistente de Publicidad y Mercadeo",
+        "fecha_inicio": "2016-04-20",
+        "fecha_fin": "2017-11-22",
+        "descuento_total": "170.00",
+        "cantidad_descontada": "2.00",
+        "descuento": "10.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 3,
+    "fields": {
+        "nombre": "Dibujante",
+        "fecha_inicio": "2011-02-24",
+        "fecha_fin": "2017-06-10",
+        "descuento_total": "316.00",
+        "cantidad_descontada": "3.00",
+        "descuento": "3.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 4,
+    "fields": {
+        "nombre": "Higienista Dental",
+        "fecha_inicio": "2012-05-14",
+        "fecha_fin": "2018-12-17",
+        "descuento_total": "54.00",
+        "cantidad_descontada": "4.00",
+        "descuento": "46.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 5,
+    "fields": {
+        "nombre": "Asistente de Seguros",
+        "fecha_inicio": "2012-02-08",
+        "fecha_fin": "2017-09-10",
+        "descuento_total": "517.00",
+        "cantidad_descontada": "5.00",
+        "descuento": "42.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 6,
+    "fields": {
+        "nombre": "Coordinador de Centro de Estudios en Artes",
+        "fecha_inicio": "2012-03-10",
+        "fecha_fin": "2017-07-27",
+        "descuento_total": "110.00",
+        "cantidad_descontada": "6.00",
+        "descuento": "15.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 7,
+    "fields": {
+        "nombre": "Asistente de Entomolog\u00eda",
+        "fecha_inicio": "2017-03-24",
+        "fecha_fin": "2018-12-14",
+        "descuento_total": "595.00",
+        "cantidad_descontada": "7.00",
+        "descuento": "26.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 8,
+    "fields": {
+        "nombre": "Analista de Registro y Control Estad\u00edstico",
+        "fecha_inicio": "2015-05-28",
+        "fecha_fin": "2017-10-11",
+        "descuento_total": "71.00",
+        "cantidad_descontada": "8.00",
+        "descuento": "12.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 9,
+    "fields": {
+        "nombre": "Instructor de Desarrollo en Artes Auditivas",
+        "fecha_inicio": "2015-04-24",
+        "fecha_fin": "2018-06-10",
+        "descuento_total": "233.00",
+        "cantidad_descontada": "9.00",
+        "descuento": "2.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 10,
+    "fields": {
+        "nombre": "Administrador de Redes y Recursos de Inform\u00e1tica",
+        "fecha_inicio": "2011-04-17",
+        "fecha_fin": "2018-12-20",
+        "descuento_total": "52.00",
+        "cantidad_descontada": "10.00",
+        "descuento": "17.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 11,
+    "fields": {
+        "nombre": "Contabilista",
+        "fecha_inicio": "2016-02-21",
+        "fecha_fin": "2017-11-27",
+        "descuento_total": "414.00",
+        "cantidad_descontada": "11.00",
+        "descuento": "13.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 12,
+    "fields": {
+        "nombre": "Instrumentista Folkl\u00f3rico",
+        "fecha_inicio": "2016-05-20",
+        "fecha_fin": "2018-06-16",
+        "descuento_total": "326.00",
+        "cantidad_descontada": "12.00",
+        "descuento": "39.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 13,
+    "fields": {
+        "nombre": "Farmac\u00e9utico",
+        "fecha_inicio": "2015-02-10",
+        "fecha_fin": "2018-06-24",
+        "descuento_total": "219.00",
+        "cantidad_descontada": "13.00",
+        "descuento": "15.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 14,
+    "fields": {
+        "nombre": "Especialista de Sistemas de Inform\u00e1tica",
+        "fecha_inicio": "2011-02-19",
+        "fecha_fin": "2018-11-11",
+        "descuento_total": "417.00",
+        "cantidad_descontada": "14.00",
+        "descuento": "31.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 15,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n Ambiental",
+        "fecha_inicio": "2016-04-27",
+        "fecha_fin": "2018-10-20",
+        "descuento_total": "292.00",
+        "cantidad_descontada": "15.00",
+        "descuento": "41.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 16,
+    "fields": {
+        "nombre": "Analista de Recursos Humanos",
+        "fecha_inicio": "2011-05-24",
+        "fecha_fin": "2017-06-04",
+        "descuento_total": "372.00",
+        "cantidad_descontada": "16.00",
+        "descuento": "34.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 17,
+    "fields": {
+        "nombre": "Director de Agrupaci\u00f3n Musical",
+        "fecha_inicio": "2016-04-14",
+        "fecha_fin": "2017-11-26",
+        "descuento_total": "403.00",
+        "cantidad_descontada": "17.00",
+        "descuento": "36.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 18,
+    "fields": {
+        "nombre": "Ingeniero Forestal",
+        "fecha_inicio": "2015-02-11",
+        "fecha_fin": "2018-06-12",
+        "descuento_total": "390.00",
+        "cantidad_descontada": "18.00",
+        "descuento": "18.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 19,
+    "fields": {
+        "nombre": "Gerente de Promoci\u00f3n y Administraci\u00f3n de Espacios y Patrimonio Cultural",
+        "fecha_inicio": "2014-03-14",
+        "fecha_fin": "2017-06-14",
+        "descuento_total": "271.00",
+        "cantidad_descontada": "19.00",
+        "descuento": "32.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 20,
+    "fields": {
+        "nombre": "Docente de Aula",
+        "fecha_inicio": "2011-03-03",
+        "fecha_fin": "2018-06-06",
+        "descuento_total": "191.00",
+        "cantidad_descontada": "20.00",
+        "descuento": "18.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 21,
+    "fields": {
+        "nombre": "Administrador",
+        "fecha_inicio": "2011-04-25",
+        "fecha_fin": "2018-06-24",
+        "descuento_total": "583.00",
+        "cantidad_descontada": "21.00",
+        "descuento": "43.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 22,
+    "fields": {
+        "nombre": "Asistente de Biblioteca",
+        "fecha_inicio": "2013-04-16",
+        "fecha_fin": "2018-08-18",
+        "descuento_total": "190.00",
+        "cantidad_descontada": "22.00",
+        "descuento": "16.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 23,
+    "fields": {
+        "nombre": "Consultor de Informaci\u00f3n y Control Estudiantil",
+        "fecha_inicio": "2014-01-11",
+        "fecha_fin": "2017-09-16",
+        "descuento_total": "265.00",
+        "cantidad_descontada": "23.00",
+        "descuento": "48.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 24,
+    "fields": {
+        "nombre": "Dise\u00f1ador Gr\u00e1fico",
+        "fecha_inicio": "2017-05-20",
+        "fecha_fin": "2018-10-04",
+        "descuento_total": "404.00",
+        "cantidad_descontada": "24.00",
+        "descuento": "40.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 25,
+    "fields": {
+        "nombre": "Planificador",
+        "fecha_inicio": "2011-02-01",
+        "fecha_fin": "2018-07-05",
+        "descuento_total": "283.00",
+        "cantidad_descontada": "25.00",
+        "descuento": "31.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 26,
+    "fields": {
+        "nombre": "Director de Agrupaci\u00f3n Musical",
+        "fecha_inicio": "2014-05-27",
+        "fecha_fin": "2017-10-23",
+        "descuento_total": "259.00",
+        "cantidad_descontada": "26.00",
+        "descuento": "4.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 27,
+    "fields": {
+        "nombre": "Coordinador de Centro de Estudios en Artes",
+        "fecha_inicio": "2012-04-17",
+        "fecha_fin": "2017-11-07",
+        "descuento_total": "97.00",
+        "cantidad_descontada": "27.00",
+        "descuento": "3.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 28,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Artes Esc\u00e9nicas",
+        "fecha_inicio": "2014-03-17",
+        "fecha_fin": "2018-07-01",
+        "descuento_total": "431.00",
+        "cantidad_descontada": "28.00",
+        "descuento": "44.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 29,
+    "fields": {
+        "nombre": "Capell\u00e1n",
+        "fecha_inicio": "2016-05-26",
+        "fecha_fin": "2018-07-14",
+        "descuento_total": "569.00",
+        "cantidad_descontada": "29.00",
+        "descuento": "16.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 30,
+    "fields": {
+        "nombre": "Asistente de Laboratorio de Idiomas",
+        "fecha_inicio": "2011-04-07",
+        "fecha_fin": "2018-11-07",
+        "descuento_total": "107.00",
+        "cantidad_descontada": "30.00",
+        "descuento": "11.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 31,
+    "fields": {
+        "nombre": "Analista de Registro y Ctrl. Estad\u00edstico Jefe",
+        "fecha_inicio": "2015-01-07",
+        "fecha_fin": "2017-08-05",
+        "descuento_total": "20.00",
+        "cantidad_descontada": "31.00",
+        "descuento": "30.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 32,
+    "fields": {
+        "nombre": "Fisioterapeuta",
+        "fecha_inicio": "2015-04-14",
+        "fecha_fin": "2017-08-25",
+        "descuento_total": "180.00",
+        "cantidad_descontada": "32.00",
+        "descuento": "4.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 33,
+    "fields": {
+        "nombre": "Cal\u00edgrafo",
+        "fecha_inicio": "2015-04-25",
+        "fecha_fin": "2017-10-03",
+        "descuento_total": "95.00",
+        "cantidad_descontada": "33.00",
+        "descuento": "33.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 34,
+    "fields": {
+        "nombre": "Editor de Asuntos Audiovisuales",
+        "fecha_inicio": "2011-01-11",
+        "fecha_fin": "2018-09-03",
+        "descuento_total": "229.00",
+        "cantidad_descontada": "34.00",
+        "descuento": "3.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 35,
+    "fields": {
+        "nombre": "Facilitador de Desarrollo en Asuntos Literarios",
+        "fecha_inicio": "2011-01-10",
+        "fecha_fin": "2018-06-05",
+        "descuento_total": "530.00",
+        "cantidad_descontada": "35.00",
+        "descuento": "32.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 36,
+    "fields": {
+        "nombre": "Promotor Vendedor de Material Did\u00e1ctico",
+        "fecha_inicio": "2015-03-09",
+        "fecha_fin": "2018-06-10",
+        "descuento_total": "473.00",
+        "cantidad_descontada": "36.00",
+        "descuento": "35.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 37,
+    "fields": {
+        "nombre": "porcentaje de despidos",
+        "fecha_inicio": "2012-03-22",
+        "fecha_fin": "2018-11-07",
+        "descuento_total": "499.00",
+        "cantidad_descontada": "37.00",
+        "descuento": "5.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 38,
+    "fields": {
+        "nombre": "Gerente de Promoci\u00f3n y Administraci\u00f3n de Espacios y Patrimonio Cultural",
+        "fecha_inicio": "2014-04-10",
+        "fecha_fin": "2018-07-28",
+        "descuento_total": "86.00",
+        "cantidad_descontada": "38.00",
+        "descuento": "7.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 39,
+    "fields": {
+        "nombre": "Inspector de Obras",
+        "fecha_inicio": "2015-04-10",
+        "fecha_fin": "2017-12-21",
+        "descuento_total": "164.00",
+        "cantidad_descontada": "39.00",
+        "descuento": "43.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 40,
+    "fields": {
+        "nombre": "Ingeniero Agr\u00f3nomo",
+        "fecha_inicio": "2016-01-03",
+        "fecha_fin": "2018-11-11",
+        "descuento_total": "433.00",
+        "cantidad_descontada": "40.00",
+        "descuento": "48.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 41,
+    "fields": {
+        "nombre": "M\u00e9dico General",
+        "fecha_inicio": "2017-02-19",
+        "fecha_fin": "2017-07-16",
+        "descuento_total": "639.00",
+        "cantidad_descontada": "41.00",
+        "descuento": "6.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 42,
+    "fields": {
+        "nombre": "Director de Ballet o Danza",
+        "fecha_inicio": "2017-01-13",
+        "fecha_fin": "2018-12-12",
+        "descuento_total": "52.00",
+        "cantidad_descontada": "42.00",
+        "descuento": "47.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 43,
+    "fields": {
+        "nombre": "Oficinista",
+        "fecha_inicio": "2012-05-28",
+        "fecha_fin": "2017-09-26",
+        "descuento_total": "641.00",
+        "cantidad_descontada": "43.00",
+        "descuento": "10.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 44,
+    "fields": {
+        "nombre": "Especialista en Asuntos Literarios",
+        "fecha_inicio": "2016-04-21",
+        "fecha_fin": "2018-11-19",
+        "descuento_total": "433.00",
+        "cantidad_descontada": "44.00",
+        "descuento": "21.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 45,
+    "fields": {
+        "nombre": "Camar\u00f3grafo",
+        "fecha_inicio": "2017-05-21",
+        "fecha_fin": "2017-06-06",
+        "descuento_total": "594.00",
+        "cantidad_descontada": "45.00",
+        "descuento": "15.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 46,
+    "fields": {
+        "nombre": "Camar\u00f3grafo",
+        "fecha_inicio": "2015-01-14",
+        "fecha_fin": "2017-09-08",
+        "descuento_total": "385.00",
+        "cantidad_descontada": "46.00",
+        "descuento": "13.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 47,
+    "fields": {
+        "nombre": "Jefe Central de Informaci\u00f3n y Control Estudiantil",
+        "fecha_inicio": "2016-02-05",
+        "fecha_fin": "2017-10-25",
+        "descuento_total": "254.00",
+        "cantidad_descontada": "47.00",
+        "descuento": "13.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 48,
+    "fields": {
+        "nombre": "Ec\u00f3nomo",
+        "fecha_inicio": "2013-01-05",
+        "fecha_fin": "2017-06-19",
+        "descuento_total": "147.00",
+        "cantidad_descontada": "48.00",
+        "descuento": "43.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 49,
+    "fields": {
+        "nombre": "Jefe de Emisi\u00f3n de Pagos",
+        "fecha_inicio": "2012-02-16",
+        "fecha_fin": "2018-08-18",
+        "descuento_total": "529.00",
+        "cantidad_descontada": "49.00",
+        "descuento": "25.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 50,
+    "fields": {
+        "nombre": "Entrenador Deportivo",
+        "fecha_inicio": "2012-05-03",
+        "fecha_fin": "2017-07-03",
+        "descuento_total": "272.00",
+        "cantidad_descontada": "50.00",
+        "descuento": "13.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 51,
+    "fields": {
+        "nombre": "Jefe de Inform\u00e1tica",
+        "fecha_inicio": "2017-01-05",
+        "fecha_fin": "2017-09-10",
+        "descuento_total": "294.00",
+        "cantidad_descontada": "51.00",
+        "descuento": "30.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 52,
+    "fields": {
+        "nombre": "Abogado Jefe",
+        "fecha_inicio": "2014-03-21",
+        "fecha_fin": "2018-12-13",
+        "descuento_total": "326.00",
+        "cantidad_descontada": "52.00",
+        "descuento": "28.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 53,
+    "fields": {
+        "nombre": "Coordinador de Pasant\u00edas y Actividades Complementarias",
+        "fecha_inicio": "2015-05-04",
+        "fecha_fin": "2017-12-08",
+        "descuento_total": "12.00",
+        "cantidad_descontada": "53.00",
+        "descuento": "46.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 54,
+    "fields": {
+        "nombre": "Jefe de Protecci\u00f3n Ambiental",
+        "fecha_inicio": "2012-02-05",
+        "fecha_fin": "2018-06-07",
+        "descuento_total": "472.00",
+        "cantidad_descontada": "54.00",
+        "descuento": "26.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 55,
+    "fields": {
+        "nombre": "Jefe de Talleres de Obras",
+        "fecha_inicio": "2013-02-27",
+        "fecha_fin": "2018-07-08",
+        "descuento_total": "367.00",
+        "cantidad_descontada": "55.00",
+        "descuento": "3.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 56,
+    "fields": {
+        "nombre": "Auxiliar de Laboratorio",
+        "fecha_inicio": "2016-04-25",
+        "fecha_fin": "2017-08-19",
+        "descuento_total": "30.00",
+        "cantidad_descontada": "56.00",
+        "descuento": "43.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 57,
+    "fields": {
+        "nombre": "Operador de Audio",
+        "fecha_inicio": "2016-04-20",
+        "fecha_fin": "2017-07-08",
+        "descuento_total": "495.00",
+        "cantidad_descontada": "57.00",
+        "descuento": "12.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 58,
+    "fields": {
+        "nombre": "Farmac\u00e9utico",
+        "fecha_inicio": "2017-03-25",
+        "fecha_fin": "2017-11-19",
+        "descuento_total": "282.00",
+        "cantidad_descontada": "58.00",
+        "descuento": "34.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 59,
+    "fields": {
+        "nombre": "Asistente de Psic\u00f3logo (C\u00f3digo Transitorio)",
+        "fecha_inicio": "2011-02-14",
+        "fecha_fin": "2017-09-20",
+        "descuento_total": "317.00",
+        "cantidad_descontada": "59.00",
+        "descuento": "26.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 60,
+    "fields": {
+        "nombre": "Asistente de C\u00e1mara",
+        "fecha_inicio": "2014-04-12",
+        "fecha_fin": "2017-10-28",
+        "descuento_total": "253.00",
+        "cantidad_descontada": "60.00",
+        "descuento": "48.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 61,
+    "fields": {
+        "nombre": "Soplador de Vidrio",
+        "fecha_inicio": "2016-05-03",
+        "fecha_fin": "2018-12-25",
+        "descuento_total": "354.00",
+        "cantidad_descontada": "61.00",
+        "descuento": "12.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 62,
+    "fields": {
+        "nombre": "Capell\u00e1n",
+        "fecha_inicio": "2011-02-17",
+        "fecha_fin": "2018-10-11",
+        "descuento_total": "134.00",
+        "cantidad_descontada": "62.00",
+        "descuento": "15.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 63,
+    "fields": {
+        "nombre": "Inspector de Protecci\u00f3n Ambiental",
+        "fecha_inicio": "2011-04-12",
+        "fecha_fin": "2018-09-27",
+        "descuento_total": "447.00",
+        "cantidad_descontada": "63.00",
+        "descuento": "36.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 64,
+    "fields": {
+        "nombre": "Promotor Social",
+        "fecha_inicio": "2013-04-01",
+        "fecha_fin": "2018-08-01",
+        "descuento_total": "290.00",
+        "cantidad_descontada": "64.00",
+        "descuento": "14.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 65,
+    "fields": {
+        "nombre": "Entrenador Deportivo",
+        "fecha_inicio": "2014-04-02",
+        "fecha_fin": "2018-10-01",
+        "descuento_total": "597.00",
+        "cantidad_descontada": "65.00",
+        "descuento": "23.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 66,
+    "fields": {
+        "nombre": "Actor",
+        "fecha_inicio": "2011-05-07",
+        "fecha_fin": "2017-08-21",
+        "descuento_total": "142.00",
+        "cantidad_descontada": "66.00",
+        "descuento": "33.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 67,
+    "fields": {
+        "nombre": "Promotor Cultural",
+        "fecha_inicio": "2015-03-17",
+        "fecha_fin": "2018-09-19",
+        "descuento_total": "372.00",
+        "cantidad_descontada": "67.00",
+        "descuento": "2.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 68,
+    "fields": {
+        "nombre": "Auxiliar de Servicios para el Arte",
+        "fecha_inicio": "2013-04-04",
+        "fecha_fin": "2017-10-23",
+        "descuento_total": "47.00",
+        "cantidad_descontada": "68.00",
+        "descuento": "14.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 69,
+    "fields": {
+        "nombre": "Maquinista de Buque",
+        "fecha_inicio": "2015-02-27",
+        "fecha_fin": "2018-09-02",
+        "descuento_total": "56.00",
+        "cantidad_descontada": "69.00",
+        "descuento": "42.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 70,
+    "fields": {
+        "nombre": "Secretaria (o) Ejecutiva (o)",
+        "fecha_inicio": "2014-02-18",
+        "fecha_fin": "2017-07-09",
+        "descuento_total": "36.00",
+        "cantidad_descontada": "70.00",
+        "descuento": "30.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 71,
+    "fields": {
+        "nombre": "Abogado Especialista",
+        "fecha_inicio": "2014-01-01",
+        "fecha_fin": "2018-09-04",
+        "descuento_total": "381.00",
+        "cantidad_descontada": "71.00",
+        "descuento": "12.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 72,
+    "fields": {
+        "nombre": "Jefe de Inventarios",
+        "fecha_inicio": "2013-03-21",
+        "fecha_fin": "2018-07-17",
+        "descuento_total": "156.00",
+        "cantidad_descontada": "72.00",
+        "descuento": "27.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 73,
+    "fields": {
+        "nombre": "Administrador Jefe",
+        "fecha_inicio": "2011-01-19",
+        "fecha_fin": "2018-11-27",
+        "descuento_total": "245.00",
+        "cantidad_descontada": "73.00",
+        "descuento": "40.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 74,
+    "fields": {
+        "nombre": "Jefe de Relaciones Interinstitucionales",
+        "fecha_inicio": "2011-05-21",
+        "fecha_fin": "2018-12-22",
+        "descuento_total": "219.00",
+        "cantidad_descontada": "74.00",
+        "descuento": "31.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 75,
+    "fields": {
+        "nombre": "Atrilero",
+        "fecha_inicio": "2013-03-26",
+        "fecha_fin": "2018-09-20",
+        "descuento_total": "327.00",
+        "cantidad_descontada": "75.00",
+        "descuento": "43.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 76,
+    "fields": {
+        "nombre": "Promotor de Cursos",
+        "fecha_inicio": "2014-05-21",
+        "fecha_fin": "2018-08-08",
+        "descuento_total": "515.00",
+        "cantidad_descontada": "76.00",
+        "descuento": "15.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 77,
+    "fields": {
+        "nombre": "Inspector de Control de P\u00e9rdidas",
+        "fecha_inicio": "2017-04-05",
+        "fecha_fin": "2017-06-16",
+        "descuento_total": "313.00",
+        "cantidad_descontada": "77.00",
+        "descuento": "49.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 78,
+    "fields": {
+        "nombre": "Investigador Ocupacional",
+        "fecha_inicio": "2011-01-26",
+        "fecha_fin": "2018-10-21",
+        "descuento_total": "470.00",
+        "cantidad_descontada": "78.00",
+        "descuento": "17.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 79,
+    "fields": {
+        "nombre": "Periodista",
+        "fecha_inicio": "2012-03-08",
+        "fecha_fin": "2018-11-16",
+        "descuento_total": "23.00",
+        "cantidad_descontada": "79.00",
+        "descuento": "12.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 80,
+    "fields": {
+        "nombre": "Jefe de Taller Metalmec\u00e1nico",
+        "fecha_inicio": "2012-05-22",
+        "fecha_fin": "2017-11-03",
+        "descuento_total": "110.00",
+        "cantidad_descontada": "80.00",
+        "descuento": "7.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 81,
+    "fields": {
+        "nombre": "Interprete Vocal",
+        "fecha_inicio": "2014-04-14",
+        "fecha_fin": "2017-06-03",
+        "descuento_total": "242.00",
+        "cantidad_descontada": "81.00",
+        "descuento": "47.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 82,
+    "fields": {
+        "nombre": "Dibujante Jefe",
+        "fecha_inicio": "2017-02-19",
+        "fecha_fin": "2018-09-20",
+        "descuento_total": "24.00",
+        "cantidad_descontada": "82.00",
+        "descuento": "40.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 83,
+    "fields": {
+        "nombre": "Jefe de Contabilidad",
+        "fecha_inicio": "2014-05-13",
+        "fecha_fin": "2018-09-07",
+        "descuento_total": "18.00",
+        "cantidad_descontada": "83.00",
+        "descuento": "28.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 84,
+    "fields": {
+        "nombre": "Dise\u00f1ador Curricular",
+        "fecha_inicio": "2014-03-20",
+        "fecha_fin": "2017-07-13",
+        "descuento_total": "690.00",
+        "cantidad_descontada": "84.00",
+        "descuento": "48.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 85,
+    "fields": {
+        "nombre": "Abogado Especialista Sectorial",
+        "fecha_inicio": "2017-02-25",
+        "fecha_fin": "2017-12-01",
+        "descuento_total": "127.00",
+        "cantidad_descontada": "85.00",
+        "descuento": "43.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 86,
+    "fields": {
+        "nombre": "Asistente de Especialista en Informaci\u00f3n",
+        "fecha_inicio": "2017-02-15",
+        "fecha_fin": "2017-11-28",
+        "descuento_total": "6.00",
+        "cantidad_descontada": "86.00",
+        "descuento": "41.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 87,
+    "fields": {
+        "nombre": "Jefe de Talleres de Obras",
+        "fecha_inicio": "2015-02-16",
+        "fecha_fin": "2017-10-19",
+        "descuento_total": "2.00",
+        "cantidad_descontada": "87.00",
+        "descuento": "13.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 88,
+    "fields": {
+        "nombre": "Analista de N\u00f3mina",
+        "fecha_inicio": "2017-04-27",
+        "fecha_fin": "2018-12-14",
+        "descuento_total": "229.00",
+        "cantidad_descontada": "88.00",
+        "descuento": "5.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 89,
+    "fields": {
+        "nombre": "Ingeniero Agr\u00f3nomo Jefe",
+        "fecha_inicio": "2013-05-19",
+        "fecha_fin": "2018-10-19",
+        "descuento_total": "35.00",
+        "cantidad_descontada": "89.00",
+        "descuento": "35.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 90,
+    "fields": {
+        "nombre": "Inspector de Obras",
+        "fecha_inicio": "2017-03-05",
+        "fecha_fin": "2017-06-09",
+        "descuento_total": "153.00",
+        "cantidad_descontada": "90.00",
+        "descuento": "3.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 91,
+    "fields": {
+        "nombre": "Asistente de Publicaciones",
+        "fecha_inicio": "2014-03-13",
+        "fecha_fin": "2018-07-27",
+        "descuento_total": "673.00",
+        "cantidad_descontada": "91.00",
+        "descuento": "10.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 92,
+    "fields": {
+        "nombre": "Recepcionista",
+        "fecha_inicio": "2012-05-11",
+        "fecha_fin": "2017-11-19",
+        "descuento_total": "418.00",
+        "cantidad_descontada": "92.00",
+        "descuento": "49.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 93,
+    "fields": {
+        "nombre": "Asistente Ejecutivo de Relaciones Interinstitucionales",
+        "fecha_inicio": "2016-03-03",
+        "fecha_fin": "2017-06-12",
+        "descuento_total": "118.00",
+        "cantidad_descontada": "93.00",
+        "descuento": "10.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 94,
+    "fields": {
+        "nombre": "Bioanalista",
+        "fecha_inicio": "2013-03-02",
+        "fecha_fin": "2018-11-08",
+        "descuento_total": "191.00",
+        "cantidad_descontada": "94.00",
+        "descuento": "37.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 95,
+    "fields": {
+        "nombre": "Concertino",
+        "fecha_inicio": "2014-03-27",
+        "fecha_fin": "2018-09-12",
+        "descuento_total": "84.00",
+        "cantidad_descontada": "95.00",
+        "descuento": "37.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 96,
+    "fields": {
+        "nombre": "Contador",
+        "fecha_inicio": "2011-04-01",
+        "fecha_fin": "2018-09-06",
+        "descuento_total": "160.00",
+        "cantidad_descontada": "96.00",
+        "descuento": "36.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 97,
+    "fields": {
+        "nombre": "Comprador Jefe",
+        "fecha_inicio": "2016-04-20",
+        "fecha_fin": "2018-07-18",
+        "descuento_total": "481.00",
+        "cantidad_descontada": "97.00",
+        "descuento": "15.00",
+        "fijo": true
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 98,
+    "fields": {
+        "nombre": "Jefe Central de Informaci\u00f3n y Control Estudiantil",
+        "fecha_inicio": "2015-05-13",
+        "fecha_fin": "2017-06-29",
+        "descuento_total": "207.00",
+        "cantidad_descontada": "98.00",
+        "descuento": "31.00",
+        "fijo": false
+    }
+},
+{
+    "model": "planilla.catalogodescuento",
+    "pk": 99,
+    "fields": {
+        "nombre": "Maquetista",
+        "fecha_inicio": "2016-04-20",
+        "fecha_fin": "2018-12-21",
+        "descuento_total": "230.00",
+        "cantidad_descontada": "99.00",
+        "descuento": "16.00",
+        "fijo": false
+    }
+}
+]

@@ -1,0 +1,72 @@
+[
+{
+    "model": "genero.genero",
+    "pk": 1,
+    "fields": {
+        "nombre": "Hombre"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 2,
+    "fields": {
+        "nombre": "Mujer"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 3,
+    "fields": {
+        "nombre": "Bisexual"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 4,
+    "fields": {
+        "nombre": "Transexual"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 5,
+    "fields": {
+        "nombre": "Pansexual"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 6,
+    "fields": {
+        "nombre": "Asexual"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 7,
+    "fields": {
+        "nombre": "Transgenero"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 8,
+    "fields": {
+        "nombre": "No binario"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 9,
+    "fields": {
+        "nombre": "Cualquiera"
+    }
+},
+{
+    "model": "genero.genero",
+    "pk": 10,
+    "fields": {
+        "nombre": "Todos los generos por dias"
+    }
+}
+]

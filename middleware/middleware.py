@@ -13,9 +13,13 @@ def FilterMenu(get_response):
             for group in groups:
                 menu = group.menu_set.filter(padre=None)
                 for me in menu:
-                    for m in Menu.objects.filter(padre=me):
-                        lista[me.nombre] = {m.nombre:m.url}
+                    sub_menu = Menu.objects.filter(padre=me)
+                    print(sub_menu)
+                    lista[me.nombre] = dict()
+                    for m in sub_menu:
+                        lista[me.nombre][m.nombre] = m.url
         request.session['lista'] = lista
+        print(request.session['lista'])
         response = get_response(request)
         return response
     return middleware
