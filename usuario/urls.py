@@ -33,6 +33,7 @@ urlpatterns = [
     path('<int:group_id>/<int:menu_id>/asignar_menu/', views.asignar_menu, name='asignar_menu'),    
     path('<int:group_id>/add_menu/', views.add_menu, name='add_menu'),
     path('<int:group_id>/set_all_menu/', views.set_all_menu, name='set_all_menu'),
+    path('servicio_validacion/', views.servicio_validacion, name='servicio_validacion'),
 ]
 
 

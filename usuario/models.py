@@ -4,6 +4,7 @@ from empleado.models import Empleado
 # Create your models here.
 class User(AbstractUser):
     empleado = models.OneToOneField(Empleado,on_delete=models.PROTECT, null=True)
+    intentos = models.IntegerField(default=0, blank=True, null=True)
     class Meta:
         db_table = "usuarios"
 

@@ -5,6 +5,13 @@ from django.views import generic
 from django.core.mail import send_mail
 from django.contrib import messages
 
+# para enviar mensajes
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
+
+
+
 
 
 # Create your views here.
@@ -27,11 +34,44 @@ def send_email(request):
         body = 'Usuario: {} \n Email: {} \n Departamento: {} \n Rol: {}'.format(user_name, user_email, user_department,
                                                                                 user_rol)
         # Send mail(Subject, body, from, to, fail)
-        print(os.getenv('EMAIL'))
-        send_mail(subject, body,  os.getenv('EMAIL'), [os.getenv('EMAIL')], fail_silently=False)
-        messages.success(request,'Solicitud enviada con exito')
+        email = os.getenv('EMAIL')
+        password = os.getenv('EMAIL_PASSWORD')
+        print(email)
+        print(password)
+        ### Hay varias formas de mandar mensajes por gmail, esta es la que tengo mas inmediata, al estar en produccion si quieren intentan descomentando la siguiente linea
+        #send_mail(subject, body,  os.getenv('EMAIL'), [os.getenv('EMAIL')], fail_silently=False)
+        #messages.success(request,'Solicitud enviada con exito')
+
+        ## enviando mensaje
+        res = other_form_send_email(subject, body, email, password, email)
+        if res:
+            messages.success(request,'Solicitud enviada con exito')
+        else:
+            messages.error(request,'No se pudo enviar peticion, contacte al administrador')
         return render(request, 'send_email.html', {})
     return render(request, 'send_email.html', {})
+
+
+
+def other_form_send_email(title,string_data, email, password,email_send):
+    try:
+        msg = MIMEMultipart()
+        msg['From'] = email
+        msg['To'] = email_send
+        msg['Subject'] = title
+        message = string_data
+        msg.attach(MIMEText(message, 'plain'))
+
+        # envio de mensaje por el puerto 587
+        server = smtplib.SMTP('smtp.gmail.com',587)
+        server.starttls()
+        server.login(msg['From'], password)
+        server.sendmail(msg['From'], msg['To'], msg.as_string())
+        server.quit()
+        print("mensaje enviado a %s:" % (msg['To']))
+        return True
+    except:
+        return False
 
 
 def show_profile(request):

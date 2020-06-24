@@ -15039,6 +15039,7 @@ be a descendant of the grid when it is being dragged.
       align-self: center;
   margin-right: 15px;
   padding: 10px 0;
+  color: white;  
 }
 
 @media (max-width: 480px) {

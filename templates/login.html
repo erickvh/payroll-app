@@ -34,25 +34,25 @@
         {% endfor %}
     {% endif %}
     <div class="login-box">
-        <form class="login-form" method="POST">
+        <form class="login-form" method="POST" id="login" action="{% url 'usuario:servicio_validacion' %}">
             {% csrf_token %}
             <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Iniciar Sesión</h3>
             <div class="form-group">
                 <label class="control-label">Email</label>
-                <input class="form-control" type="text" name='username' placeholder="Nombre de usuario" autofocus>
+                <input class="form-control" type="text" name='username' id="username" placeholder="Nombre de usuario" autofocus>
             </div>
             {% if form.errors.username %}
                 <div class="form-control-feedback text-danger">{{ form.errors.username }}</div>
             {% endif %}
             <div class="form-group">
                 <label class="control-label">Contraseña</label>
-                <input class="form-control" type="password" name="password" placeholder="Contraseña">
+                <input class="form-control" type="password" name="password" id="password" placeholder="Contraseña">
                 {% if form.errors.password %}
                     <div class="form-control-feedback text-danger">{{ form.errors.password }}</div>
                 {% endif %}
             </div>
             <div class="form-group btn-container">
-                <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Iniciar Sesión
+                <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>Iniciar Sesión
                 </button>
                  <a class="btn btn-primary btn-block" href='/send_email'><i class="fa fa-sign-in fa-lg fa-fw"></i>Solicitar cuenta
                 </a>
@@ -61,12 +61,11 @@
     </div>
 </section>
 <!-- Essential javascripts for application to work-->
-<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="{% static 'js/plugins/pace.min.js' %}"></script>
-
 </body>
 </html>

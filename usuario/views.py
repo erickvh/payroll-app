@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from django.http import JsonResponse
 from django.contrib.auth.decorators import permission_required
-
+from django.contrib.auth import authenticate, login
 
 #imports del modelo
 from usuario.models import User
@@ -17,6 +17,8 @@ from empleado.models import Empleado
 from .forms import UserForm, UserUpdateForm
 from django.contrib.auth.hashers import make_password
 from .models import Menu
+from generales.views import other_form_send_email
+import os
 
 # Roles o grupos
 
@@ -254,6 +256,40 @@ def toggle_usuario(request,usuario_id):
         messages.warning(request, message)
 
     return redirect('/usuarios')
+
+
+def servicio_validacion(request):
+    if request.method == 'POST':
+        username = request.POST.get('username', None)
+        password = request.POST.get('password', None)
+        if username and password:
+            usuario = get_object_or_404(User, username=username)
+            if usuario:
+                user = authenticate(username=username, password=password)
+                if user:
+                    login(request, user)
+                    messages.success(request, '¡Inicio de sesion exitoso!')
+                else:
+                    if usuario.intentos > 2:
+                        usuario.is_active = False
+                        messages.error(request, 'Usuario bloqueado por demasiados intentos fallidos')
+                        email = os.getenv('EMAIL')
+                        password = os.getenv('EMAIL_PASSWORD')
+                        body = 'El usuario:'+usuario.username+ ' a intentado iniciar sesion demasiadas veces, por favor desbloqueelo'
+                        res = other_form_send_email('Peticion de desbloqueo', body, email, password, email)
+                        if res:
+                            messages.success(request,'Solicitud enviada para pedir desbloqueo')
+                        else:
+                            messages.error(request,'No se pudo enviar peticion, contacte al administrador')
+                    else: 
+                        messages.error(request, 'Intento de inicio de session fallido')
+                    usuario.intentos = usuario.intentos + 1
+                    usuario.save()
+            else: 
+                messages.error(request, 'Usuario no existe')
+        else:
+            messages.error(request, 'Digite correctamente el nombre del usuario y contraseña')
+    return redirect('/')
 
 
 

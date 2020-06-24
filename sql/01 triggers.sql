@@ -73,3 +73,26 @@ execute procedure actualizar_centro_costo();
 
 
 
+
+
+
+create or replace function 
+habilitar_usuario() 
+returns trigger as $tgr_usuarios$
+declare
+begin 
+if old.is_active=false and new.is_active=true then
+  new.intentos=0;
+end if;
+return new;
+end;
+$tgr_usuarios$ language plpgsql;
+
+
+create trigger tgr_usuarios 
+before update
+on usuarios for each row
+execute procedure habilitar_usuario(); 
+
+
+

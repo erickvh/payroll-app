@@ -82,7 +82,8 @@ MIDDLEWARE = [
 ]
 
 LOGIN_REQUIRED_IGNORE_PATHS = [
-    '/send_email'
+    '/send_email',
+    '/usuarios/servicio_validacion/'
 ]
 
 ROOT_URLCONF = 'payrollApp.urls'

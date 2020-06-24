@@ -6,9 +6,7 @@
         "nombre": "Cat\u00e1logos Empleado",
         "url": "",
         "padre": null,
-        "groups": [
-            4
-        ]
+        "groups": []
     }
 },
 {
@@ -18,9 +16,7 @@
         "nombre": "Cat\u00e1logos Empresa",
         "url": "",
         "padre": null,
-        "groups": [
-            4
-        ]
+        "groups": []
     }
 },
 {
@@ -30,9 +26,7 @@
         "nombre": "Cat\u00e1logos Planilla",
         "url": "",
         "padre": null,
-        "groups": [
-            4
-        ]
+        "groups": []
     }
 },
 {
@@ -42,9 +36,7 @@
         "nombre": "Empleados",
         "url": "",
         "padre": null,
-        "groups": [
-            4
-        ]
+        "groups": []
     }
 },
 {
