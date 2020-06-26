@@ -17,7 +17,7 @@ from empleado.models import Empleado
 from .forms import UserForm, UserUpdateForm
 from django.contrib.auth.hashers import make_password
 from .models import Menu
-from generales.views import other_form_send_email
+from generales.views import send_email_for_enable
 import os
 
 # Roles o grupos
@@ -273,10 +273,8 @@ def servicio_validacion(request):
                     if usuario.intentos > 2:
                         usuario.is_active = False
                         messages.error(request, 'Usuario bloqueado por demasiados intentos fallidos')
-                        email = os.getenv('EMAIL')
-                        password = os.getenv('EMAIL_PASSWORD')
                         body = 'El usuario:'+usuario.username+ ' a intentado iniciar sesion demasiadas veces, por favor desbloqueelo'
-                        res = other_form_send_email('Peticion de desbloqueo', body, email, password, email)
+                        res = send_email_for_enable(request,'Peticion de desbloqueo', body)
                         if res:
                             messages.success(request,'Solicitud enviada para pedir desbloqueo')
                         else:
