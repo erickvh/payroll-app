@@ -268,7 +268,6 @@ def servicio_validacion(request):
                 user = authenticate(username=username, password=password)
                 if user:
                     login(request, user)
-                    messages.success(request, '¡Inicio de sesion exitoso!')
                 else:
                     if usuario.intentos > 2:
                         usuario.is_active = False

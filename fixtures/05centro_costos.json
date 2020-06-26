@@ -3,9 +3,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 1,
     "fields": {
-        "presupuesto": 17207.0,
-        "fecha_inicio": "2015-05-04",
-        "fecha_fin": "2018-07-16",
+        "presupuesto": 67207.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 1
     }
@@ -14,9 +14,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 2,
     "fields": {
-        "presupuesto": 24102.0,
-        "fecha_inicio": "2016-04-24",
-        "fecha_fin": "2017-06-24",
+        "presupuesto": 74102.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 2
     }
@@ -25,9 +25,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 3,
     "fields": {
-        "presupuesto": 26128.0,
-        "fecha_inicio": "2014-04-19",
-        "fecha_fin": "2017-09-20",
+        "presupuesto": 76128.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 3
     }
@@ -36,9 +36,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 4,
     "fields": {
-        "presupuesto": 9060.0,
-        "fecha_inicio": "2017-01-08",
-        "fecha_fin": "2017-06-28",
+        "presupuesto": 59060.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 4
     }
@@ -47,9 +47,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 5,
     "fields": {
-        "presupuesto": 2791.0,
-        "fecha_inicio": "2016-03-13",
-        "fecha_fin": "2017-12-09",
+        "presupuesto": 52791.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 5
     }
@@ -58,9 +58,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 6,
     "fields": {
-        "presupuesto": 11065.0,
-        "fecha_inicio": "2011-02-19",
-        "fecha_fin": "2017-08-24",
+        "presupuesto": 61065.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 6
     }
@@ -69,9 +69,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 7,
     "fields": {
-        "presupuesto": 18408.0,
-        "fecha_inicio": "2017-02-25",
-        "fecha_fin": "2017-10-29",
+        "presupuesto": 68408.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 7
     }
@@ -80,9 +80,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 8,
     "fields": {
-        "presupuesto": 13502.0,
-        "fecha_inicio": "2014-03-11",
-        "fecha_fin": "2017-09-04",
+        "presupuesto": 63502.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 8
     }
@@ -91,9 +91,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 9,
     "fields": {
-        "presupuesto": 3493.0,
-        "fecha_inicio": "2013-03-18",
-        "fecha_fin": "2018-12-03",
+        "presupuesto": 53493.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 9
     }
@@ -102,9 +102,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 10,
     "fields": {
-        "presupuesto": 11750.0,
-        "fecha_inicio": "2017-05-22",
-        "fecha_fin": "2017-11-18",
+        "presupuesto": 61750.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 10
     }
@@ -113,9 +113,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 11,
     "fields": {
-        "presupuesto": 25303.0,
-        "fecha_inicio": "2013-03-24",
-        "fecha_fin": "2018-08-25",
+        "presupuesto": 75303.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 11
     }
@@ -124,9 +124,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 12,
     "fields": {
-        "presupuesto": 40600.0,
-        "fecha_inicio": "2015-02-14",
-        "fecha_fin": "2018-06-04",
+        "presupuesto": 90600.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 12
     }
@@ -135,9 +135,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 13,
     "fields": {
-        "presupuesto": 2336.0,
-        "fecha_inicio": "2016-03-20",
-        "fecha_fin": "2018-07-11",
+        "presupuesto": 52336.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 13
     }
@@ -146,9 +146,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 14,
     "fields": {
-        "presupuesto": 12361.0,
-        "fecha_inicio": "2017-04-15",
-        "fecha_fin": "2018-07-17",
+        "presupuesto": 62361.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 14
     }
@@ -157,9 +157,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 15,
     "fields": {
-        "presupuesto": 19673.0,
-        "fecha_inicio": "2015-03-22",
-        "fecha_fin": "2017-10-14",
+        "presupuesto": 69673.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 15
     }
@@ -168,9 +168,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 16,
     "fields": {
-        "presupuesto": 15018.0,
-        "fecha_inicio": "2013-03-08",
-        "fecha_fin": "2017-09-27",
+        "presupuesto": 65018.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 16
     }
@@ -179,9 +179,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 17,
     "fields": {
-        "presupuesto": 39802.0,
-        "fecha_inicio": "2017-04-05",
-        "fecha_fin": "2018-11-08",
+        "presupuesto": 89802.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 17
     }
@@ -190,9 +190,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 18,
     "fields": {
-        "presupuesto": 3288.0,
-        "fecha_inicio": "2013-02-08",
-        "fecha_fin": "2017-11-28",
+        "presupuesto": 53288.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 18
     }
@@ -201,9 +201,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 19,
     "fields": {
-        "presupuesto": 9427.0,
-        "fecha_inicio": "2017-05-26",
-        "fecha_fin": "2018-09-13",
+        "presupuesto": 59427.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 19
     }
@@ -212,9 +212,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 20,
     "fields": {
-        "presupuesto": 10736.0,
-        "fecha_inicio": "2013-01-09",
-        "fecha_fin": "2017-12-27",
+        "presupuesto": 60736.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 20
     }
@@ -223,9 +223,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 21,
     "fields": {
-        "presupuesto": 3390.0,
-        "fecha_inicio": "2011-04-01",
-        "fecha_fin": "2018-12-23",
+        "presupuesto": 53390.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 21
     }
@@ -234,9 +234,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 22,
     "fields": {
-        "presupuesto": 14090.0,
-        "fecha_inicio": "2012-05-26",
-        "fecha_fin": "2018-10-14",
+        "presupuesto": 64090.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 22
     }
@@ -245,9 +245,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 23,
     "fields": {
-        "presupuesto": 1485.0,
-        "fecha_inicio": "2017-04-19",
-        "fecha_fin": "2018-08-24",
+        "presupuesto": 51485.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 23
     }
@@ -256,9 +256,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 24,
     "fields": {
-        "presupuesto": 17080.0,
-        "fecha_inicio": "2011-02-11",
-        "fecha_fin": "2017-06-25",
+        "presupuesto": 67080.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 24
     }
@@ -267,9 +267,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 25,
     "fields": {
-        "presupuesto": 37712.0,
-        "fecha_inicio": "2011-04-11",
-        "fecha_fin": "2017-10-20",
+        "presupuesto": 87712.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 25
     }
@@ -278,9 +278,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 26,
     "fields": {
-        "presupuesto": 19472.0,
-        "fecha_inicio": "2012-03-21",
-        "fecha_fin": "2018-10-13",
+        "presupuesto": 69472.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 26
     }
@@ -289,9 +289,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 27,
     "fields": {
-        "presupuesto": 16734.0,
-        "fecha_inicio": "2015-02-09",
-        "fecha_fin": "2018-06-20",
+        "presupuesto": 66734.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 27
     }
@@ -300,9 +300,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 28,
     "fields": {
-        "presupuesto": 4029.0,
-        "fecha_inicio": "2016-05-22",
-        "fecha_fin": "2017-08-23",
+        "presupuesto": 54029.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 28
     }
@@ -311,9 +311,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 29,
     "fields": {
-        "presupuesto": 27249.0,
-        "fecha_inicio": "2016-04-24",
-        "fecha_fin": "2017-09-07",
+        "presupuesto": 77249.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 29
     }
@@ -322,9 +322,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 30,
     "fields": {
-        "presupuesto": 25861.0,
-        "fecha_inicio": "2013-04-17",
-        "fecha_fin": "2017-10-29",
+        "presupuesto": 75861.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 30
     }
@@ -333,9 +333,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 31,
     "fields": {
-        "presupuesto": 58715.0,
-        "fecha_inicio": "2015-03-18",
-        "fecha_fin": "2018-08-16",
+        "presupuesto": 108715.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 31
     }
@@ -344,9 +344,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 32,
     "fields": {
-        "presupuesto": 37132.0,
-        "fecha_inicio": "2011-05-01",
-        "fecha_fin": "2018-08-25",
+        "presupuesto": 87132.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 32
     }
@@ -355,9 +355,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 33,
     "fields": {
-        "presupuesto": 12179.0,
-        "fecha_inicio": "2015-02-26",
-        "fecha_fin": "2017-11-25",
+        "presupuesto": 62179.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 33
     }
@@ -366,9 +366,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 34,
     "fields": {
-        "presupuesto": 12255.0,
-        "fecha_inicio": "2011-01-21",
-        "fecha_fin": "2017-11-23",
+        "presupuesto": 62255.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 34
     }
@@ -377,9 +377,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 35,
     "fields": {
-        "presupuesto": 6683.0,
-        "fecha_inicio": "2016-05-16",
-        "fecha_fin": "2018-10-19",
+        "presupuesto": 56683.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 35
     }
@@ -388,9 +388,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 36,
     "fields": {
-        "presupuesto": 15578.0,
-        "fecha_inicio": "2012-02-27",
-        "fecha_fin": "2018-12-07",
+        "presupuesto": 65578.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 36
     }
@@ -399,9 +399,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 37,
     "fields": {
-        "presupuesto": 21145.0,
-        "fecha_inicio": "2015-04-13",
-        "fecha_fin": "2017-07-25",
+        "presupuesto": 71145.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 37
     }
@@ -410,9 +410,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 38,
     "fields": {
-        "presupuesto": 25398.0,
-        "fecha_inicio": "2011-04-06",
-        "fecha_fin": "2018-09-05",
+        "presupuesto": 75398.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 38
     }
@@ -421,9 +421,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 39,
     "fields": {
-        "presupuesto": 3669.0,
-        "fecha_inicio": "2016-03-18",
-        "fecha_fin": "2018-08-19",
+        "presupuesto": 53669.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 39
     }
@@ -432,9 +432,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 40,
     "fields": {
-        "presupuesto": 34483.0,
-        "fecha_inicio": "2014-01-13",
-        "fecha_fin": "2017-11-27",
+        "presupuesto": 84483.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 40
     }
@@ -443,9 +443,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 41,
     "fields": {
-        "presupuesto": 25279.0,
-        "fecha_inicio": "2016-04-04",
-        "fecha_fin": "2018-06-22",
+        "presupuesto": 75279.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 41
     }
@@ -454,9 +454,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 42,
     "fields": {
-        "presupuesto": 24348.0,
-        "fecha_inicio": "2015-03-20",
-        "fecha_fin": "2017-10-23",
+        "presupuesto": 74348.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 42
     }
@@ -465,9 +465,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 43,
     "fields": {
-        "presupuesto": 8327.0,
-        "fecha_inicio": "2016-02-13",
-        "fecha_fin": "2018-12-22",
+        "presupuesto": 58327.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 43
     }
@@ -476,9 +476,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 44,
     "fields": {
-        "presupuesto": 27609.0,
-        "fecha_inicio": "2017-02-11",
-        "fecha_fin": "2017-07-21",
+        "presupuesto": 77609.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 44
     }
@@ -487,9 +487,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 45,
     "fields": {
-        "presupuesto": 1478.0,
-        "fecha_inicio": "2016-02-27",
-        "fecha_fin": "2017-09-23",
+        "presupuesto": 51478.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 45
     }
@@ -498,9 +498,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 46,
     "fields": {
-        "presupuesto": 33961.0,
-        "fecha_inicio": "2017-03-19",
-        "fecha_fin": "2017-07-19",
+        "presupuesto": 83961.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 46
     }
@@ -509,9 +509,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 47,
     "fields": {
-        "presupuesto": 14984.0,
-        "fecha_inicio": "2014-01-03",
-        "fecha_fin": "2017-08-21",
+        "presupuesto": 64984.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 47
     }
@@ -520,9 +520,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 48,
     "fields": {
-        "presupuesto": 3109.0,
-        "fecha_inicio": "2013-03-13",
-        "fecha_fin": "2017-09-19",
+        "presupuesto": 53109.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 48
     }
@@ -531,9 +531,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 49,
     "fields": {
-        "presupuesto": 30179.0,
-        "fecha_inicio": "2015-01-27",
-        "fecha_fin": "2017-09-27",
+        "presupuesto": 80179.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 49
     }
@@ -542,9 +542,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 50,
     "fields": {
-        "presupuesto": 4411.0,
-        "fecha_inicio": "2012-04-29",
-        "fecha_fin": "2018-11-15",
+        "presupuesto": 54411.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 50
     }
@@ -553,9 +553,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 51,
     "fields": {
-        "presupuesto": 44951.0,
-        "fecha_inicio": "2017-01-12",
-        "fecha_fin": "2018-12-14",
+        "presupuesto": 94951.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 51
     }
@@ -564,9 +564,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 52,
     "fields": {
-        "presupuesto": 40930.0,
-        "fecha_inicio": "2013-02-28",
-        "fecha_fin": "2018-11-21",
+        "presupuesto": 90930.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 52
     }
@@ -575,9 +575,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 53,
     "fields": {
-        "presupuesto": 75765.0,
-        "fecha_inicio": "2017-04-13",
-        "fecha_fin": "2018-06-13",
+        "presupuesto": 125765.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 53
     }
@@ -586,9 +586,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 54,
     "fields": {
-        "presupuesto": 36839.0,
-        "fecha_inicio": "2016-02-06",
-        "fecha_fin": "2018-09-20",
+        "presupuesto": 86839.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 54
     }
@@ -597,9 +597,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 55,
     "fields": {
-        "presupuesto": 16826.0,
-        "fecha_inicio": "2017-03-03",
-        "fecha_fin": "2017-08-21",
+        "presupuesto": 66826.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 55
     }
@@ -608,9 +608,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 56,
     "fields": {
-        "presupuesto": 63408.0,
-        "fecha_inicio": "2017-01-09",
-        "fecha_fin": "2017-09-13",
+        "presupuesto": 113408.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 56
     }
@@ -619,9 +619,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 57,
     "fields": {
-        "presupuesto": 35077.0,
-        "fecha_inicio": "2011-04-16",
-        "fecha_fin": "2018-06-09",
+        "presupuesto": 85077.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 57
     }
@@ -630,9 +630,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 58,
     "fields": {
-        "presupuesto": 14552.0,
-        "fecha_inicio": "2011-05-19",
-        "fecha_fin": "2017-12-10",
+        "presupuesto": 64552.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 58
     }
@@ -641,9 +641,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 59,
     "fields": {
-        "presupuesto": 16680.0,
-        "fecha_inicio": "2017-01-24",
-        "fecha_fin": "2017-06-23",
+        "presupuesto": 66680.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 59
     }
@@ -652,9 +652,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 60,
     "fields": {
-        "presupuesto": 13085.0,
-        "fecha_inicio": "2013-01-28",
-        "fecha_fin": "2018-07-08",
+        "presupuesto": 63085.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 60
     }
@@ -663,9 +663,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 61,
     "fields": {
-        "presupuesto": 26382.0,
-        "fecha_inicio": "2017-04-23",
-        "fecha_fin": "2018-06-03",
+        "presupuesto": 76382.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 61
     }
@@ -674,9 +674,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 62,
     "fields": {
-        "presupuesto": 16843.0,
-        "fecha_inicio": "2015-02-08",
-        "fecha_fin": "2017-12-20",
+        "presupuesto": 66843.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 62
     }
@@ -685,9 +685,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 63,
     "fields": {
-        "presupuesto": 57802.0,
-        "fecha_inicio": "2017-01-17",
-        "fecha_fin": "2017-06-12",
+        "presupuesto": 107802.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 63
     }
@@ -696,9 +696,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 64,
     "fields": {
-        "presupuesto": 16846.0,
-        "fecha_inicio": "2011-04-10",
-        "fecha_fin": "2017-06-29",
+        "presupuesto": 66846.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 64
     }
@@ -707,9 +707,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 65,
     "fields": {
-        "presupuesto": 9286.0,
-        "fecha_inicio": "2015-05-26",
-        "fecha_fin": "2018-11-06",
+        "presupuesto": 59286.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 65
     }
@@ -718,9 +718,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 66,
     "fields": {
-        "presupuesto": 38522.0,
-        "fecha_inicio": "2015-05-04",
-        "fecha_fin": "2017-08-27",
+        "presupuesto": 88522.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 66
     }
@@ -729,9 +729,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 67,
     "fields": {
-        "presupuesto": 25734.0,
-        "fecha_inicio": "2017-05-12",
-        "fecha_fin": "2018-08-01",
+        "presupuesto": 75734.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 67
     }
@@ -740,9 +740,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 68,
     "fields": {
-        "presupuesto": 42471.0,
-        "fecha_inicio": "2012-05-16",
-        "fecha_fin": "2018-06-07",
+        "presupuesto": 92471.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 68
     }
@@ -751,9 +751,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 69,
     "fields": {
-        "presupuesto": 18032.0,
-        "fecha_inicio": "2012-05-04",
-        "fecha_fin": "2017-06-18",
+        "presupuesto": 68032.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 69
     }
@@ -762,9 +762,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 70,
     "fields": {
-        "presupuesto": 31476.0,
-        "fecha_inicio": "2011-03-15",
-        "fecha_fin": "2018-10-07",
+        "presupuesto": 81476.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 70
     }
@@ -773,9 +773,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 71,
     "fields": {
-        "presupuesto": 13436.0,
-        "fecha_inicio": "2014-02-20",
-        "fecha_fin": "2018-10-12",
+        "presupuesto": 63436.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 71
     }
@@ -784,9 +784,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 72,
     "fields": {
-        "presupuesto": 28241.0,
-        "fecha_inicio": "2016-05-25",
-        "fecha_fin": "2017-12-07",
+        "presupuesto": 78241.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 72
     }
@@ -795,9 +795,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 73,
     "fields": {
-        "presupuesto": 28429.0,
-        "fecha_inicio": "2011-01-26",
-        "fecha_fin": "2017-09-13",
+        "presupuesto": 78429.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 73
     }
@@ -806,9 +806,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 74,
     "fields": {
-        "presupuesto": 6789.0,
-        "fecha_inicio": "2014-03-02",
-        "fecha_fin": "2018-07-10",
+        "presupuesto": 56789.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 74
     }
@@ -817,9 +817,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 75,
     "fields": {
-        "presupuesto": 38066.0,
-        "fecha_inicio": "2015-04-06",
-        "fecha_fin": "2018-06-05",
+        "presupuesto": 88066.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 75
     }
@@ -828,9 +828,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 76,
     "fields": {
-        "presupuesto": 21422.0,
-        "fecha_inicio": "2017-02-06",
-        "fecha_fin": "2017-07-16",
+        "presupuesto": 71422.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 76
     }
@@ -839,9 +839,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 77,
     "fields": {
-        "presupuesto": 32807.0,
-        "fecha_inicio": "2014-04-16",
-        "fecha_fin": "2018-09-17",
+        "presupuesto": 82807.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 77
     }
@@ -850,9 +850,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 78,
     "fields": {
-        "presupuesto": 19888.0,
-        "fecha_inicio": "2016-01-15",
-        "fecha_fin": "2018-10-26",
+        "presupuesto": 69888.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 78
     }
@@ -861,9 +861,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 79,
     "fields": {
-        "presupuesto": 22241.0,
-        "fecha_inicio": "2014-02-10",
-        "fecha_fin": "2018-09-01",
+        "presupuesto": 72241.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 79
     }
@@ -872,9 +872,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 80,
     "fields": {
-        "presupuesto": 43777.0,
-        "fecha_inicio": "2014-05-06",
-        "fecha_fin": "2017-06-06",
+        "presupuesto": 93777.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 80
     }
@@ -883,9 +883,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 81,
     "fields": {
-        "presupuesto": 43174.0,
-        "fecha_inicio": "2011-01-15",
-        "fecha_fin": "2017-07-24",
+        "presupuesto": 93174.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 81
     }
@@ -894,9 +894,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 82,
     "fields": {
-        "presupuesto": 10034.0,
-        "fecha_inicio": "2013-01-07",
-        "fecha_fin": "2017-10-23",
+        "presupuesto": 60034.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 82
     }
@@ -905,9 +905,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 83,
     "fields": {
-        "presupuesto": 11115.0,
-        "fecha_inicio": "2016-04-26",
-        "fecha_fin": "2017-09-05",
+        "presupuesto": 61115.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 83
     }
@@ -916,9 +916,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 84,
     "fields": {
-        "presupuesto": 56757.0,
-        "fecha_inicio": "2012-04-03",
-        "fecha_fin": "2017-08-28",
+        "presupuesto": 106757.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 84
     }
@@ -927,9 +927,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 85,
     "fields": {
-        "presupuesto": 22397.0,
-        "fecha_inicio": "2017-04-28",
-        "fecha_fin": "2018-11-17",
+        "presupuesto": 72397.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 85
     }
@@ -938,9 +938,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 86,
     "fields": {
-        "presupuesto": 14380.0,
-        "fecha_inicio": "2014-01-25",
-        "fecha_fin": "2017-12-06",
+        "presupuesto": 64380.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 86
     }
@@ -949,9 +949,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 87,
     "fields": {
-        "presupuesto": 33593.0,
-        "fecha_inicio": "2013-03-08",
-        "fecha_fin": "2017-11-28",
+        "presupuesto": 83593.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 87
     }
@@ -960,9 +960,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 88,
     "fields": {
-        "presupuesto": 17832.0,
-        "fecha_inicio": "2015-01-29",
-        "fecha_fin": "2017-06-15",
+        "presupuesto": 67832.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 88
     }
@@ -971,9 +971,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 89,
     "fields": {
-        "presupuesto": 44090.0,
-        "fecha_inicio": "2015-01-28",
-        "fecha_fin": "2018-06-10",
+        "presupuesto": 94090.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 89
     }
@@ -982,9 +982,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 90,
     "fields": {
-        "presupuesto": 23097.0,
-        "fecha_inicio": "2012-03-20",
-        "fecha_fin": "2017-11-22",
+        "presupuesto": 73097.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 90
     }
@@ -993,9 +993,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 91,
     "fields": {
-        "presupuesto": 13277.0,
-        "fecha_inicio": "2017-04-27",
-        "fecha_fin": "2017-06-14",
+        "presupuesto": 63277.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 91
     }
@@ -1004,9 +1004,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 92,
     "fields": {
-        "presupuesto": 34064.0,
-        "fecha_inicio": "2015-04-23",
-        "fecha_fin": "2017-11-06",
+        "presupuesto": 84064.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 92
     }
@@ -1015,9 +1015,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 93,
     "fields": {
-        "presupuesto": 9377.0,
-        "fecha_inicio": "2011-04-12",
-        "fecha_fin": "2017-08-24",
+        "presupuesto": 59377.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 93
     }
@@ -1026,9 +1026,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 94,
     "fields": {
-        "presupuesto": 5458.0,
-        "fecha_inicio": "2012-01-05",
-        "fecha_fin": "2018-10-18",
+        "presupuesto": 55458.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 94
     }
@@ -1037,9 +1037,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 95,
     "fields": {
-        "presupuesto": 8997.0,
-        "fecha_inicio": "2013-04-05",
-        "fecha_fin": "2017-08-08",
+        "presupuesto": 58997.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 95
     }
@@ -1048,9 +1048,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 96,
     "fields": {
-        "presupuesto": 1708.0,
-        "fecha_inicio": "2015-02-03",
-        "fecha_fin": "2017-06-17",
+        "presupuesto": 51708.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 96
     }
@@ -1059,9 +1059,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 97,
     "fields": {
-        "presupuesto": 58204.0,
-        "fecha_inicio": "2011-01-13",
-        "fecha_fin": "2017-07-26",
+        "presupuesto": 108204.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 97
     }
@@ -1070,9 +1070,9 @@
     "model": "centro_costo.centrocostos",
     "pk": 98,
     "fields": {
-        "presupuesto": 21921.0,
-        "fecha_inicio": "2013-02-16",
-        "fecha_fin": "2017-06-16",
+        "presupuesto": 71921.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 98
     }
@@ -1081,11 +1081,22 @@
     "model": "centro_costo.centrocostos",
     "pk": 99,
     "fields": {
-        "presupuesto": 61898.0,
-        "fecha_inicio": "2016-04-12",
-        "fecha_fin": "2018-12-01",
+        "presupuesto": 111898.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
         "remanente": 0.0,
         "departamento_organizacion": 99
+    }
+},
+{
+    "model": "centro_costo.centrocostos",
+    "pk": 100,
+    "fields": {
+        "presupuesto": 130000.0,
+        "fecha_inicio": "2020-01-01",
+        "fecha_fin": "2021-01-01",
+        "remanente": 0.0,
+        "departamento_organizacion": 12
     }
 }
 ]

@@ -44,9 +44,9 @@ Grupos / roles
                     <td class="d-flex justify-content-center">
                         <form method="post" action="{% url 'usuario:delete_rol' group.id %}">
                             {% csrf_token %}
-                            <a href="{% url 'usuario:permiso_rol' group.id %}" class="btn btn-outline-info mr-2" ><i class="fa fa-edit icon-expe"></i></a>
+                            <a href="{% url 'usuario:permiso_rol' group.id %}" class="btn btn-outline-info mr-2" ><i class="fa fa-ravelry icon-expe"></i></a>
                             <button type="submit" class="btn btn-outline-danger mr-2" ><i class="fa fa-remove icon-expe"></i></button>
-                            <a href="{% url 'usuario:add_menu' group.id %}" class="btn btn-outline-success mr-2" ><i class="fa fa-edit icon-expe"></i></a>
+                            <a href="{% url 'usuario:add_menu' group.id %}" class="btn btn-outline-success mr-2" ><i class="fa fa-tags icon-expe"></i></a>
                         </form> 
                     </td>
                 </tr>
